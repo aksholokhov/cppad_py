@@ -1,0 +1,11 @@
+# files to ignore
+/git_commit.sh
+junk
+junk.*
+# directories to ignore
+/build/
+# /doc/
+new
+# extensions to ignore
+*.log
+*.swp
