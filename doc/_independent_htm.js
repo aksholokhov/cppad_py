@@ -38,7 +38,6 @@ var list_down1 = [
 ];
 var list_current0 = [
 'independent.htm#Syntax',
-'independent.htm#module_ref',
 'independent.htm#x',
 'independent.htm#ax',
 'independent.htm#Purpose',

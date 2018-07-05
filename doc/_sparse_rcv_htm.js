@@ -39,7 +39,6 @@ var list_down0 = [
 ];
 var list_current0 = [
 'sparse_rcv.htm#Syntax',
-'sparse_rcv.htm#module_ref',
 'sparse_rcv.htm#pattern',
 'sparse_rcv.htm#matrix',
 'sparse_rcv.htm#nr',

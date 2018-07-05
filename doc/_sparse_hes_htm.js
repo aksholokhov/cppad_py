@@ -39,7 +39,6 @@ var list_down0 = [
 ];
 var list_current0 = [
 'sparse_hes.htm#Syntax',
-'sparse_hes.htm#module_ref',
 'sparse_hes.htm#Purpose',
 'sparse_hes.htm#af',
 'sparse_hes.htm#subset',

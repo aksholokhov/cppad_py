@@ -33,7 +33,6 @@ var list_down1 = [
 var list_current0 = [
 'vector_ctor.htm#Syntax',
 'vector_ctor.htm#Purpose',
-'vector_ctor.htm#module_ref',
 'vector_ctor.htm#n',
 'vector_ctor.htm#vec_bool',
 'vector_ctor.htm#vec_int',

@@ -38,7 +38,6 @@ var list_down1 = [
 var list_current0 = [
 'a_double_ctor.htm#Syntax',
 'a_double_ctor.htm#Purpose',
-'a_double_ctor.htm#module_ref',
 'a_double_ctor.htm#d',
 'a_double_ctor.htm#ad_other',
 'a_double_ctor.htm#ad',

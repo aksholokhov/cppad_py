@@ -25,9 +25,7 @@ var list_down1 = [
 'error.htm'
 ];
 var list_current0 = [
-'module.htm#Language',
-'module.htm#Module Name',
-'module.htm#module_ref'
+'module.htm#Language'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

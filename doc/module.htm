@@ -12,10 +12,10 @@ MathJax.Hub.Config({
 >
 </script>
 <head>
-<title>Cppad Py Modules and Languages</title>
+<title>C++ and Python Modules</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
-<meta name="description" id="description" content="Cppad Py Modules and Languages">
-<meta name="keywords" id="keywords" content=" cppad py modules languages language module name module_ref ">
+<meta name="description" id="description" content="C++ and Python Modules">
+<meta name="keywords" id="keywords" content=" c++ python modules language ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -76,53 +76,20 @@ A:active { color : purple }
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
 <option>Language</option>
-<option>Module Name</option>
-<option>module_ref</option>
 </select>
 </td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
-\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Cppad Py Modules and Languages</big></big></b></center>
+\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>C++ and Python Modules</big></big></b></center>
 <br>
 <b><big><a name="Language" id="Language">Language</a></big></b>
 <br>
 Is a source code language.
-Note that in C++, the library functions are accessed directly,
-while in the other languages they are accessed through the
-corresponding Swig module.
+Note that in C++, the library functions are in
+the <code><font color="blue">cppad_py</font></code> namespace,
+while in the Python language is accessed through the
+Swig <code><font color="blue">cppad_py</font></code> module.
 
-<br>
-<br>
-<b><big><a name="Module Name" id="Module Name">Module Name</a></big></b>
-<br>
-This is the name of the Swig module.
-In C++ this is actually a <code><font color="blue">namespace</font></code>, instead of a
-Swig module.
-
-<br>
-<br>
-<b><big><a name="module_ref" id="module_ref">module_ref</a></big></b>
-<br>
-We use 
-<code><i><font color="black"><span style='white-space: nowrap'>module_ref</span></font></i></code>
- to denote the source code used to reference
-the Cppad Py module for a particular language.
-It has the following value (depending on the language):
-<table><tr><td align='left'  valign='top'>
-
-Language     </td><td align='left'  valign='top'>
- Module Name        </td><td align='left'  valign='top'>
- module_ref            </td></tr><tr><td align='left'  valign='top'>
-
-C++          </td><td align='left'  valign='top'>
- <code><font color="blue">cppad_py</font></code>   </td><td align='left'  valign='top'>
- <code><font color="blue">cppad_py::</font></code>    </td></tr><tr><td align='left'  valign='top'>
-
-Python       </td><td align='left'  valign='top'>
- <code><font color="blue">cppad_py</font></code>   </td><td align='left'  valign='top'>
- <code><font color="blue">cppad_py.</font></code>
-</td></tr>
-</table>
 
 <hr>Input File: lib/cppad_py.i
 

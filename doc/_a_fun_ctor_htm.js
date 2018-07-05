@@ -38,7 +38,6 @@ var list_down1 = [
 ];
 var list_current0 = [
 'a_fun_ctor.htm#Syntax',
-'a_fun_ctor.htm#module_ref',
 'a_fun_ctor.htm#ax',
 'a_fun_ctor.htm#ay',
 'a_fun_ctor.htm#af',

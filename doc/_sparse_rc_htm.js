@@ -39,7 +39,6 @@ var list_down0 = [
 ];
 var list_current0 = [
 'sparse_rc.htm#Syntax',
-'sparse_rc.htm#module_ref',
 'sparse_rc.htm#pattern',
 'sparse_rc.htm#nr',
 'sparse_rc.htm#nc',

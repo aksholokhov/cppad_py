@@ -39,7 +39,6 @@ var list_down0 = [
 ];
 var list_current0 = [
 'sparse_jac.htm#Syntax',
-'sparse_jac.htm#module_ref',
 'sparse_jac.htm#Purpose',
 'sparse_jac.htm#sparse_jac_for',
 'sparse_jac.htm#sparse_jac_rev',

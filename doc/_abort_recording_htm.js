@@ -43,7 +43,6 @@ var list_down0 = [
 var list_current0 = [
 'abort_recording.htm#Syntax',
 'abort_recording.htm#Purpose',
-'abort_recording.htm#module_ref',
 'abort_recording.htm#Example'
 ];
 function choose_across0(item)
