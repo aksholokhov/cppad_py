@@ -3,9 +3,9 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180705: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required source directory license contents ',
-'testing  Running the Cppad Py Tests  ',' configuration available binary directory check cppad_py_lib check_swig_xam check_lib ',
-'run_cmake.sh  Get Cppad and Configure Cppad Py for A system  ',' syntax source directory settings cmake_binary_dir cmake_generator cmake_verbose_makefile cmake_build_type swig_cxx_flags cppad_cxx_flags test_cppad ',
+'cppad_py  cppad_py-20180706: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required source directory license contents ',
+'testing  Running the Cppad Py Tests  ',' configuration available binary directory check cppad_swig_lib check_swig_xam check_lib ',
+'run_cmake.sh  Get Cppad and Configure Cppad Py for A system  ',' syntax source directory settings cmake_binary_dir cmake_generator cmake_verbose_makefile cmake_build_type swig_cxx_flags cppad_cxx_flags python_major_version test_cppad ',
 'swig_xam.i  Example Using Swig with C++  ',' includes py_swig_xam m_swig_xam pl_swig_xam exception int_class int_array_ptr int_array_class vector_double swig_xam.hpp double_class ',
 'swig_xam.hpp  Example C++ Library That is Called by Swig  ',' ',
 'swig_xam_function  Swig Example: C++ Function Specifications  ',' prototypes factorial_by_value message_of_void add_by_ptr max_array_by_ptr max_std_vector_double raise_exception ',

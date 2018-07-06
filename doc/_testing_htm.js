@@ -23,9 +23,9 @@ var list_current0 = [
 'testing.htm#Available Tests',
 'testing.htm#Binary Directory',
 'testing.htm#check',
-'testing.htm#cppad_py_lib',
+'testing.htm#cppad_swig_lib',
 'testing.htm#check_swig_xam',
-'testing.htm#check_swig_xam.check_lib'
+'testing.htm#check_lib'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

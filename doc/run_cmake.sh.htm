@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Get Cppad and Configure Cppad Py for A system</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Get Cppad and Configure Cppad Py for A system">
-<meta name="keywords" id="keywords" content=" get cppad configure py system syntax source directory settings cmake_binary_dir cmake_generator cmake_verbose_makefile cmake_build_type swig_cxx_flags cppad_cxx_flags test_cppad ">
+<meta name="keywords" id="keywords" content=" get cppad configure py system syntax source directory settings cmake_binary_dir cmake_generator cmake_verbose_makefile cmake_build_type swig_cxx_flags cppad_cxx_flags python_major_version test_cppad ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -79,6 +79,7 @@ A:active { color : purple }
 <option>cmake_build_type</option>
 <option>swig_cxx_flags</option>
 <option>cppad_cxx_flags</option>
+<option>python_major_version</option>
 <option>test_cppad</option>
 </select>
 </td>
@@ -116,6 +117,7 @@ the user should check and possibly change the following settings:
 <font color="#009900">cmake_build_type</font><font color="#990000">=</font><font color="#FF0000">'debug'</font>
 <font color="#009900">swig_cxx_flags</font><font color="#990000">=</font><font color="#FF0000">'-Wno-sign-compare -Wno-catch-value -Wno-class-memaccess'</font>
 <font color="#009900">cppad_cxx_flags</font><font color="#990000">=</font><font color="#FF0000">'-Wall -pedantic-errors'</font>
+<font color="#009900">python_major_version</font><font color="#990000">=</font><font color="#FF0000">'3'</font>
 <font color="#009900">test_cppad</font><font color="#990000">=</font><font color="#FF0000">'no'</font></tt></pre>
 each of these settings is described below:
 
@@ -167,6 +169,12 @@ by Swig.
 <br>
 Extra C++ compiler flags used when compiling code that includes Cppad
 header files.
+
+<br>
+<br>
+<b><big><a name="python_major_version" id="python_major_version">python_major_version</a></big></b>
+<br>
+This is the major version for python and must be either 2 or 3.
 
 <br>
 <br>

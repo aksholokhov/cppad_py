@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Running the Cppad Py Tests</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Running the Cppad Py Tests">
-<meta name="keywords" id="keywords" content=" running the cppad py tests configuration available binary directory check cppad_py_lib check_swig_xam check_lib ">
+<meta name="keywords" id="keywords" content=" running the cppad py tests configuration available binary directory check cppad_swig_lib check_swig_xam check_lib ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -72,9 +72,9 @@ A:active { color : purple }
 <option>Available Tests</option>
 <option>Binary Directory</option>
 <option>check</option>
-<option>cppad_py_lib</option>
+<option>cppad_swig_lib</option>
 <option>check_swig_xam</option>
-<option>---..check_lib</option>
+<option>check_lib</option>
 </select>
 </td>
 </tr></table><br>
@@ -120,7 +120,7 @@ Cmake binary directory.
 <br>
 <b><big><a name="check" id="check">check</a></big></b>
 <br>
-The command
+If you change int the Cmake binary directory, the command
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check<br>
@@ -129,12 +129,12 @@ will run all of the available tests.
 
 <br>
 <br>
-<b><big><a name="cppad_py_lib" id="cppad_py_lib">cppad_py_lib</a></big></b>
+<b><big><a name="cppad_swig_lib" id="cppad_swig_lib">cppad_swig_lib</a></big></b>
 <br>
 On some systems, the following dynamically linked library may not be found:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/libcppad_py_lib.</span></font><i><font color="black"><span style='white-space: nowrap'>*</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/libcppad_swig_lib.</span></font><i><font color="black"><span style='white-space: nowrap'>*</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
 Depending on your system,
 you may be able to use one of the following commands to fix this:
@@ -158,17 +158,16 @@ runs a simple test of Swig, for the particular language, on your system.
 
 <br>
 <br>
-<big><a name="check_swig_xam.check_lib" id="check_swig_xam.check_lib">check_lib</a></big>
+<b><big><a name="check_lib" id="check_lib">check_lib</a></big></b>
 <br>
 For 
 <code><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i></code>
- equal
-<code><font color="blue">cplusplus</font></code>, <code><font color="blue">octave</font></code>, <code><font color="blue">perl</font></code>, <code><font color="blue">python</font></code>,
+ equal <code><font color="blue">cplusplus</font></code> and <code><font color="blue">python</font></code>,
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_</span></font><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-runs a test of Cppad Py, for the particular language, on your system.
+runs a the tests for the C++ and for Python on your system.
 
 
 <hr>Input File: testing.omh

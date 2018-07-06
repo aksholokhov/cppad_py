@@ -29,6 +29,7 @@ var list_current0 = [
 'run_cmake.sh.htm#cmake_build_type',
 'run_cmake.sh.htm#swig_cxx_flags',
 'run_cmake.sh.htm#cppad_cxx_flags',
+'run_cmake.sh.htm#python_major_version',
 'run_cmake.sh.htm#test_cppad'
 ];
 function choose_across0(item)
