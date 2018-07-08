@@ -1,0 +1,183 @@
+<html>
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath:  [ ['@(@','@)@'] ] ,
+    displayMath: [ ['@[@','@]@'] ]
+  }
+});
+</script>
+<script type='text/javascript' src=
+'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default'
+>
+</script>
+<head>
+<title>Configure and Build the cppad_py Python Module</title>
+<meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
+<meta name="description" id="description" content="Configure and Build the cppad_py Python Module">
+<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ">
+<style type='text/css'>
+body { color : black }
+body { background-color : white }
+A:link { color : blue }
+A:visited { color : purple }
+A:active { color : purple }
+</style>
+<script type='text/javascript' language='JavaScript' src='_setup.py_htm.js'>
+</script>
+</head>
+<body>
+<table><tr>
+<td>
+<a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
+</td>
+<td><a href="testing.htm" target="_top">Prev</a>
+</td><td><a href="get_cppad.sh.htm" target="_top">Next</a>
+</td><td>
+<select onchange='choose_across0(this)'>
+<option>Index-&gt;</option>
+<option>contents</option>
+<option>reference</option>
+<option>index</option>
+<option>search</option>
+<option>external</option>
+</select>
+</td>
+<td>
+<select onchange='choose_up0(this)'>
+<option>Up-&gt;</option>
+<option>cppad_py</option>
+<option>testing</option>
+<option>setup.py</option>
+</select>
+</td>
+<td>
+<select onchange='choose_down2(this)'>
+<option>cppad_py-&gt;</option>
+<option>testing</option>
+<option>swig_xam.i</option>
+<option>library</option>
+<option>whats_new_2018</option>
+</select>
+</td>
+<td>
+<select onchange='choose_down1(this)'>
+<option>testing-&gt;</option>
+<option>setup.py</option>
+<option>get_cppad.sh</option>
+</select>
+</td>
+<td>setup.py</td>
+<td>
+<select onchange='choose_current0(this)'>
+<option>Headings-&gt;</option>
+<option>Syntax</option>
+<option>Requirements</option>
+<option>Configure</option>
+<option>---..verbose_makefile</option>
+<option>---..build_type</option>
+<option>---..swig_cxx_flags</option>
+<option>---..cppad_cxx_flags</option>
+<option>---..cppad_prefix</option>
+<option>---..test_cppad</option>
+</select>
+</td>
+</tr></table><br>
+@(@\newcommand{\B}[1]{ {\bf #1} }
+\newcommand{\R}[1]{ {\rm #1} }@)@ 
+
+
+<center><b><big><big>Configure and Build the cppad_py Python Module</big></big></b></center>
+<br>
+<b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
+
+<br>
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace&nbsp;[--quiet]&nbsp;[--debug]&nbsp;[--undef&nbsp;NDEBUG]<br>
+</span></font></code>
+where 
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
+ is the Python executable you will be using with
+Cppad Py.
+
+<br>
+<br>
+<b><big><a name="Requirements" id="Requirements">Requirements</a></big></b>
+<br>
+This program must be run from the
+<a href="cppad_py.htm#Top Source Directory" target="_top"><span style='white-space: nowrap'>top&nbsp;source&nbsp;directory</span></a>
+
+and you must first run <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+.
+
+<br>
+<br>
+<b><big><a name="Configure" id="Configure">Configure</a></big></b>
+<br>
+Before running,
+the user should check and possibly change the following settings
+near the top of <code><font color="blue">setup.py</font></code>:
+<pre><tt>verbose_makefile <font color="#990000">=</font> <font color="#FF0000">"false"</font>
+build_type       <font color="#990000">=</font> <font color="#FF0000">"debug"</font>
+swig_cxx_flags   <font color="#990000">=</font> <font color="#FF0000">"-Wno-sign-compare -Wno-catch-value -Wno-class-memaccess"</font>
+cppad_cxx_flags  <font color="#990000">=</font> <font color="#FF0000">"-Wall -pedantic-errors"</font>
+cppad_prefix     <font color="#990000">=</font> <font color="#FF0000">"build/prefix"</font>
+test_cppad       <font color="#990000">=</font> <font color="#FF0000">"false"</font></tt></pre>
+.
+Each of these settings is described below:
+
+<br>
+<br>
+<big><a name="Configure.verbose_makefile" id="Configure.verbose_makefile">verbose_makefile</a></big>
+<br>
+This is either <code><font color="blue">&quot;true&quot;</font></code> or <code><font color="blue">&quot;false&quot;</font></code>.
+If it is true, many of the compiler and Swig options used to
+build the system are output during the <code><font color="blue">make</font></code> commands.
+If it is false, the output during the make commands just describes
+whats is being done without so much detail.
+
+<br>
+<br>
+<big><a name="Configure.build_type" id="Configure.build_type">build_type</a></big>
+<br>
+This is either <code><font color="blue">&quot;debug&quot;</font></code>, <code><font color="blue">&quot;release&quot;</font></code>.
+
+<br>
+<br>
+<big><a name="Configure.swig_cxx_flags" id="Configure.swig_cxx_flags">swig_cxx_flags</a></big>
+<br>
+Extra C++ compiler flags used when compiling code that is created
+by Swig.
+
+<br>
+<br>
+<big><a name="Configure.cppad_cxx_flags" id="Configure.cppad_cxx_flags">cppad_cxx_flags</a></big>
+<br>
+Extra C++ compiler flags used when compiling code that includes Cppad
+header files.
+
+<br>
+<br>
+<big><a name="Configure.cppad_prefix" id="Configure.cppad_prefix">cppad_prefix</a></big>
+<br>
+This is the directory where <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+ puts Cppad
+(relative to the top source directory).
+
+<br>
+<br>
+<big><a name="Configure.test_cppad" id="Configure.test_cppad">test_cppad</a></big>
+<br>
+This is either <code><font color="blue">&quot;true&quot;</font></code> or <code><font color="blue">&quot;false&quot;</font></code>.
+If it is <code><font color="blue">&quot;true&quot;</font></code>, <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+ will build and run
+a separate check of Cppad for this system.
+This takes a significant amount of time, but may be useful
+if you have any problems.
+
+
+<hr>Input File: setup.py
+
+</body>
+</html>

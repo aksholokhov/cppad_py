@@ -3,9 +3,10 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180707: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required source directory license contents ',
-'testing  Running the Cppad Py Tests  ',' configuration build python module available binary directory check cppad_swig_lib check_swig_xam check_lib ',
-'run_cmake.sh  Get Cppad and Configure Cppad Py for A system  ',' syntax source directory settings cmake_binary_dir cmake_generator cmake_verbose_makefile cmake_build_type swig_cxx_flags cppad_cxx_flags python_major_version test_cppad ',
+'cppad_py  cppad_py-20180708: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
+'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check check_swig_xam check_lib ',
+'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
+'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
 'swig_xam.i  Example Using Swig with C++  ',' includes py_swig_xam m_swig_xam pl_swig_xam exception int_class int_array_ptr int_array_class vector_double swig_xam.hpp double_class ',
 'swig_xam.hpp  Example C++ Library That is Called by Swig  ',' ',
 'swig_xam_function  Swig Example: C++ Function Specifications  ',' prototypes factorial_by_value message_of_void add_by_ptr max_array_by_ptr max_std_vector_double raise_exception ',
@@ -97,7 +98,7 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 07-03 '
+'whats_new_2018  Cppad Py Changes During 2018  ',' 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;

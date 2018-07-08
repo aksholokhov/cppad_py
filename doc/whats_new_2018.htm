@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Cppad Py Changes During 2018</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Cppad Py Changes During 2018">
-<meta name="keywords" id="keywords" content=" cppad py changes during 2018 07-03 ">
+<meta name="keywords" id="keywords" content=" cppad py changes during 2018 07-08 07-07 07-03 ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -63,12 +63,50 @@ A:active { color : purple }
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
+<option>07-08</option>
+<option>07-07</option>
 <option>07-03</option>
 </select>
 </td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Cppad Py Changes During 2018</big></big></b></center>
+<br>
+<b><big><a name="07-08" id="07-08">07-08</a></big></b>
+
+<ol type="1"><li>
+Advanced to <code><font color="blue">cppad-20180703</font></code>.
+</li><li>
+
+Fix the following warning:
+<code><font color="blue">catching polymorphic type class 'std::runtime_error' by value</font></code>.
+</li><li>
+
+Suppress the following warning when running <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+:
+<code><font color="blue">clearing an object of non-trivial type class 'cppad_py::a_double'</font></code>;
+see <a href="https://github.com/swig/swig/issues/1259" target="_top"><span style='white-space: nowrap'>swig&nbsp;issue&nbsp;1259</span></a>
+.
+</li><li>
+
+Move all settings to <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+ and run <code><font color="blue">cmake</font></code> from there.
+</li><li>
+
+The file <code><font color="blue">cppad_py/__init__.py</font></code> was not being created.
+This has been fixed.
+</li></ol>
+
+
+<br>
+<br>
+<b><big><a name="07-07" id="07-07">07-07</a></big></b>
+<br>
+Change build of Python module to use Python 3,
+<a href="testing.htm#setup.py" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+,
+
+<br>
 <br>
 <b><big><a name="07-03" id="07-03">07-03</a></big></b>
 <br>

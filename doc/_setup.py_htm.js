@@ -8,7 +8,7 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'testing.htm',
-'run_cmake.sh.htm'
+'setup.py.htm'
 ];
 var list_down2 = [
 'testing.htm',
@@ -17,20 +17,19 @@ var list_down2 = [
 'whats_new_2018.htm'
 ];
 var list_down1 = [
-'run_cmake.sh.htm'
+'setup.py.htm',
+'get_cppad.sh.htm'
 ];
 var list_current0 = [
-'run_cmake.sh.htm#Syntax',
-'run_cmake.sh.htm#Source Directory',
-'run_cmake.sh.htm#System Settings',
-'run_cmake.sh.htm#cmake_binary_dir',
-'run_cmake.sh.htm#cmake_generator',
-'run_cmake.sh.htm#cmake_verbose_makefile',
-'run_cmake.sh.htm#cmake_build_type',
-'run_cmake.sh.htm#swig_cxx_flags',
-'run_cmake.sh.htm#cppad_cxx_flags',
-'run_cmake.sh.htm#python_major_version',
-'run_cmake.sh.htm#test_cppad'
+'setup.py.htm#Syntax',
+'setup.py.htm#Requirements',
+'setup.py.htm#Configure',
+'setup.py.htm#Configure.verbose_makefile',
+'setup.py.htm#Configure.build_type',
+'setup.py.htm#Configure.swig_cxx_flags',
+'setup.py.htm#Configure.cppad_cxx_flags',
+'setup.py.htm#Configure.cppad_prefix',
+'setup.py.htm#Configure.test_cppad'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Running the Cppad Py Tests</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Running the Cppad Py Tests">
-<meta name="keywords" id="keywords" content=" running the cppad py tests configuration build python module available binary directory check cppad_swig_lib check_swig_xam check_lib ">
+<meta name="keywords" id="keywords" content=" running the cppad py tests configuration get_cppad.sh setup.py check check_swig_xam check_lib ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -32,7 +32,7 @@ A:active { color : purple }
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
 <td><a href="_contents.htm" target="_top">Prev</a>
-</td><td><a href="run_cmake.sh.htm" target="_top">Next</a>
+</td><td><a href="setup.py.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -62,18 +62,17 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down0(this)'>
 <option>testing-&gt;</option>
-<option>run_cmake.sh</option>
+<option>setup.py</option>
+<option>get_cppad.sh</option>
 </select>
 </td>
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
 <option>Configuration</option>
-<option>Build Python Module</option>
-<option>Available Tests</option>
-<option>Binary Directory</option>
+<option>get_cppad.sh</option>
+<option>setup.py</option>
 <option>check</option>
-<option>cppad_swig_lib</option>
 <option>check_swig_xam</option>
 <option>check_lib</option>
 </select>
@@ -84,78 +83,43 @@ A:active { color : purple }
 <br>
 <b><big><a name="Configuration" id="Configuration">Configuration</a></big></b>
 <br>
-You must first configure Cppad Py for your system using
-<a href="run_cmake.sh.htm" target="_top"><span style='white-space: nowrap'>run_cmake.sh</span></a>
-.
+You must edit <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+
+to configure Cppad Py for your system.
 
 <br>
 <br>
-<b><big><a name="Build Python Module" id="Build Python Module">Build Python Module</a></big></b>
+<b><big><a name="get_cppad.sh" id="get_cppad.sh">get_cppad.sh</a></big></b>
 <br>
-The next step is the build the Python cppad_py module using the command
-<code><font color='blue'><pre style='display:inline'> 
-     python3 setup.py build_ext --inplace
-</pre></font></code>
-Note that if you change
-<a href="run_cmake.sh.htm#python_major_version" target="_top"><span style='white-space: nowrap'>python_major_version</span></a>
- to 2,
-you will have the use the <code><font color="blue">python2</font></code> command above.
+The next step is to get a copy of Cppad using the command
+<code><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></code><a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>bin/get_cppad.sh</span></a>
+
 
 <br>
 <br>
-<b><big><a name="Available Tests" id="Available Tests">Available Tests</a></big></b>
+<b><big><a name="setup.py" id="setup.py">setup.py</a></big></b>
 <br>
-After <code><font color="blue">bin/run_cmake.sh</font></code>, the following command will list
-the available tests:
+The next step is the build the Python cppad_py module using
+one of the command:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grep&nbsp;'make&nbsp;check'&nbsp;cmake_cppad_py.log<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace<br>
 </span></font></code>
-Note that this command must be executed in the
-<a href="cppad_py.htm#Source Directory" target="_top"><span style='white-space: nowrap'>source&nbsp;directory</span></a>
-.
-
-<br>
-<br>
-<b><big><a name="Binary Directory" id="Binary Directory">Binary Directory</a></big></b>
-<br>
-You can determine the 
-<code><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i></code>
- with the command
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grep&nbsp;CMAKE_BINARY_DIR&nbsp;cmake_cppad_py.log<br>
-</span></font></code>
-This, and the previous command, assume your are in the source directory.
-The rest of the commands below assume you are in the
-Cmake binary directory.
+where 
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
+ is the Python executable you will be
+using with Cppad Py.
 
 <br>
 <br>
 <b><big><a name="check" id="check">check</a></big></b>
 <br>
-If you change int the Cmake binary directory, the command
+The next step is to check cppad_py on your system using
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;build<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check<br>
-</span></font></code>
-will run all of the available tests.
-
-<br>
-<br>
-<b><big><a name="cppad_swig_lib" id="cppad_swig_lib">cppad_swig_lib</a></big></b>
-<br>
-On some systems, the following dynamically linked library may not be found:
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/libcppad_swig_lib.</span></font><i><font color="black"><span style='white-space: nowrap'>*</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-Depending on your system,
-you may be able to use one of the following commands to fix this:
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATH=&quot;</span></font><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib:$PATH&quot;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LD_LIBRARY_PATH=&quot;</span></font><i><font color="black"><span style='white-space: nowrap'>binary_directory</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib:$LD_LIBRARY_PATH&quot;<br>
 </span></font></code>
 <br>
 <b><big><a name="check_swig_xam" id="check_swig_xam">check_swig_xam</a></big></b>
@@ -168,7 +132,7 @@ For
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_swig_xam_</span></font><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-runs a simple test of Swig, for the particular language, on your system.
+only runs a simple test of Swig, for the particular language, on your system.
 
 <br>
 <br>
@@ -181,7 +145,7 @@ For
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_</span></font><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-runs a the tests for the C++ and for Python on your system.
+only runs a the tests for the C++ or Python on your system.
 
 
 <hr>Input File: testing.omh

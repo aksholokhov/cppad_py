@@ -16,15 +16,14 @@ var list_down1 = [
 'whats_new_2018.htm'
 ];
 var list_down0 = [
-'run_cmake.sh.htm'
+'setup.py.htm',
+'get_cppad.sh.htm'
 ];
 var list_current0 = [
 'testing.htm#Configuration',
-'testing.htm#Build Python Module',
-'testing.htm#Available Tests',
-'testing.htm#Binary Directory',
+'testing.htm#get_cppad.sh',
+'testing.htm#setup.py',
 'testing.htm#check',
-'testing.htm#cppad_swig_lib',
 'testing.htm#check_swig_xam',
 'testing.htm#check_lib'
 ];

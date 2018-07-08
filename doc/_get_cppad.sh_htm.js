@@ -7,28 +7,23 @@ var list_across0 = [
 ];
 var list_up0 = [
 'cppad_py.htm',
-'_reference.htm'
+'testing.htm',
+'get_cppad.sh.htm'
 ];
-var list_down1 = [
+var list_down2 = [
 'testing.htm',
 'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
+var list_down1 = [
+'setup.py.htm',
+'get_cppad.sh.htm'
+];
 var list_current0 = [
-'_reference.htm#A',
-'_reference.htm#C',
-'_reference.htm#E',
-'_reference.htm#G',
-'_reference.htm#H',
-'_reference.htm#I',
-'_reference.htm#J',
-'_reference.htm#L',
-'_reference.htm#M',
-'_reference.htm#S',
-'_reference.htm#T',
-'_reference.htm#V',
-'_reference.htm#W'
+'get_cppad.sh.htm#Syntax',
+'get_cppad.sh.htm#Top Source Directory',
+'get_cppad.sh.htm#setup.py'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
@@ -41,6 +36,12 @@ function choose_up0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_up0[index-1];
+}
+function choose_down2(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down2[index-1];
 }
 function choose_down1(item)
 {	var index          = item.selectedIndex;
