@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Running the Cppad Py Tests</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Running the Cppad Py Tests">
-<meta name="keywords" id="keywords" content=" running the cppad py tests configuration available binary directory check cppad_swig_lib check_swig_xam check_lib ">
+<meta name="keywords" id="keywords" content=" running the cppad py tests configuration build python module available binary directory check cppad_swig_lib check_swig_xam check_lib ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -69,6 +69,7 @@ A:active { color : purple }
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
 <option>Configuration</option>
+<option>Build Python Module</option>
 <option>Available Tests</option>
 <option>Binary Directory</option>
 <option>check</option>
@@ -86,6 +87,19 @@ A:active { color : purple }
 You must first configure Cppad Py for your system using
 <a href="run_cmake.sh.htm" target="_top"><span style='white-space: nowrap'>run_cmake.sh</span></a>
 .
+
+<br>
+<br>
+<b><big><a name="Build Python Module" id="Build Python Module">Build Python Module</a></big></b>
+<br>
+The next step is the build the Python cppad_py module using the command
+<code><font color='blue'><pre style='display:inline'> 
+     python3 setup.py build_ext --inplace
+</pre></font></code>
+Note that if you change
+<a href="run_cmake.sh.htm#python_major_version" target="_top"><span style='white-space: nowrap'>python_major_version</span></a>
+ to 2,
+you will have the use the <code><font color="blue">python2</font></code> command above.
 
 <br>
 <br>

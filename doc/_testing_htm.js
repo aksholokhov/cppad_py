@@ -20,6 +20,7 @@ var list_down0 = [
 ];
 var list_current0 = [
 'testing.htm#Configuration',
+'testing.htm#Build Python Module',
 'testing.htm#Available Tests',
 'testing.htm#Binary Directory',
 'testing.htm#check',
