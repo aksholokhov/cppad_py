@@ -4,6 +4,7 @@ junk
 junk.*
 # directories to ignore
 /build/
+/cppad_py/
 # /doc/
 new
 # extensions to ignore
