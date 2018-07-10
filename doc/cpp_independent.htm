@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_independent_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_cpp_independent_htm.js'>
 </script>
 </head>
 <body>
@@ -50,7 +50,7 @@ A:active { color : purple }
 <option>library</option>
 <option>cpp_lib</option>
 <option>a_fun</option>
-<option>independent</option>
+<option>cpp_independent</option>
 </select>
 </td>
 <td>
@@ -65,6 +65,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down3(this)'>
 <option>library-&gt;</option>
+<option>py_lib</option>
 <option>cpp_lib</option>
 </select>
 </td>
@@ -81,7 +82,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down1(this)'>
 <option>a_fun-&gt;</option>
-<option>independent</option>
+<option>cpp_independent</option>
 <option>abort_recording</option>
 <option>a_fun_ctor</option>
 <option>a_fun_jacobian</option>
@@ -92,7 +93,7 @@ A:active { color : purple }
 <option>a_fun_property</option>
 </select>
 </td>
-<td>independent</td>
+<td>cpp_independent</td>
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
@@ -111,7 +112,7 @@ A:active { color : purple }
 
 <br>
 
-<code><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py.independent(</span></font><i><font color="black"><span style='white-space: nowrap'>x</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
+<code><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py::independent(</span></font><i><font color="black"><span style='white-space: nowrap'>x</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
 
 
 <br>
@@ -156,7 +157,7 @@ It has size
 <b><big><a name="Purpose" id="Purpose">Purpose</a></big></b>
 <br>
 This starts a recording of the <a href="a_double.htm" target="_top"><span style='white-space: nowrap'>a_double</span></a>
- operation.
+ operations.
 This recording is terminated, and the information is stored,
 by calling the <a href="a_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>a_fun&nbsp;constructor</span></a>
 .
@@ -168,7 +169,7 @@ by calling <a href="abort_recording.htm" target="_top"><span style='white-space:
 <br>
 <b><big><a name="Example" id="Example">Example</a></big></b>
 <br>
-All of the <code><font color="blue">a_fun</font></code> examples use this function.
+All of the c++ <code><font color="blue">a_fun</font></code> examples use this function.
 
 
 <hr>Input File: lib/cplusplus/a_fun.cpp

@@ -19,6 +19,7 @@ var list_down4 = [
 'whats_new_2018.htm'
 ];
 var list_down3 = [
+'py_lib.htm',
 'cpp_lib.htm'
 ];
 var list_down2 = [
@@ -29,7 +30,7 @@ var list_down2 = [
 'error.htm'
 ];
 var list_down1 = [
-'independent.htm',
+'cpp_independent.htm',
 'abort_recording.htm',
 'a_fun_ctor.htm',
 'a_fun_jacobian.htm',

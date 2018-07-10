@@ -7,20 +7,45 @@ var list_across0 = [
 ];
 var list_up0 = [
 'cppad_py.htm',
-'library.htm'
+'library.htm',
+'cpp_lib.htm',
+'a_fun.htm',
+'cpp_independent.htm'
 ];
-var list_down1 = [
+var list_down4 = [
 'testing.htm',
 'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
-var list_down0 = [
+var list_down3 = [
 'py_lib.htm',
 'cpp_lib.htm'
 ];
+var list_down2 = [
+'a_double.htm',
+'vector.htm',
+'a_fun.htm',
+'sparse.htm',
+'error.htm'
+];
+var list_down1 = [
+'cpp_independent.htm',
+'abort_recording.htm',
+'a_fun_ctor.htm',
+'a_fun_jacobian.htm',
+'a_fun_hessian.htm',
+'a_fun_forward.htm',
+'a_fun_reverse.htm',
+'a_fun_optimize.htm',
+'a_fun_property.htm'
+];
 var list_current0 = [
-'library.htm#Contents'
+'cpp_independent.htm#Syntax',
+'cpp_independent.htm#x',
+'cpp_independent.htm#ax',
+'cpp_independent.htm#Purpose',
+'cpp_independent.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
@@ -33,6 +58,24 @@ function choose_up0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_up0[index-1];
+}
+function choose_down4(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down4[index-1];
+}
+function choose_down3(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down3[index-1];
+}
+function choose_down2(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down2[index-1];
 }
 function choose_down1(item)
 {	var index          = item.selectedIndex;

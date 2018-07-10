@@ -14,6 +14,7 @@ var list_up0 = [
 'vector_size_xam.py.htm'
 ];
 var list_down4 = [
+'py_lib.htm',
 'cpp_lib.htm'
 ];
 var list_down3 = [

@@ -18,6 +18,7 @@ var list_down3 = [
 'whats_new_2018.htm'
 ];
 var list_down2 = [
+'py_lib.htm',
 'cpp_lib.htm'
 ];
 var list_down1 = [

@@ -14,6 +14,7 @@ var list_up0 = [
 'a_fun_property_xam.py.htm'
 ];
 var list_down4 = [
+'py_lib.htm',
 'cpp_lib.htm'
 ];
 var list_down3 = [
@@ -24,7 +25,7 @@ var list_down3 = [
 'error.htm'
 ];
 var list_down2 = [
-'independent.htm',
+'cpp_independent.htm',
 'abort_recording.htm',
 'a_fun_ctor.htm',
 'a_fun_jacobian.htm',

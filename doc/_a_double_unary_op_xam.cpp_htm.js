@@ -14,6 +14,7 @@ var list_up0 = [
 'a_double_unary_op_xam.cpp.htm'
 ];
 var list_down4 = [
+'py_lib.htm',
 'cpp_lib.htm'
 ];
 var list_down3 = [

@@ -57,6 +57,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down4(this)'>
 <option>library-&gt;</option>
+<option>py_lib</option>
 <option>cpp_lib</option>
 </select>
 </td>
@@ -73,7 +74,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down2(this)'>
 <option>a_fun-&gt;</option>
-<option>independent</option>
+<option>cpp_independent</option>
 <option>abort_recording</option>
 <option>a_fun_ctor</option>
 <option>a_fun_jacobian</option>
@@ -99,6 +100,7 @@ A:active { color : purple }
 <pre><tt><b><font color="#0000FF">def</font></b> <b><font color="#000000">a_fun_abort_xam</font></b><font color="#990000">()</font> <font color="#990000">:</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># load the Cppad Py library</font></i>
+     <b><font color="#000080">import</font></b> numpy
      <b><font color="#000080">import</font></b> cppad_py
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># initialize return variable</font></i>
@@ -107,7 +109,7 @@ A:active { color : purple }
      n_ind <font color="#990000">=</font> <font color="#993399">2</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># create ax</font></i>
-     x <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">vec_double</font></b><font color="#990000">(</font>n_ind<font color="#990000">)</font>
+     x <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">zeros</font></b><font color="#990000">(</font>n_ind<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
      <b><font color="#0000FF">for</font></b> i <b><font color="#0000FF">in</font></b> <b><font color="#000000">range</font></b><font color="#990000">(</font> n_ind  <font color="#990000">)</font> <font color="#990000">:</font>
           x<font color="#990000">[</font>i<font color="#990000">]</font> <font color="#990000">=</font> i <font color="#990000">+</font> <font color="#993399">1.0</font>
      <i><font color="#9A1900">#</font></i>
