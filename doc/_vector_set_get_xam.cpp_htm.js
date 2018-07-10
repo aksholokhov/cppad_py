@@ -8,18 +8,15 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
+'cpp_lib.htm',
 'vector.htm',
 'vector_set_get.htm',
 'vector_set_get_xam.cpp.htm'
 ];
 var list_down4 = [
-'testing.htm',
-'swig_xam.i.htm',
-'library.htm',
-'whats_new_2018.htm'
+'cpp_lib.htm'
 ];
 var list_down3 = [
-'module.htm',
 'a_double.htm',
 'vector.htm',
 'a_fun.htm',

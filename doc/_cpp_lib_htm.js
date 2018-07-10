@@ -8,7 +8,7 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'module.htm'
+'cpp_lib.htm'
 ];
 var list_down2 = [
 'testing.htm',
@@ -17,7 +17,9 @@ var list_down2 = [
 'whats_new_2018.htm'
 ];
 var list_down1 = [
-'module.htm',
+'cpp_lib.htm'
+];
+var list_down0 = [
 'a_double.htm',
 'vector.htm',
 'a_fun.htm',
@@ -25,7 +27,7 @@ var list_down1 = [
 'error.htm'
 ];
 var list_current0 = [
-'module.htm#Language'
+'cpp_lib.htm#Contents'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

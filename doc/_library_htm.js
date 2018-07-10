@@ -16,12 +16,7 @@ var list_down1 = [
 'whats_new_2018.htm'
 ];
 var list_down0 = [
-'module.htm',
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'cpp_lib.htm'
 ];
 var list_current0 = [
 'library.htm#Contents'

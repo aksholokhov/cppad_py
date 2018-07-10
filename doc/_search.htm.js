@@ -3,7 +3,7 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180708: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
+'cppad_py  cppad_py-20180710: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
 'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check check_swig_xam check_lib ',
 'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
@@ -18,8 +18,8 @@ Keyword =
 'check_swig_xam.py  Swig Example / Test: Python Script  ',' load the module initialize error count factorial_by_value message_of_void int_class int_array_ptr int_array_class vector_double raise_exception normal_class double_class set exit code ',
 'check_swig_xam.m  Swig Example / Test: Octave Script  ',' load the module initialize error count factorial_by_value message_of_void int_class int_array_ptr int_array_class vector_double raise_exception normal_class double_class set exit code ',
 'check_swig_xam.pl  Swig Example / Test: Perl Script  ',' add current directory search path load the module initialize error count factorial_by_value message_of_void int_class int_array_ptr int_array_class vector_double raise_exception normal_class double_class set exit code ',
-'library  The Cppad Py Library  ',' ',
-'module  C++ and Python Modules  ',' language ',
+'library  The Cppad Py Libraries  ',' ',
+'cpp_lib  The C++ Library  ',' ',
 'a_double  Cppad Py AD Scalars  ',' ',
 'vector  Cppad Py Vectors  ',' ',
 'a_fun  Cppad Py AD Functions  ',' ',
@@ -98,7 +98,7 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 07-08 07-07 07-03 '
+'whats_new_2018  Cppad Py Changes During 2018  ',' 07-10 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;

@@ -12,10 +12,10 @@ MathJax.Hub.Config({
 >
 </script>
 <head>
-<title>C++ and Python Modules</title>
+<title>The C++ Library</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
-<meta name="description" id="description" content="C++ and Python Modules">
-<meta name="keywords" id="keywords" content=" c++ python modules language ">
+<meta name="description" id="description" content="The C++ Library">
+<meta name="keywords" id="keywords" content=" the c++ library ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_module_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_cpp_lib_htm.js'>
 </script>
 </head>
 <body>
@@ -48,7 +48,7 @@ A:active { color : purple }
 <option>Up-&gt;</option>
 <option>cppad_py</option>
 <option>library</option>
-<option>module</option>
+<option>cpp_lib</option>
 </select>
 </td>
 <td>
@@ -63,7 +63,12 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down1(this)'>
 <option>library-&gt;</option>
-<option>module</option>
+<option>cpp_lib</option>
+</select>
+</td>
+<td>
+<select onchange='choose_down0(this)'>
+<option>cpp_lib-&gt;</option>
 <option>a_double</option>
 <option>vector</option>
 <option>a_fun</option>
@@ -71,27 +76,21 @@ A:active { color : purple }
 <option>error</option>
 </select>
 </td>
-<td>module</td>
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
-<option>Language</option>
+<option>Contents</option>
 </select>
 </td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
-\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>C++ and Python Modules</big></big></b></center>
+\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>The C++ Library</big></big></b></center>
 <br>
-<b><big><a name="Language" id="Language">Language</a></big></b>
+<b><big><a name="Contents" id="Contents">Contents</a></big></b>
 <br>
-Is a source code language.
-Note that in C++, the library functions are in
-the <code><font color="blue">cppad_py</font></code> namespace,
-while in the Python language is accessed through the
-Swig <code><font color="blue">cppad_py</font></code> module.
-
-
-<hr>Input File: lib/cppad_py_swig.i
+<table>
+<tr><td><a href="a_double.htm" target="_top">a_double</a></td><td>Cppad&nbsp;Py&nbsp;AD&nbsp;Scalars</td></tr><tr><td><a href="vector.htm" target="_top">vector</a></td><td>Cppad&nbsp;Py&nbsp;Vectors</td></tr><tr><td><a href="a_fun.htm" target="_top">a_fun</a></td><td>Cppad&nbsp;Py&nbsp;AD&nbsp;Functions</td></tr><tr><td><a href="sparse.htm" target="_top">sparse</a></td><td>Cppad&nbsp;Py&nbsp;Sparse&nbsp;Calculation</td></tr><tr><td><a href="error.htm" target="_top">error</a></td><td>Cppad&nbsp;Py&nbsp;Error&nbsp;Messaging</td></tr></table>
+<hr>Input File: lib/cplusplus/cpp_lib.omh
 
 </body>
 </html>

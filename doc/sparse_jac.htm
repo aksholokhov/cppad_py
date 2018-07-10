@@ -48,12 +48,13 @@ A:active { color : purple }
 <option>Up-&gt;</option>
 <option>cppad_py</option>
 <option>library</option>
+<option>cpp_lib</option>
 <option>sparse</option>
 <option>sparse_jac</option>
 </select>
 </td>
 <td>
-<select onchange='choose_down3(this)'>
+<select onchange='choose_down4(this)'>
 <option>cppad_py-&gt;</option>
 <option>testing</option>
 <option>swig_xam.i</option>
@@ -62,9 +63,14 @@ A:active { color : purple }
 </select>
 </td>
 <td>
-<select onchange='choose_down2(this)'>
+<select onchange='choose_down3(this)'>
 <option>library-&gt;</option>
-<option>module</option>
+<option>cpp_lib</option>
+</select>
+</td>
+<td>
+<select onchange='choose_down2(this)'>
+<option>cpp_lib-&gt;</option>
 <option>a_double</option>
 <option>vector</option>
 <option>a_fun</option>
@@ -331,7 +337,7 @@ All the other forward mode coefficients are unspecified.
 .
 
 
-<hr>Input File: lib/sparse.cpp
+<hr>Input File: lib/cplusplus/sparse.cpp
 
 </body>
 </html>

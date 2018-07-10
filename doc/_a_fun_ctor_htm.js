@@ -8,17 +8,20 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
+'cpp_lib.htm',
 'a_fun.htm',
 'a_fun_ctor.htm'
 ];
-var list_down3 = [
+var list_down4 = [
 'testing.htm',
 'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
+var list_down3 = [
+'cpp_lib.htm'
+];
 var list_down2 = [
-'module.htm',
 'a_double.htm',
 'vector.htm',
 'a_fun.htm',
@@ -54,6 +57,12 @@ function choose_up0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_up0[index-1];
+}
+function choose_down4(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down4[index-1];
 }
 function choose_down3(item)
 {	var index          = item.selectedIndex;
