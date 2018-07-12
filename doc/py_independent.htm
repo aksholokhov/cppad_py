@@ -32,7 +32,7 @@ A:active { color : purple }
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
 <td><a href="py_lib.htm" target="_top">Prev</a>
-</td><td><a href="cpp_lib.htm" target="_top">Next</a>
+</td><td><a href="py_abort_recording.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -72,6 +72,8 @@ A:active { color : purple }
 <select onchange='choose_down1(this)'>
 <option>py_lib-&gt;</option>
 <option>py_independent</option>
+<option>py_abort_recording</option>
+<option>py_a_fun_ctor</option>
 </select>
 </td>
 <td>py_independent</td>
@@ -113,7 +115,7 @@ to denote the number of independent variables.
 <br>
 <b><big><a name="ax" id="ax">ax</a></big></b>
 <br>
-The result is a numpy vector will elements that
+The result is a numpy vector with elements that
 correspond to c++ <code><font color="blue">a_double</font></code>.
 This is the vector of independent variables.
 It has size 
@@ -134,10 +136,10 @@ It has size
 This starts a recording of the <a href="a_double.htm" target="_top"><span style='white-space: nowrap'>a_double</span></a>
  operations.
 This recording is terminated, and the information is stored,
-by calling the <a href="a_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>a_fun&nbsp;constructor</span></a>
+by calling the <a href="py_a_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>a_fun&nbsp;constructor</span></a>
 .
 It is terminated, and the information is lost,
-by calling <a href="abort_recording.htm" target="_top"><span style='white-space: nowrap'>abort_recording</span></a>
+by calling <a href="py_abort_recording.htm" target="_top"><span style='white-space: nowrap'>abort_recording</span></a>
 .
 
 <br>

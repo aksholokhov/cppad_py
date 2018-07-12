@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_a_fun_ctor_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_cpp_a_fun_ctor_htm.js'>
 </script>
 </head>
 <body>
@@ -31,7 +31,7 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="a_fun_abort_xam.py.htm" target="_top">Prev</a>
+<td><a href="a_fun_abort_xam.cpp.htm" target="_top">Prev</a>
 </td><td><a href="a_fun_jacobian.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
@@ -50,7 +50,7 @@ A:active { color : purple }
 <option>library</option>
 <option>cpp_lib</option>
 <option>a_fun</option>
-<option>a_fun_ctor</option>
+<option>cpp_a_fun_ctor</option>
 </select>
 </td>
 <td>
@@ -83,8 +83,8 @@ A:active { color : purple }
 <select onchange='choose_down1(this)'>
 <option>a_fun-&gt;</option>
 <option>cpp_independent</option>
-<option>abort_recording</option>
-<option>a_fun_ctor</option>
+<option>cpp_abort_recording</option>
+<option>cpp_a_fun_ctor</option>
 <option>a_fun_jacobian</option>
 <option>a_fun_hessian</option>
 <option>a_fun_forward</option>
@@ -93,7 +93,7 @@ A:active { color : purple }
 <option>a_fun_property</option>
 </select>
 </td>
-<td>a_fun_ctor</td>
+<td>cpp_a_fun_ctor</td>
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
@@ -115,7 +115,7 @@ A:active { color : purple }
 
 <br>
 
-<code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py.a_fun(</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
+<code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py::a_fun(</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
 
 
 <br>
@@ -127,10 +127,11 @@ This argument has prototype
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;vec_a_double&amp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-It must be the same as
+and must be the same as
 <a href="cpp_independent.htm#ax" target="_top"><span style='white-space: nowrap'>ax</span></a>
- in the previous call to <code><font color="blue">independent</font></code>.
-To be specific, it must be the original independent variables.
+
+returned by the previous call to <code><font color="blue">independent</font></code>; i.e.,
+it must be the independent variable vector.
 We use the notation 
 <code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>.size()</span></font></code>
 
@@ -147,7 +148,7 @@ This argument has prototype
 </span></font></code>
 It specifies the dependent variables.
 We use the notation 
-<code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>.size()</span></font></code>
+<code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i><font color="blue"><span style='white-space: nowrap'>.size()</span></font></code>
 
 to denote the number of dependent variables.
 
@@ -158,7 +159,7 @@ to denote the number of dependent variables.
 The result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a_fun&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cppad_py::a_fun&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
 It has a representation for the <a href="a_double.htm" target="_top"><span style='white-space: nowrap'>a_double</span></a>
  operations

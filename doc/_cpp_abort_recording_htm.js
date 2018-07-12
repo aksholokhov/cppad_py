@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'a_fun.htm',
-'a_fun_ctor.htm'
+'cpp_abort_recording.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -31,8 +31,8 @@ var list_down2 = [
 ];
 var list_down1 = [
 'cpp_independent.htm',
-'abort_recording.htm',
-'a_fun_ctor.htm',
+'cpp_abort_recording.htm',
+'cpp_a_fun_ctor.htm',
 'a_fun_jacobian.htm',
 'a_fun_hessian.htm',
 'a_fun_forward.htm',
@@ -40,12 +40,13 @@ var list_down1 = [
 'a_fun_optimize.htm',
 'a_fun_property.htm'
 ];
+var list_down0 = [
+'a_fun_abort_xam.cpp.htm'
+];
 var list_current0 = [
-'a_fun_ctor.htm#Syntax',
-'a_fun_ctor.htm#ax',
-'a_fun_ctor.htm#ay',
-'a_fun_ctor.htm#af',
-'a_fun_ctor.htm#Example'
+'cpp_abort_recording.htm#Syntax',
+'cpp_abort_recording.htm#Purpose',
+'cpp_abort_recording.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

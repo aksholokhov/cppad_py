@@ -3,7 +3,7 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180710: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
+'cppad_py  cppad_py-20180712: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
 'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check check_swig_xam check_lib ',
 'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
@@ -21,6 +21,9 @@ Keyword =
 'library  The Cppad Py Libraries  ',' ',
 'py_lib  The Python Library  ',' ',
 'py_independent  Declare Independent Variables and Start Recording  ',' syntax purpose example ',
+'py_abort_recording  Abort Recording  ',' syntax purpose example ',
+'a_fun_abort_xam.py  Python: Abort Recording a_double Operations: Example and Test  ',' ',
+'py_a_fun_ctor  Stop Current Recording and Store in an a_fun Object  ',' syntax ay af example ',
 'cpp_lib  The C++ Library  ',' ',
 'a_double  Cppad Py AD Scalars  ',' ',
 'vector  Cppad Py Vectors  ',' ',
@@ -57,8 +60,8 @@ Keyword =
 'vector_set_get_xam.cpp  C++: Setting and Getting Vector Elements: Example and Test  ',' ',
 'vector_set_get_xam.py  Python: Setting and Getting Vector Elements: Example and Test  ',' ',
 'cpp_independent  Declare Independent Variables and Start Recording  ',' syntax purpose example ',
-'abort_recording  Abort Recording  ',' syntax purpose example ',
-'a_fun_ctor  Stop Current Recording and Store in an a_fun Object  ',' syntax ay af example ',
+'cpp_abort_recording  Abort Recording  ',' syntax purpose example ',
+'cpp_a_fun_ctor  Stop Current Recording and Store in an a_fun Object  ',' syntax ay af example ',
 'a_fun_jacobian  Jacobian of an AD Function  ',' syntax af f(x) example ',
 'a_fun_hessian  Hessian of an AD Function  ',' syntax af f(x) g(x) w example ',
 'a_fun_forward  Forward Mode AD  ',' syntax taylor coefficient af f(x) x(t) y(t) p xp yp example ',
@@ -66,7 +69,6 @@ Keyword =
 'a_fun_optimize  Optimize an AD Function  ',' syntax purpose af example ',
 'a_fun_property  Properties of an AD Function  ',' syntax af size_ind size_dep size_var size_op example ',
 'a_fun_abort_xam.cpp  C++: Abort Recording a_double Operations: Example and Test  ',' ',
-'a_fun_abort_xam.py  Python: Abort Recording a_double Operations: Example and Test  ',' ',
 'a_fun_jacobian_xam.cpp  C++: Dense Jacobian Using AD: Example and Test  ',' ',
 'a_fun_jacobian_xam.py  Python: Dense Jacobian Using AD: Example and Test  ',' ',
 'a_fun_hessian_xam.cpp  C++: Dense Hessian Using AD: Example and Test  ',' ',
@@ -100,7 +102,7 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 07-10 07-08 07-07 07-03 '
+'whats_new_2018  Cppad Py Changes During 2018  ',' 07-12 07-10 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;

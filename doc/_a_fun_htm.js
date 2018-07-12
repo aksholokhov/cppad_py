@@ -30,8 +30,8 @@ var list_down1 = [
 ];
 var list_down0 = [
 'cpp_independent.htm',
-'abort_recording.htm',
-'a_fun_ctor.htm',
+'cpp_abort_recording.htm',
+'cpp_a_fun_ctor.htm',
 'a_fun_jacobian.htm',
 'a_fun_hessian.htm',
 'a_fun_forward.htm',

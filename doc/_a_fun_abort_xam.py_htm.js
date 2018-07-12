@@ -8,35 +8,26 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'a_fun.htm',
-'abort_recording.htm',
+'py_lib.htm',
+'py_abort_recording.htm',
 'a_fun_abort_xam.py.htm'
 ];
 var list_down4 = [
+'testing.htm',
+'swig_xam.i.htm',
+'library.htm',
+'whats_new_2018.htm'
+];
+var list_down3 = [
 'py_lib.htm',
 'cpp_lib.htm'
 ];
-var list_down3 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
-];
 var list_down2 = [
-'cpp_independent.htm',
-'abort_recording.htm',
-'a_fun_ctor.htm',
-'a_fun_jacobian.htm',
-'a_fun_hessian.htm',
-'a_fun_forward.htm',
-'a_fun_reverse.htm',
-'a_fun_optimize.htm',
-'a_fun_property.htm'
+'py_independent.htm',
+'py_abort_recording.htm',
+'py_a_fun_ctor.htm'
 ];
 var list_down1 = [
-'a_fun_abort_xam.cpp.htm',
 'a_fun_abort_xam.py.htm'
 ];
 function choose_across0(item)
