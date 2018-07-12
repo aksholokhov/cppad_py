@@ -9,18 +9,16 @@ var list_up0 = [
 'cppad_py.htm',
 'library.htm',
 'py_lib.htm',
+'py_a_fun.htm',
 'py_abort_recording.htm',
 'a_fun_abort_xam.py.htm'
 ];
 var list_down4 = [
-'testing.htm',
-'swig_xam.i.htm',
-'library.htm',
-'whats_new_2018.htm'
-];
-var list_down3 = [
 'py_lib.htm',
 'cpp_lib.htm'
+];
+var list_down3 = [
+'py_a_fun.htm'
 ];
 var list_down2 = [
 'py_independent.htm',

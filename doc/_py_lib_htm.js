@@ -21,9 +21,7 @@ var list_down1 = [
 'cpp_lib.htm'
 ];
 var list_down0 = [
-'py_independent.htm',
-'py_abort_recording.htm',
-'py_a_fun_ctor.htm'
+'py_a_fun.htm'
 ];
 var list_current0 = [
 'py_lib.htm#Contents'

@@ -9,17 +9,21 @@ var list_up0 = [
 'cppad_py.htm',
 'library.htm',
 'py_lib.htm',
+'py_a_fun.htm',
 'py_abort_recording.htm'
 ];
-var list_down3 = [
+var list_down4 = [
 'testing.htm',
 'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
-var list_down2 = [
+var list_down3 = [
 'py_lib.htm',
 'cpp_lib.htm'
+];
+var list_down2 = [
+'py_a_fun.htm'
 ];
 var list_down1 = [
 'py_independent.htm',
@@ -45,6 +49,12 @@ function choose_up0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_up0[index-1];
+}
+function choose_down4(item)
+{	var index          = item.selectedIndex;
+	item.selectedIndex = 0;
+	if(index > 0)
+		document.location = list_down4[index-1];
 }
 function choose_down3(item)
 {	var index          = item.selectedIndex;

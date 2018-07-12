@@ -84,6 +84,24 @@ Continue conversion of python library to using <code><font color="blue">numpy.ar
 
 Add the file <code><font color="blue">cppad_py/python_major_version</font></code> which contains
 the major version of python that this build of <code><font color="blue">cppad_py</font></code> is for.
+</li><li>
+
+Automatically use <a href="setup.py.htm#Configure.build_type" target="_top"><span style='white-space: nowrap'>build_type</span></a>
+
+control how setup.py compiles C++
+(one used to use flags on setup.py command line).
+</li><li>
+
+setup.py was using the git repository version of Cppad instead of the
+one installed in <code><font color="blue">build/prefix</font></code> by <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+.
+This has been fixed.
+</li><li>
+
+Change <code><font color="blue">size_ind</font></code> to <a href="a_fun_property.htm#size_domain" target="_top"><span style='white-space: nowrap'>size_domain</span></a>
+
+and <code><font color="blue">size_dep</font></code> to <a href="a_fun_property.htm#size_range" target="_top"><span style='white-space: nowrap'>size_range</span></a>
+.
 </li></ol>
 
 

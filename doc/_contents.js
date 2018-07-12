@@ -1,6 +1,6 @@
 var Cookie            = document.cookie;
 var Open              = '';
-var SectionCount      = 105   ;
+var SectionCount      = 106   ;
 var ImagesInitialized = false;
 Children              = new Array();
 Initialize();
