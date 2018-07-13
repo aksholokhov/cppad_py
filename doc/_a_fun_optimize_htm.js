@@ -35,7 +35,7 @@ var list_down1 = [
 'cpp_a_fun_ctor.htm',
 'cpp_a_fun_property.htm',
 'cpp_a_fun_jacobian.htm',
-'a_fun_hessian.htm',
+'cpp_a_fun_hessian.htm',
 'a_fun_forward.htm',
 'a_fun_reverse.htm',
 'a_fun_optimize.htm'

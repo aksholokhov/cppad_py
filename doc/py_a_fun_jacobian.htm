@@ -83,6 +83,7 @@ A:active { color : purple }
 <option>py_a_fun_ctor</option>
 <option>py_a_fun_property</option>
 <option>py_a_fun_jacobian</option>
+<option>py_a_fun_hessian</option>
 </select>
 </td>
 <td>
@@ -159,9 +160,8 @@ in to the constructor for
 <br>
 <b><big><a name="x" id="x">x</a></big></b>
 <br>
-This argument is a numpy vector,
-with elements that correspond to c++ <code><font color="blue">double</font></code>,
-and its size must be 
+This argument is a numpy vector with <code><font color="blue">float</font></code> elements
+and size 
 <code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
 .
 It specifies the argument value at we are computing the Jacobian
@@ -173,11 +173,10 @@ f'(x)
 <br>
 <b><big><a name="J" id="J">J</a></big></b>
 <br>
-The result is a numpy matrix,
-with elements that correspond to c++ <code><font color="blue">double</font></code>,
+The result is a numpy matrix with <code><font color="blue">float</font></code> elements,
 
 <code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i></code>
- rows and <code><font color="blue">n</font></code> columns.
+ rows, and <code><font color="blue">n</font></code> columns.
 For 
 <code><i><font color="black"><span style='white-space: nowrap'>i</span></font></i></code>
  between zero and 

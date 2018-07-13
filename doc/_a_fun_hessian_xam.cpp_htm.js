@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'a_fun.htm',
-'a_fun_hessian.htm',
+'cpp_a_fun_hessian.htm',
 'a_fun_hessian_xam.cpp.htm'
 ];
 var list_down4 = [
@@ -30,14 +30,13 @@ var list_down2 = [
 'cpp_a_fun_ctor.htm',
 'cpp_a_fun_property.htm',
 'cpp_a_fun_jacobian.htm',
-'a_fun_hessian.htm',
+'cpp_a_fun_hessian.htm',
 'a_fun_forward.htm',
 'a_fun_reverse.htm',
 'a_fun_optimize.htm'
 ];
 var list_down1 = [
-'a_fun_hessian_xam.cpp.htm',
-'a_fun_hessian_xam.py.htm'
+'a_fun_hessian_xam.cpp.htm'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

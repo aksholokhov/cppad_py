@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'a_fun.htm',
-'a_fun_hessian.htm'
+'cpp_a_fun_hessian.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -35,24 +35,23 @@ var list_down1 = [
 'cpp_a_fun_ctor.htm',
 'cpp_a_fun_property.htm',
 'cpp_a_fun_jacobian.htm',
-'a_fun_hessian.htm',
+'cpp_a_fun_hessian.htm',
 'a_fun_forward.htm',
 'a_fun_reverse.htm',
 'a_fun_optimize.htm'
 ];
 var list_down0 = [
-'a_fun_hessian_xam.cpp.htm',
-'a_fun_hessian_xam.py.htm'
+'a_fun_hessian_xam.cpp.htm'
 ];
 var list_current0 = [
-'a_fun_hessian.htm#Syntax',
-'a_fun_hessian.htm#af',
-'a_fun_hessian.htm#f(x)',
-'a_fun_hessian.htm#g(x)',
-'a_fun_hessian.htm#x',
-'a_fun_hessian.htm#w',
-'a_fun_hessian.htm#H',
-'a_fun_hessian.htm#Example'
+'cpp_a_fun_hessian.htm#Syntax',
+'cpp_a_fun_hessian.htm#af',
+'cpp_a_fun_hessian.htm#f(x)',
+'cpp_a_fun_hessian.htm#g(x)',
+'cpp_a_fun_hessian.htm#x',
+'cpp_a_fun_hessian.htm#w',
+'cpp_a_fun_hessian.htm#H',
+'cpp_a_fun_hessian.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

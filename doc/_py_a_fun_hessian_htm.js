@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'py_lib.htm',
 'py_a_fun.htm',
-'py_a_fun_property.htm'
+'py_a_fun_hessian.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -34,16 +34,17 @@ var list_down1 = [
 'py_a_fun_hessian.htm'
 ];
 var list_down0 = [
-'a_fun_property_xam.py.htm'
+'a_fun_hessian_xam.py.htm'
 ];
 var list_current0 = [
-'py_a_fun_property.htm#Syntax',
-'py_a_fun_property.htm#af',
-'py_a_fun_property.htm#size_domain',
-'py_a_fun_property.htm#size_range',
-'py_a_fun_property.htm#size_var',
-'py_a_fun_property.htm#size_op',
-'py_a_fun_property.htm#Example'
+'py_a_fun_hessian.htm#Syntax',
+'py_a_fun_hessian.htm#af',
+'py_a_fun_hessian.htm#f(x)',
+'py_a_fun_hessian.htm#g(x)',
+'py_a_fun_hessian.htm#x',
+'py_a_fun_hessian.htm#w',
+'py_a_fun_hessian.htm#H',
+'py_a_fun_hessian.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
