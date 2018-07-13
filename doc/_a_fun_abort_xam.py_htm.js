@@ -23,7 +23,9 @@ var list_down3 = [
 var list_down2 = [
 'py_independent.htm',
 'py_abort_recording.htm',
-'py_a_fun_ctor.htm'
+'py_a_fun_ctor.htm',
+'py_a_fun_property.htm',
+'py_a_fun_jacobian.htm'
 ];
 var list_down1 = [
 'a_fun_abort_xam.py.htm'

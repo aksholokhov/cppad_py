@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'a_fun.htm',
-'a_fun_property.htm'
+'cpp_a_fun_property.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -33,25 +33,24 @@ var list_down1 = [
 'cpp_independent.htm',
 'cpp_abort_recording.htm',
 'cpp_a_fun_ctor.htm',
-'a_fun_jacobian.htm',
+'cpp_a_fun_property.htm',
+'cpp_a_fun_jacobian.htm',
 'a_fun_hessian.htm',
 'a_fun_forward.htm',
 'a_fun_reverse.htm',
-'a_fun_optimize.htm',
-'a_fun_property.htm'
+'a_fun_optimize.htm'
 ];
 var list_down0 = [
-'a_fun_property_xam.cpp.htm',
-'a_fun_property_xam.py.htm'
+'a_fun_property_xam.cpp.htm'
 ];
 var list_current0 = [
-'a_fun_property.htm#Syntax',
-'a_fun_property.htm#af',
-'a_fun_property.htm#size_domain',
-'a_fun_property.htm#size_range',
-'a_fun_property.htm#size_var',
-'a_fun_property.htm#size_op',
-'a_fun_property.htm#Example'
+'cpp_a_fun_property.htm#Syntax',
+'cpp_a_fun_property.htm#af',
+'cpp_a_fun_property.htm#size_domain',
+'cpp_a_fun_property.htm#size_range',
+'cpp_a_fun_property.htm#size_var',
+'cpp_a_fun_property.htm#size_op',
+'cpp_a_fun_property.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

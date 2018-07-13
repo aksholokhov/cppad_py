@@ -33,12 +33,12 @@ var list_down1 = [
 'cpp_independent.htm',
 'cpp_abort_recording.htm',
 'cpp_a_fun_ctor.htm',
-'a_fun_jacobian.htm',
+'cpp_a_fun_property.htm',
+'cpp_a_fun_jacobian.htm',
 'a_fun_hessian.htm',
 'a_fun_forward.htm',
 'a_fun_reverse.htm',
-'a_fun_optimize.htm',
-'a_fun_property.htm'
+'a_fun_optimize.htm'
 ];
 var list_down0 = [
 'a_fun_forward_xam.cpp.htm',

@@ -12,10 +12,10 @@ MathJax.Hub.Config({
 >
 </script>
 <head>
-<title>Hessian of an AD Function</title>
+<title>Jacobian of an AD Function</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
-<meta name="description" id="description" content="Hessian of an AD Function">
-<meta name="keywords" id="keywords" content=" hessian ad function syntax af f(x) g(x) x w h example ">
+<meta name="description" id="description" content="Jacobian of an AD Function">
+<meta name="keywords" id="keywords" content=" jacobian ad function syntax af f(x) x j example ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_a_fun_hessian_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_cpp_a_fun_jacobian_htm.js'>
 </script>
 </head>
 <body>
@@ -31,8 +31,8 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="a_fun_jacobian_xam.cpp.htm" target="_top">Prev</a>
-</td><td><a href="a_fun_hessian_xam.cpp.htm" target="_top">Next</a>
+<td><a href="a_fun_property_xam.cpp.htm" target="_top">Prev</a>
+</td><td><a href="a_fun_jacobian_xam.cpp.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -50,7 +50,7 @@ A:active { color : purple }
 <option>library</option>
 <option>cpp_lib</option>
 <option>a_fun</option>
-<option>a_fun_hessian</option>
+<option>cpp_a_fun_jacobian</option>
 </select>
 </td>
 <td>
@@ -95,9 +95,8 @@ A:active { color : purple }
 </td>
 <td>
 <select onchange='choose_down0(this)'>
-<option>a_fun_hessian-&gt;</option>
-<option>a_fun_hessian_xam.cpp</option>
-<option>a_fun_hessian_xam.py</option>
+<option>cpp_a_fun_jacobian-&gt;</option>
+<option>a_fun_jacobian_xam.cpp</option>
 </select>
 </td>
 <td>
@@ -106,10 +105,8 @@ A:active { color : purple }
 <option>Syntax</option>
 <option>af</option>
 <option>f(x)</option>
-<option>g(x)</option>
 <option>x</option>
-<option>w</option>
-<option>H</option>
+<option>J</option>
 <option>Example</option>
 </select>
 </td>
@@ -118,13 +115,13 @@ A:active { color : purple }
 \newcommand{\R}[1]{ {\rm #1} }@)@
 
 
-<center><b><big><big>Hessian of an AD Function</big></big></b></center>
+<center><b><big><big>Jacobian of an AD Function</big></big></b></center>
 <br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
 
 <br>
 
-<code><i><font color="black"><span style='white-space: nowrap'>H</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.hessian(</span></font><i><font color="black"><span style='white-space: nowrap'>x</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>w</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
+<code><i><font color="black"><span style='white-space: nowrap'>J</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.jacobian(</span></font><i><font color="black"><span style='white-space: nowrap'>x</span></font></i><font color="blue"><span style='white-space: nowrap'>)</span></font></code>
 
 
 <br>
@@ -173,20 +170,6 @@ in to the constructor for
 
 <br>
 <br>
-<b><big><a name="g(x)" id="g(x)">g(x)</a></big></b>
-<br>
-We use the notation <small>@(@
-g: \B{R}^n \rightarrow \B{R}
-@)@</small>
-for the function defined by
-<small>@[@
-
-	g(x) = \sum_{i=0}^{n-1} w_i f_i (x)
-
-@]@</small>
-
-<br>
-<br>
 <b><big><a name="x" id="x">x</a></big></b>
 <br>
 This argument has prototype
@@ -197,45 +180,27 @@ This argument has prototype
 and its size must be 
 <code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
 .
-It specifies the argument value at we are computing the Hessian
+It specifies the argument value at we are computing the Jacobian
 <small>@(@
-g^{(2)}(x)
+f'(x)
 @)@</small>.
 
 <br>
 <br>
-<b><big><a name="w" id="w">w</a></big></b>
-<br>
-This argument has prototype
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;vec_double&amp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>w</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-and its size must be 
-<code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i></code>
-.
-It specifies the vector 
-<code><i><font color="black"><span style='white-space: nowrap'>w</span></font></i></code>
- in the definition of <small>@(@
-g(x)
-@)@</small> above.
-
-<br>
-<br>
-<b><big><a name="H" id="H">H</a></big></b>
+<b><big><a name="J" id="J">J</a></big></b>
 <br>
 The result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec_double&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>H</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec_double&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>J</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
 and its size is 
-<code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i><font color="blue"><span style='white-space: nowrap'>*</span></font><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
+<code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i><font color="blue"><span style='white-space: nowrap'>*</span></font><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
 .
 For 
 <code><i><font color="black"><span style='white-space: nowrap'>i</span></font></i></code>
  between zero and 
-<code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i><font color="blue"><span style='white-space: nowrap'>-1</span></font></code>
+<code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i><font color="blue"><span style='white-space: nowrap'>-1</span></font></code>
 
 and 
 <code><i><font color="black"><span style='white-space: nowrap'>j</span></font></i></code>
@@ -244,7 +209,7 @@ and
 ,
 <small>@[@
 
-	H [ i * n + j ] = \frac{ \partial^2 g }{ \partial x_i \partial x_j } (x)
+	J [ i * n + j ] = \frac{ \partial f_i }{ \partial x_j } (x)
 
 @]@</small>
 
@@ -255,10 +220,8 @@ and
 <b><big><a name="Example" id="Example">Example</a></big></b>
 
 <br>
-<a href="a_fun_hessian_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>C++</span></a>
-,
-<a href="a_fun_hessian_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
-.
+<a href="a_fun_jacobian_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>a_fun_jacobian_xam.cpp</span></a>
+
 
 
 

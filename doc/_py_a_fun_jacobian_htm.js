@@ -10,25 +10,38 @@ var list_up0 = [
 'library.htm',
 'py_lib.htm',
 'py_a_fun.htm',
-'py_a_fun_property.htm',
-'a_fun_property_xam.py.htm'
+'py_a_fun_jacobian.htm'
 ];
 var list_down4 = [
+'testing.htm',
+'swig_xam.i.htm',
+'library.htm',
+'whats_new_2018.htm'
+];
+var list_down3 = [
 'py_lib.htm',
 'cpp_lib.htm'
 ];
-var list_down3 = [
+var list_down2 = [
 'py_a_fun.htm'
 ];
-var list_down2 = [
+var list_down1 = [
 'py_independent.htm',
 'py_abort_recording.htm',
 'py_a_fun_ctor.htm',
 'py_a_fun_property.htm',
 'py_a_fun_jacobian.htm'
 ];
-var list_down1 = [
-'a_fun_property_xam.py.htm'
+var list_down0 = [
+'a_fun_jacobian_xam.py.htm'
+];
+var list_current0 = [
+'py_a_fun_jacobian.htm#Syntax',
+'py_a_fun_jacobian.htm#af',
+'py_a_fun_jacobian.htm#f(x)',
+'py_a_fun_jacobian.htm#x',
+'py_a_fun_jacobian.htm#J',
+'py_a_fun_jacobian.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
