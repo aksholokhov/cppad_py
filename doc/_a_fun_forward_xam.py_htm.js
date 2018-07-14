@@ -8,9 +8,9 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'a_fun.htm',
-'a_fun_forward.htm',
+'py_lib.htm',
+'py_a_fun.htm',
+'py_a_fun_forward.htm',
 'a_fun_forward_xam.py.htm'
 ];
 var list_down4 = [
@@ -18,25 +18,20 @@ var list_down4 = [
 'cpp_lib.htm'
 ];
 var list_down3 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'py_a_fun.htm'
 ];
 var list_down2 = [
-'cpp_independent.htm',
-'cpp_abort_recording.htm',
-'cpp_a_fun_ctor.htm',
-'cpp_a_fun_property.htm',
-'cpp_a_fun_jacobian.htm',
-'cpp_a_fun_hessian.htm',
-'a_fun_forward.htm',
-'a_fun_reverse.htm',
-'a_fun_optimize.htm'
+'py_independent.htm',
+'py_abort_recording.htm',
+'py_a_fun_ctor.htm',
+'py_a_fun_property.htm',
+'py_a_fun_jacobian.htm',
+'py_a_fun_hessian.htm',
+'py_a_fun_forward.htm',
+'py_a_fun_reverse.htm',
+'py_a_fun_optimize.htm'
 ];
 var list_down1 = [
-'a_fun_forward_xam.cpp.htm',
 'a_fun_forward_xam.py.htm'
 ];
 function choose_across0(item)

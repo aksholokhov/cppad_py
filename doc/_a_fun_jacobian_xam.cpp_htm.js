@@ -31,9 +31,9 @@ var list_down2 = [
 'cpp_a_fun_property.htm',
 'cpp_a_fun_jacobian.htm',
 'cpp_a_fun_hessian.htm',
-'a_fun_forward.htm',
-'a_fun_reverse.htm',
-'a_fun_optimize.htm'
+'cpp_a_fun_forward.htm',
+'cpp_a_fun_reverse.htm',
+'cpp_a_fun_optimize.htm'
 ];
 var list_down1 = [
 'a_fun_jacobian_xam.cpp.htm'

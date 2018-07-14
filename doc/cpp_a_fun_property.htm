@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Properties of an AD Function</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Properties of an AD Function">
-<meta name="keywords" id="keywords" content=" properties ad function syntax af size_domain size_range size_var size_op example ">
+<meta name="keywords" id="keywords" content=" properties ad function syntax af size_domain size_range size_var size_op size_order example ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -88,9 +88,9 @@ A:active { color : purple }
 <option>cpp_a_fun_property</option>
 <option>cpp_a_fun_jacobian</option>
 <option>cpp_a_fun_hessian</option>
-<option>a_fun_forward</option>
-<option>a_fun_reverse</option>
-<option>a_fun_optimize</option>
+<option>cpp_a_fun_forward</option>
+<option>cpp_a_fun_reverse</option>
+<option>cpp_a_fun_optimize</option>
 </select>
 </td>
 <td>
@@ -108,6 +108,7 @@ A:active { color : purple }
 <option>size_range</option>
 <option>size_var</option>
 <option>size_op</option>
+<option>size_order</option>
 <option>Example</option>
 </select>
 </td>
@@ -132,6 +133,9 @@ A:active { color : purple }
 </span></font></code>
 
 <code><i><font color="black"><span style='white-space: nowrap'>p</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.size_op()<br>
+</span></font></code>
+
+<code><i><font color="black"><span style='white-space: nowrap'>q</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.size_order()<br>
 </span></font></code>
 <br>
 <b><big><a name="af" id="af">af</a></big></b>
@@ -193,6 +197,30 @@ The return value has prototype
 </span></font></code>
 and is the number of atomic operations that are used to express
 the dependent variables as a function of the independent variables.
+
+<br>
+<br>
+<b><big><a name="size_order" id="size_order">size_order</a></big></b>
+<br>
+The return value has prototype
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>q</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+</span></font></code>
+and is the number of Taylor coefficients currently stored in 
+<code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i></code>
+,
+for every variable in the operation sequence corresponding to 
+<code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i></code>
+.
+These coefficients are computed by <a href="cpp_a_fun_forward.htm" target="_top"><span style='white-space: nowrap'>cpp_a_fun_forward</span></a>
+.
+This is different from the other function properties in that it can change
+after each call to 
+<code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.forward</span></font></code>
+; see
+<a href="cpp_a_fun_forward.htm#p.size_order" target="_top"><span style='white-space: nowrap'>size_order</span></a>
+ in the forward mode section.
 
 
 <br>

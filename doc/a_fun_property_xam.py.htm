@@ -76,6 +76,9 @@ A:active { color : purple }
 <option>py_a_fun_property</option>
 <option>py_a_fun_jacobian</option>
 <option>py_a_fun_hessian</option>
+<option>py_a_fun_forward</option>
+<option>py_a_fun_reverse</option>
+<option>py_a_fun_optimize</option>
 </select>
 </td>
 <td>
@@ -132,9 +135,14 @@ A:active { color : purple }
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># check af properties</font></i>
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_domain</font></b><font color="#990000">()</font> <font color="#990000">==</font> n_ind
-     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_range</font></b><font color="#990000">()</font> <font color="#990000">==</font> n_dep
-     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_var</font></b><font color="#990000">()</font> <font color="#990000">==</font> n_var
-     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_op</font></b><font color="#990000">()</font> <font color="#990000">==</font> n_op
+     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_range</font></b><font color="#990000">()</font>  <font color="#990000">==</font> n_dep
+     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_var</font></b><font color="#990000">()</font>    <font color="#990000">==</font> n_var
+     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_op</font></b><font color="#990000">()</font>     <font color="#990000">==</font> n_op
+     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_order</font></b><font color="#990000">()</font>  <font color="#990000">==</font> <font color="#993399">0</font>
+     <i><font color="#9A1900">#</font></i>
+     <i><font color="#9A1900"># compute zero order Taylor coefficients</font></i>
+     y  <font color="#990000">=</font> af<font color="#990000">.</font><b><font color="#000000">forward</font></b><font color="#990000">(</font><font color="#993399">0</font><font color="#990000">,</font> x<font color="#990000">)</font>
+     ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_order</font></b><font color="#990000">()</font> <font color="#990000">==</font> <font color="#993399">1</font>
      <i><font color="#9A1900">#</font></i>
      <b><font color="#0000FF">return</font></b><font color="#990000">(</font> ok  <font color="#990000">)</font>
 <i><font color="#9A1900">#</font></i></tt></pre>

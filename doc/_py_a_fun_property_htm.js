@@ -31,7 +31,10 @@ var list_down1 = [
 'py_a_fun_ctor.htm',
 'py_a_fun_property.htm',
 'py_a_fun_jacobian.htm',
-'py_a_fun_hessian.htm'
+'py_a_fun_hessian.htm',
+'py_a_fun_forward.htm',
+'py_a_fun_reverse.htm',
+'py_a_fun_optimize.htm'
 ];
 var list_down0 = [
 'a_fun_property_xam.py.htm'
@@ -43,6 +46,7 @@ var list_current0 = [
 'py_a_fun_property.htm#size_range',
 'py_a_fun_property.htm#size_var',
 'py_a_fun_property.htm#size_op',
+'py_a_fun_property.htm#size_order',
 'py_a_fun_property.htm#Example'
 ];
 function choose_across0(item)

@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Forward Mode AD</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Forward Mode AD">
-<meta name="keywords" id="keywords" content=" forward mode ad syntax taylor coefficient af f(x) x(t) y(t) p xp yp example ">
+<meta name="keywords" id="keywords" content=" forward mode ad syntax taylor coefficient af f(x) x(t) y(t) p size_order xp yp example ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_a_fun_forward_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_py_a_fun_forward_htm.js'>
 </script>
 </head>
 <body>
@@ -31,8 +31,8 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="a_fun_hessian_xam.cpp.htm" target="_top">Prev</a>
-</td><td><a href="a_fun_forward_xam.cpp.htm" target="_top">Next</a>
+<td><a href="a_fun_hessian_xam.py.htm" target="_top">Prev</a>
+</td><td><a href="a_fun_forward_xam.py.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -48,9 +48,9 @@ A:active { color : purple }
 <option>Up-&gt;</option>
 <option>cppad_py</option>
 <option>library</option>
-<option>cpp_lib</option>
-<option>a_fun</option>
-<option>a_fun_forward</option>
+<option>py_lib</option>
+<option>py_a_fun</option>
+<option>py_a_fun_forward</option>
 </select>
 </td>
 <td>
@@ -71,32 +71,27 @@ A:active { color : purple }
 </td>
 <td>
 <select onchange='choose_down2(this)'>
-<option>cpp_lib-&gt;</option>
-<option>a_double</option>
-<option>vector</option>
-<option>a_fun</option>
-<option>sparse</option>
-<option>error</option>
+<option>py_lib-&gt;</option>
+<option>py_a_fun</option>
 </select>
 </td>
 <td>
 <select onchange='choose_down1(this)'>
-<option>a_fun-&gt;</option>
-<option>cpp_independent</option>
-<option>cpp_abort_recording</option>
-<option>cpp_a_fun_ctor</option>
-<option>cpp_a_fun_property</option>
-<option>cpp_a_fun_jacobian</option>
-<option>cpp_a_fun_hessian</option>
-<option>a_fun_forward</option>
-<option>a_fun_reverse</option>
-<option>a_fun_optimize</option>
+<option>py_a_fun-&gt;</option>
+<option>py_independent</option>
+<option>py_abort_recording</option>
+<option>py_a_fun_ctor</option>
+<option>py_a_fun_property</option>
+<option>py_a_fun_jacobian</option>
+<option>py_a_fun_hessian</option>
+<option>py_a_fun_forward</option>
+<option>py_a_fun_reverse</option>
+<option>py_a_fun_optimize</option>
 </select>
 </td>
 <td>
 <select onchange='choose_down0(this)'>
-<option>a_fun_forward-&gt;</option>
-<option>a_fun_forward_xam.cpp</option>
+<option>py_a_fun_forward-&gt;</option>
 <option>a_fun_forward_xam.py</option>
 </select>
 </td>
@@ -110,6 +105,7 @@ A:active { color : purple }
 <option>X(t)</option>
 <option>Y(t)</option>
 <option>p</option>
+<option>---..size_order</option>
 <option>xp</option>
 <option>yp</option>
 <option>Example</option>
@@ -117,10 +113,7 @@ A:active { color : purple }
 </td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
-\newcommand{\R}[1]{ {\rm #1} }@)@
-
-
-<center><b><big><big>Forward Mode AD</big></big></b></center>
+\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Forward Mode AD</big></big></b></center>
 <br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
 
@@ -155,16 +148,14 @@ t = 0
 <br>
 <b><big><a name="af" id="af">af</a></big></b>
 <br>
-This object has prototype
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a_fun&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-Note that its state is changed by this operation because it keeps
+This object must have been returned by a previous call to the python
+<a href="py_a_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>a_fun</span></a>
+ constructor.
+Note that its state is changed by this operation because
 all the Taylor coefficient that it calculates for every
-variable in recording it stored.
+variable in recording are stored.
 See more discussion of this fact under the heading
-<a href="a_fun_forward.htm#p" target="_top"><span style='white-space: nowrap'>p</span></a>
+<a href="py_a_fun_forward.htm#p" target="_top"><span style='white-space: nowrap'>p</span></a>
  below.
 
 <br>
@@ -213,12 +204,7 @@ Y(t) = f(X(t))
 <br>
 <b><big><a name="p" id="p">p</a></big></b>
 <br>
-This argument has prototype
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>p</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-i.e., it is a positive integer.
+This argument has type <code><font color="blue">int</font></code> and is non-negative.
 Its value is the order of the Taylor coefficient being calculated.
 If there was no call to <code><font color="blue">forward</font></code> for this 
 <code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i></code>
@@ -239,14 +225,20 @@ and for every variable in the recording, will be stored in
 
 <br>
 <br>
+<big><a name="p.size_order" id="p.size_order">size_order</a></big>
+<br>
+After this call,
+<a href="py_a_fun_property.htm#size_order" target="_top"><span style='white-space: nowrap'>af.size_order()</span></a>
+ is 
+<code><i><font color="black"><span style='white-space: nowrap'>p</span></font></i><font color="blue"><span style='white-space: nowrap'>+1</span></font></code>
+.
+
+<br>
+<br>
 <b><big><a name="xp" id="xp">xp</a></big></b>
 <br>
-This argument has prototype
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;vec_double&amp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>xp</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-and its size must be 
+This argument is a numpy vector with <code><font color="blue">float</font></code> elements
+and size 
 <code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
 .
 It specifies the <code><i>p</i></code>-th order Taylor coefficients for 
@@ -257,12 +249,8 @@ It specifies the <code><i>p</i></code>-th order Taylor coefficients for
 <br>
 <b><big><a name="yp" id="yp">yp</a></big></b>
 <br>
-The result has prototype
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec_double&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>yp</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-and its size is 
+The result is a numpy vector with <code><font color="blue">float</font></code> elements
+and size 
 <code><i><font color="black"><span style='white-space: nowrap'>m</span></font></i></code>
 .
 It is the <code><i>p</i></code>-th order Taylor coefficients for <small>@(@
@@ -275,14 +263,12 @@ Y(t)
 <b><big><a name="Example" id="Example">Example</a></big></b>
 
 <br>
-<a href="a_fun_forward_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>C++</span></a>
-,
-<a href="a_fun_forward_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
-.
+<a href="a_fun_forward_xam.py.htm" target="_top"><span style='white-space: nowrap'>a_fun_forward_xam.py</span></a>
 
 
 
-<hr>Input File: lib/cplusplus/a_fun.cpp
+
+<hr>Input File: lib/python/a_fun_forward.py
 
 </body>
 </html>

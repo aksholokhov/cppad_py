@@ -30,7 +30,10 @@ var list_down0 = [
 'py_a_fun_ctor.htm',
 'py_a_fun_property.htm',
 'py_a_fun_jacobian.htm',
-'py_a_fun_hessian.htm'
+'py_a_fun_hessian.htm',
+'py_a_fun_forward.htm',
+'py_a_fun_reverse.htm',
+'py_a_fun_optimize.htm'
 ];
 var list_current0 = [
 'py_a_fun.htm#Contents'

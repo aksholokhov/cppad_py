@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'a_fun.htm',
-'a_fun_optimize.htm'
+'cpp_a_fun_forward.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -36,19 +36,25 @@ var list_down1 = [
 'cpp_a_fun_property.htm',
 'cpp_a_fun_jacobian.htm',
 'cpp_a_fun_hessian.htm',
-'a_fun_forward.htm',
-'a_fun_reverse.htm',
-'a_fun_optimize.htm'
+'cpp_a_fun_forward.htm',
+'cpp_a_fun_reverse.htm',
+'cpp_a_fun_optimize.htm'
 ];
 var list_down0 = [
-'a_fun_optimize_xam.cpp.htm',
-'a_fun_optimize_xam.py.htm'
+'a_fun_forward_xam.cpp.htm'
 ];
 var list_current0 = [
-'a_fun_optimize.htm#Syntax',
-'a_fun_optimize.htm#Purpose',
-'a_fun_optimize.htm#af',
-'a_fun_optimize.htm#Example'
+'cpp_a_fun_forward.htm#Syntax',
+'cpp_a_fun_forward.htm#Taylor Coefficient',
+'cpp_a_fun_forward.htm#af',
+'cpp_a_fun_forward.htm#f(x)',
+'cpp_a_fun_forward.htm#X(t)',
+'cpp_a_fun_forward.htm#Y(t)',
+'cpp_a_fun_forward.htm#p',
+'cpp_a_fun_forward.htm#p.size_order',
+'cpp_a_fun_forward.htm#xp',
+'cpp_a_fun_forward.htm#yp',
+'cpp_a_fun_forward.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
