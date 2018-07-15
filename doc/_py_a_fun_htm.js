@@ -22,7 +22,8 @@ var list_down2 = [
 'cpp_lib.htm'
 ];
 var list_down1 = [
-'py_a_fun.htm'
+'py_a_fun.htm',
+'py_utility.htm'
 ];
 var list_down0 = [
 'py_independent.htm',

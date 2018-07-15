@@ -21,7 +21,8 @@ var list_down1 = [
 'cpp_lib.htm'
 ];
 var list_down0 = [
-'py_a_fun.htm'
+'py_a_fun.htm',
+'py_utility.htm'
 ];
 var list_current0 = [
 'py_lib.htm#Contents'

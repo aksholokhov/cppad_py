@@ -131,13 +131,13 @@ A:active { color : purple }
 <code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.resize(</span></font><i><font color="black"><span style='white-space: nowrap'>nr</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>nc</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>nnz</span></font></i><font color="blue"><span style='white-space: nowrap'>)<br>
 </span></font></code>
 
-<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nr()<br>
+<code><i><font color="black"><span style='white-space: nowrap'>nr</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nr()<br>
 </span></font></code>
 
-<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nc()<br>
+<code><i><font color="black"><span style='white-space: nowrap'>nc</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nc()<br>
 </span></font></code>
 
-<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nnz()<br>
+<code><i><font color="black"><span style='white-space: nowrap'>nnz</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nnz()<br>
 </span></font></code>
 
 <code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.put(</span></font><i><font color="black"><span style='white-space: nowrap'>k</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>r</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>c</span></font></i><font color="blue"><span style='white-space: nowrap'>)<br>
@@ -157,7 +157,7 @@ A:active { color : purple }
 <br>
 <b><big><a name="pattern" id="pattern">pattern</a></big></b>
 <br>
-The result has prototype
+This result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sparse_rc&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
@@ -172,51 +172,61 @@ except during its constructor, <code><font color="blue">resize</font></code>, an
 <br>
 <b><big><a name="nr" id="nr">nr</a></big></b>
 <br>
-This argument has prototype
+This argument and result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>nr</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-It specifies the number of rows in the sparsity pattern.
-The function call <code><font color="blue">nr()</font></code> returns the value of 
+It is the number of rows in the sparsity pattern.
+The function call 
+<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nr()</span></font></code>
+ returns the value of
+
 <code><i><font color="black"><span style='white-space: nowrap'>nr</span></font></i></code>
-.
+ in the previous <code><font color="blue">resize</font></code> operation.
 
 <br>
 <br>
 <b><big><a name="nc" id="nc">nc</a></big></b>
 <br>
-This argument has prototype
+This argument and result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>nc</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-It specifies the number of columns in the sparsity pattern.
-The function call <code><font color="blue">nc()</font></code> returns the value of 
+It is the number of columns in the sparsity pattern.
+The function call 
+<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nc()</span></font></code>
+ returns the value of
+
 <code><i><font color="black"><span style='white-space: nowrap'>nc</span></font></i></code>
-.
+ in the previous <code><font color="blue">resize</font></code> operation.
 
 <br>
 <br>
 <b><big><a name="nnz" id="nnz">nnz</a></big></b>
 <br>
-This argument has prototype
+This argument and result has prototype
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>nnz</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-It specifies the number of possibly non-zero
+It is the number of possibly non-zero
 index pairs in the sparsity pattern.
-The function call <code><font color="blue">nnz()</font></code> returns the value of 
+The function call 
+<code><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>.nnz()</span></font></code>
+ returns the value of
+
 <code><i><font color="black"><span style='white-space: nowrap'>nnz</span></font></i></code>
-.
+ in the previous <code><font color="blue">resize</font></code> operation.
 
 <br>
 <br>
 <b><big><a name="resize" id="resize">resize</a></big></b>
 <br>
 The current sparsity pattern is lost and a new one is started
-with the specified parameters. The elements in the 
+with the specified parameters.
+After each <code><font color="blue">resize</font></code>, the elements in the 
 <code><i><font color="black"><span style='white-space: nowrap'>row</span></font></i></code>
 
 and 

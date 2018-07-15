@@ -65,6 +65,7 @@ A:active { color : purple }
 <select onchange='choose_down3(this)'>
 <option>py_lib-&gt;</option>
 <option>py_a_fun</option>
+<option>py_utility</option>
 </select>
 </td>
 <td>
@@ -109,8 +110,8 @@ A:active { color : purple }
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># dimension some vectors</font></i>
      <i><font color="#9A1900"># x  = cppad_py.vec_double(n_ind)</font></i>
-     x  <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">zeros</font></b><font color="#990000">(</font>n_ind<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
-     ay <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">zeros</font></b><font color="#990000">(</font>n_dep<font color="#990000">,</font> dtype<font color="#990000">=</font>cppad_py<font color="#990000">.</font>a_double<font color="#990000">)</font>
+     x  <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n_ind<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
+     ay <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n_dep<font color="#990000">,</font> dtype<font color="#990000">=</font>cppad_py<font color="#990000">.</font>a_double<font color="#990000">)</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># independent variables</font></i>
      x<font color="#990000">[</font><font color="#993399">0</font><font color="#990000">]</font>  <font color="#990000">=</font> <font color="#993399">1.0</font>

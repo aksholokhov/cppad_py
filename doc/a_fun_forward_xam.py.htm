@@ -65,6 +65,7 @@ A:active { color : purple }
 <select onchange='choose_down3(this)'>
 <option>py_lib-&gt;</option>
 <option>py_a_fun</option>
+<option>py_utility</option>
 </select>
 </td>
 <td>
@@ -107,7 +108,7 @@ A:active { color : purple }
      n_ind <font color="#990000">=</font> <font color="#993399">2</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># create the independent variables ax</font></i>
-     xp <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">zeros</font></b><font color="#990000">(</font>n_ind<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
+     xp <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n_ind<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
      <b><font color="#0000FF">for</font></b> i <b><font color="#0000FF">in</font></b> <b><font color="#000000">range</font></b><font color="#990000">(</font> n_ind  <font color="#990000">)</font> <font color="#990000">:</font>
           xp<font color="#990000">[</font>i<font color="#990000">]</font> <font color="#990000">=</font> i <font color="#990000">+</font> <font color="#993399">1.0</font>
      <i><font color="#9A1900">#</font></i>
@@ -116,7 +117,7 @@ A:active { color : purple }
      <i><font color="#9A1900"># create dependent varialbes ay with ay0 = ax0 * ax1</font></i>
      ax0    <font color="#990000">=</font> ax<font color="#990000">[</font><font color="#993399">0</font><font color="#990000">]</font>
      ax1    <font color="#990000">=</font> ax<font color="#990000">[</font><font color="#993399">1</font><font color="#990000">]</font>
-     ay    <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">zeros</font></b><font color="#990000">(</font>n_dep<font color="#990000">,</font> dtype<font color="#990000">=</font>cppad_py<font color="#990000">.</font>a_double<font color="#990000">)</font>
+     ay    <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n_dep<font color="#990000">,</font> dtype<font color="#990000">=</font>cppad_py<font color="#990000">.</font>a_double<font color="#990000">)</font>
      ay<font color="#990000">[</font><font color="#993399">0</font><font color="#990000">]</font> <font color="#990000">=</font> ax0 <font color="#990000">*</font> ax1
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># define af corresponding to f(x) = x0 * x1</font></i>

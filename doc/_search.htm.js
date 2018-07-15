@@ -3,7 +3,7 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180714: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
+'cppad_py  cppad_py-20180715: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
 'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check check_swig_xam check_lib ',
 'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
@@ -37,6 +37,9 @@ Keyword =
 'a_fun_reverse_xam.py  Python: Reverse Mode AD: Example and Test  ',' ',
 'py_a_fun_optimize  Optimize an AD Function  ',' syntax purpose af example ',
 'a_fun_optimize_xam.py  Python: Optimize an a_fun: Example and Test  ',' ',
+'py_utility  Python Utilities  ',' ',
+'numpy2vec  Convert a Numpy Array to a cppad_py Vector  ',' syntax dtype shape name ',
+'vec2numpy  Convert a cppad_py Vector to a Numpy Array  ',' syntax nr nc ',
 'cpp_lib  The C++ Library  ',' ',
 'a_double  Cppad Py AD Scalars  ',' ',
 'vector  Cppad Py Vectors  ',' ',
@@ -109,7 +112,7 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
+'whats_new_2018  Cppad Py Changes During 2018  ',' 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;
