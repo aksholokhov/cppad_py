@@ -3,7 +3,7 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180715: A C++ AD Library with a Swig Interface  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
+'cppad_py  cppad_py-20180716: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed supporting packages required top source directory license contents ',
 'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check check_swig_xam check_lib ',
 'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
