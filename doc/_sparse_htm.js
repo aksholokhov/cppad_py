@@ -29,12 +29,12 @@ var list_down1 = [
 'error.htm'
 ];
 var list_down0 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'cpp_sparse_rc.htm',
+'cpp_sparse_rcv.htm',
+'cpp_jac_sparsity.htm',
+'cpp_sparsity.htm',
+'cpp_sparse_jac.htm',
+'cpp_sparse_hes.htm'
 ];
 var list_current0 = [
 'sparse.htm#Contents'

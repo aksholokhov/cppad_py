@@ -8,9 +8,9 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'sparse.htm',
-'sparse_jac.htm',
+'py_lib.htm',
+'py_sparse.htm',
+'py_sparse_jac.htm',
 'sparse_jac_xam.py.htm'
 ];
 var list_down4 = [
@@ -18,22 +18,19 @@ var list_down4 = [
 'cpp_lib.htm'
 ];
 var list_down3 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'py_a_fun.htm',
+'py_sparse.htm',
+'py_utility.htm'
 ];
 var list_down2 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'py_sparse_rc.htm',
+'py_sparse_rcv.htm',
+'py_jac_sparsity.htm',
+'py_hes_sparsity.htm',
+'py_sparse_jac.htm',
+'py_sparse_hes.htm'
 ];
 var list_down1 = [
-'sparse_jac_xam.cpp.htm',
 'sparse_jac_xam.py.htm'
 ];
 function choose_across0(item)

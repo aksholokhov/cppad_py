@@ -23,6 +23,7 @@ var list_down2 = [
 ];
 var list_down1 = [
 'py_a_fun.htm',
+'py_sparse.htm',
 'py_utility.htm'
 ];
 var list_down0 = [

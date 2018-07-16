@@ -8,9 +8,9 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'sparse.htm',
-'sparse_jac.htm'
+'py_lib.htm',
+'py_sparse.htm',
+'py_sparse_rc.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -23,37 +23,37 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'py_a_fun.htm',
+'py_sparse.htm',
+'py_utility.htm'
 ];
 var list_down1 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'py_sparse_rc.htm',
+'py_sparse_rcv.htm',
+'py_jac_sparsity.htm',
+'py_hes_sparsity.htm',
+'py_sparse_jac.htm',
+'py_sparse_hes.htm'
 ];
 var list_down0 = [
-'sparse_jac_xam.cpp.htm',
-'sparse_jac_xam.py.htm'
+'sparse_rc_xam.py.htm'
 ];
 var list_current0 = [
-'sparse_jac.htm#Syntax',
-'sparse_jac.htm#Purpose',
-'sparse_jac.htm#sparse_jac_for',
-'sparse_jac.htm#sparse_jac_rev',
-'sparse_jac.htm#af',
-'sparse_jac.htm#subset',
-'sparse_jac.htm#x',
-'sparse_jac.htm#pattern',
-'sparse_jac.htm#work',
-'sparse_jac.htm#n_sweep',
-'sparse_jac.htm#Uses Forward',
-'sparse_jac.htm#Example'
+'py_sparse_rc.htm#Syntax',
+'py_sparse_rc.htm#pattern',
+'py_sparse_rc.htm#nr',
+'py_sparse_rc.htm#nc',
+'py_sparse_rc.htm#nnz',
+'py_sparse_rc.htm#resize',
+'py_sparse_rc.htm#put',
+'py_sparse_rc.htm#put.k',
+'py_sparse_rc.htm#put.r',
+'py_sparse_rc.htm#put.c',
+'py_sparse_rc.htm#row',
+'py_sparse_rc.htm#col',
+'py_sparse_rc.htm#row_major',
+'py_sparse_rc.htm#col_major',
+'py_sparse_rc.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

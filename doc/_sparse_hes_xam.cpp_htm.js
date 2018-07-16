@@ -10,7 +10,7 @@ var list_up0 = [
 'library.htm',
 'cpp_lib.htm',
 'sparse.htm',
-'sparse_hes.htm',
+'cpp_sparse_hes.htm',
 'sparse_hes_xam.cpp.htm'
 ];
 var list_down4 = [
@@ -25,16 +25,15 @@ var list_down3 = [
 'error.htm'
 ];
 var list_down2 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'cpp_sparse_rc.htm',
+'cpp_sparse_rcv.htm',
+'cpp_jac_sparsity.htm',
+'cpp_sparsity.htm',
+'cpp_sparse_jac.htm',
+'cpp_sparse_hes.htm'
 ];
 var list_down1 = [
-'sparse_hes_xam.cpp.htm',
-'sparse_hes_xam.py.htm'
+'sparse_hes_xam.cpp.htm'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

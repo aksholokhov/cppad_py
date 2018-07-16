@@ -23,7 +23,7 @@ A:link { color : blue }
 A:visited { color : purple }
 A:active { color : purple }
 </style>
-<script type='text/javascript' language='JavaScript' src='_sparse_hes_htm.js'>
+<script type='text/javascript' language='JavaScript' src='_cpp_sparse_hes_htm.js'>
 </script>
 </head>
 <body>
@@ -31,7 +31,7 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="sparse_jac_xam.py.htm" target="_top">Prev</a>
+<td><a href="sparse_jac_xam.cpp.htm" target="_top">Prev</a>
 </td><td><a href="sparse_hes_xam.cpp.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
@@ -50,7 +50,7 @@ A:active { color : purple }
 <option>library</option>
 <option>cpp_lib</option>
 <option>sparse</option>
-<option>sparse_hes</option>
+<option>cpp_sparse_hes</option>
 </select>
 </td>
 <td>
@@ -82,19 +82,18 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down1(this)'>
 <option>sparse-&gt;</option>
-<option>sparse_rc</option>
-<option>sparse_rcv</option>
-<option>jac_sparsity</option>
-<option>hes_sparsity</option>
-<option>sparse_jac</option>
-<option>sparse_hes</option>
+<option>cpp_sparse_rc</option>
+<option>cpp_sparse_rcv</option>
+<option>cpp_jac_sparsity</option>
+<option>cpp_sparsity</option>
+<option>cpp_sparse_jac</option>
+<option>cpp_sparse_hes</option>
 </select>
 </td>
 <td>
 <select onchange='choose_down0(this)'>
-<option>sparse_hes-&gt;</option>
+<option>cpp_sparse_hes-&gt;</option>
 <option>sparse_hes_xam.cpp</option>
-<option>sparse_hes_xam.py</option>
 </select>
 </td>
 <td>
@@ -124,7 +123,7 @@ A:active { color : purple }
 
 <br>
 
-<code><i><font color="black"><span style='white-space: nowrap'>work</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py.sparse_hes_work()<br>
+<code><i><font color="black"><span style='white-space: nowrap'>work</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py::sparse_hes_work()<br>
 </span></font></code>
 
 <code><i><font color="black"><span style='white-space: nowrap'>n_sweep</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>af</span></font></i><font color="blue"><span style='white-space: nowrap'>.sparse_hes(</span></font><i><font color="black"><span style='white-space: nowrap'>subset</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>x</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>r</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>work</span></font></i><font color="blue"><span style='white-space: nowrap'>)<br>
@@ -164,7 +163,7 @@ Note that the Taylor coefficients stored in
 <code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i></code>
  are affected
 by this operation; see
-<a href="sparse_hes.htm#Uses Forward" target="_top"><span style='white-space: nowrap'>uses&nbsp;forward</span></a>
+<a href="cpp_sparse_hes.htm#Uses Forward" target="_top"><span style='white-space: nowrap'>uses&nbsp;forward</span></a>
  below.
 
 <br>
@@ -244,7 +243,7 @@ This argument has prototype
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;sparse_rc&amp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>pattern</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-Its row size and column size is 
+Its row size and column sizes are 
 <code><i><font color="black"><span style='white-space: nowrap'>n</span></font></i></code>
 ; i.e.,
 
@@ -256,7 +255,7 @@ It is a sparsity pattern for the Hessian <small>@(@
 H(x)
 @)@</small>.
 This argument is not used (and need not satisfy any conditions),
-when <a href="sparse_hes.htm#work" target="_top"><span style='white-space: nowrap'>work</span></a>
+when <a href="cpp_sparse_hes.htm#work" target="_top"><span style='white-space: nowrap'>work</span></a>
  is non-empty.
 
 <br>
@@ -328,10 +327,8 @@ All the other forward mode coefficients are unspecified.
 <b><big><a name="Example" id="Example">Example</a></big></b>
 
 <br>
-<a href="sparse_hes_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>C++</span></a>
-,
-<a href="sparse_hes_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
-.
+<a href="sparse_hes_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>sparse_hes_xam.cpp</span></a>
+
 
 
 <hr>Input File: lib/cplusplus/sparse.cpp

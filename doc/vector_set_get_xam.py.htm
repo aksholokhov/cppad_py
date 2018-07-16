@@ -93,7 +93,7 @@ A:active { color : purple }
 \newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Python: Setting and Getting Vector Elements: Example and Test</big></big></b></center>
 <pre><tt><b><font color="#0000FF">def</font></b> <b><font color="#000000">vector_set_get_xam</font></b><font color="#990000">()</font> <font color="#990000">:</font>
      <i><font color="#9A1900">#</font></i>
-     <i><font color="#9A1900"># load the Cppad Py library</font></i>
+     <b><font color="#000080">import</font></b> numpy
      <b><font color="#000080">import</font></b> cppad_py
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># initialize return variable</font></i>
@@ -102,8 +102,8 @@ A:active { color : purple }
      n <font color="#990000">=</font> <font color="#993399">4</font>
      bv <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">vec_bool</font></b><font color="#990000">(</font>n<font color="#990000">)</font>
      iv <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">vec_int</font></b><font color="#990000">(</font>n<font color="#990000">)</font>
-     dv <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">vec_double</font></b><font color="#990000">(</font>n<font color="#990000">)</font>
-     av <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">vec_a_double</font></b><font color="#990000">(</font>n<font color="#990000">)</font>
+     dv <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n<font color="#990000">,</font> dtype<font color="#990000">=</font>float<font color="#990000">)</font>
+     av <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">empty</font></b><font color="#990000">(</font>n<font color="#990000">,</font> dtype<font color="#990000">=</font>cppad_py<font color="#990000">.</font>a_double<font color="#990000">)</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># setting elements</font></i>
      <b><font color="#0000FF">for</font></b> i <b><font color="#0000FF">in</font></b> <b><font color="#000000">range</font></b><font color="#990000">(</font> n  <font color="#990000">)</font> <font color="#990000">:</font>

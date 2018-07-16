@@ -176,10 +176,10 @@ add&#160;<a href="check_swig_xam.pl.htm#Add Current Directory To Search Path" ta
 add<b>_</b>by<b>_</b>ptr&#160;<a href="swig_xam_function.htm#add_by_ptr" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications:&#160;add_by_ptr</a><br>
 addition&#160;<a href="swig_xam_template_class.htm#addition" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class:&#160;addition</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_normal_class.htm#addition" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Class:&#160;addition</a><br>
-af&#160;<a href="sparse_hes.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;af</a><br>
-&#160;&#160;&#160;<a href="sparse_jac.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;af</a><br>
-&#160;&#160;&#160;<a href="hes_sparsity.htm#af" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
-&#160;&#160;&#160;<a href="jac_sparsity.htm#af" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
+af&#160;<a href="cpp_sparse_hes.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;af</a><br>
+&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;af</a><br>
+&#160;&#160;&#160;<a href="cpp_sparsity.htm#af" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
+&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#af" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
 &#160;&#160;&#160;<a href="cpp_a_fun_optimize.htm#af" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;af</a><br>
 &#160;&#160;&#160;<a href="cpp_a_fun_reverse.htm#af" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;af</a><br>
 &#160;&#160;&#160;<a href="cpp_a_fun_forward.htm#af" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;af</a><br>
@@ -187,6 +187,10 @@ af&#160;<a href="sparse_hes.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Hes
 &#160;&#160;&#160;<a href="cpp_a_fun_jacobian.htm#af" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;af</a><br>
 &#160;&#160;&#160;<a href="cpp_a_fun_property.htm#af" target="_top">Properties&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;af</a><br>
 &#160;&#160;&#160;<a href="cpp_a_fun_ctor.htm#af" target="_top">Stop&nbsp;Current&nbsp;Recording&nbsp;and&nbsp;Store&nbsp;in&nbsp;an&nbsp;a_fun&nbsp;Object:&#160;af</a><br>
+&#160;&#160;&#160;<a href="py_sparse_hes.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;af</a><br>
+&#160;&#160;&#160;<a href="py_sparse_jac.htm#af" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;af</a><br>
+&#160;&#160;&#160;<a href="py_hes_sparsity.htm#af" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
+&#160;&#160;&#160;<a href="py_jac_sparsity.htm#af" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;af</a><br>
 &#160;&#160;&#160;<a href="py_a_fun_optimize.htm#af" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;af</a><br>
 &#160;&#160;&#160;<a href="py_a_fun_reverse.htm#af" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;af</a><br>
 &#160;&#160;&#160;<a href="py_a_fun_forward.htm#af" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;af</a><br>
@@ -234,7 +238,8 @@ build<b>_</b>type&#160;<a href="setup.py.htm#Configure.build_type" target="_top"
 
 <b><big><a name="C">C</a></big></b>
 <br>
-c&#160;<a href="sparse_rc.htm#put.c" target="_top">Sparsity&nbsp;Patterns:&#160;put.c</a><br>
+c&#160;<a href="cpp_sparse_rc.htm#put.c" target="_top">Sparsity&nbsp;Patterns:&#160;put.c</a><br>
+&#160;&#160;<a href="py_sparse_rc.htm#put.c" target="_top">Sparsity&nbsp;Patterns:&#160;put.c</a><br>
 c<b>++</b>&#160;<a href="cpp_lib.htm" target="_top">The&nbsp;C++&nbsp;Library</a><br>
 &#160;&#160;&#160;&#160;<a href="swig_xam_template_class.hpp.htm" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class&nbsp;Implementation</a><br>
 &#160;&#160;&#160;&#160;<a href="swig_xam_normal_class.cpp.htm" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Class&nbsp;Implementation</a><br>
@@ -286,18 +291,25 @@ code&#160;<a href="check_swig_xam.pl.htm#Set Exit Code" target="_top">Swig&nbsp;
 &#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm#Set Exit Code" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script:&#160;Set&nbsp;Exit&nbsp;Code</a><br>
 coefficient&#160;<a href="cpp_a_fun_forward.htm#Taylor Coefficient" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;Taylor&nbsp;Coefficient</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_forward.htm#Taylor Coefficient" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;Taylor&nbsp;Coefficient</a><br>
-col&#160;<a href="sparse_rcv.htm#col" target="_top">Sparse&nbsp;Matrices:&#160;col</a><br>
-&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#col" target="_top">Sparsity&nbsp;Patterns:&#160;col</a><br>
-col<b>_</b>major&#160;<a href="sparse_rcv.htm#col_major" target="_top">Sparse&nbsp;Matrices:&#160;col_major</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#col_major" target="_top">Sparsity&nbsp;Patterns:&#160;col_major</a><br>
+col&#160;<a href="cpp_sparse_rcv.htm#col" target="_top">Sparse&nbsp;Matrices:&#160;col</a><br>
+&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#col" target="_top">Sparsity&nbsp;Patterns:&#160;col</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#col" target="_top">Sparse&nbsp;Matrices:&#160;col</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#col" target="_top">Sparsity&nbsp;Patterns:&#160;col</a><br>
+col<b>_</b>major&#160;<a href="cpp_sparse_rcv.htm#col_major" target="_top">Sparse&nbsp;Matrices:&#160;col_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#col_major" target="_top">Sparsity&nbsp;Patterns:&#160;col_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#col_major" target="_top">Sparse&nbsp;Matrices:&#160;col_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#col_major" target="_top">Sparsity&nbsp;Patterns:&#160;col_major</a><br>
 comparison&#160;<a href="a_double_compare_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Comparison&nbsp;Operators:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_compare_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Comparison&nbsp;Operators:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_compare.htm" target="_top">ad_double&nbsp;Comparison&nbsp;Operators</a><br>
-component&#160;<a href="hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
-computing&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+component&#160;<a href="cpp_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+computing&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
 conditional&#160;<a href="a_double_cond_assign_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Conditional&nbsp;Assignment:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_cond_assign_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Conditional&nbsp;Assignment:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_cond_assign.htm" target="_top">AD&nbsp;Conditional&nbsp;Assignment</a><br>
@@ -362,7 +374,8 @@ element<b>_</b>type&#160;<a href="vector_set_get.htm#element_type" target="_top"
 elements&#160;<a href="vector_set_get.htm" target="_top">Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements</a><br>
 elements<b>:</b>&#160;<a href="vector_set_get_xam.py.htm" target="_top">Python:&nbsp;Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="vector_set_get_xam.cpp.htm" target="_top">C++:&nbsp;Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-entire&#160;<a href="jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+entire&#160;<a href="cpp_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
 equality&#160;<a href="swig_xam_template_class.htm#equality" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class:&#160;equality</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_normal_class.htm#equality" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Class:&#160;equality</a><br>
 error&#160;<a href="error.htm" target="_top">Cppad&nbsp;Py&nbsp;Error&nbsp;Messaging</a><br>
@@ -373,24 +386,18 @@ errors&#160;<a href="error_message.htm#Cppad Errors" target="_top">Exception&nbs
 example&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="error_message_xam.cpp.htm" target="_top">C++:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="error_message.htm#Example" target="_top">Exception&nbsp;Handling:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm#Example" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#Example" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv.htm#Example" target="_top">Sparse&nbsp;Matrices:&#160;Example</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#Example" target="_top">Sparsity&nbsp;Patterns:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_hes.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm#Example" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#Example" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rcv.htm#Example" target="_top">Sparse&nbsp;Matrices:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#Example" target="_top">Sparsity&nbsp;Patterns:&#160;Example</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_optimize_xam.cpp.htm" target="_top">C++:&nbsp;Optimize&nbsp;an&nbsp;a_fun:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.cpp.htm" target="_top">C++:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_forward_xam.cpp.htm" target="_top">C++:&nbsp;Forward&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -436,6 +443,18 @@ example&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_property.htm#Example" target="_top">Properties&nbsp;of&nbsp;an&nbsp;a_double&nbsp;Object:&#160;Example</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_op.htm#Example" target="_top">a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus:&#160;Example</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ctor.htm#Example" target="_top">The&nbsp;a_double&nbsp;Constructor:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#Example" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Example" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Example" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#Example" target="_top">Sparse&nbsp;Matrices:&#160;Example</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#Example" target="_top">Sparsity&nbsp;Patterns:&#160;Example</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_optimize_xam.py.htm" target="_top">Python:&nbsp;Optimize&nbsp;an&nbsp;a_fun:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_optimize.htm#Example" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;Example</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.py.htm" target="_top">Python:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -486,11 +505,14 @@ factorial<b>_</b>by<b>_</b>value&#160;<a href="check_swig_xam.pl.htm#factorial_b
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.m.htm#factorial_by_value" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Octave&nbsp;Script:&#160;factorial_by_value</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm#factorial_by_value" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script:&#160;factorial_by_value</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_function.htm#factorial_by_value" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications:&#160;factorial_by_value</a><br>
-for<b>_</b>jac<b>_</b>sparsity&#160;<a href="jac_sparsity.htm#Purpose.for_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.for_jac_sparsity</a><br>
-forward&#160;<a href="sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
+for<b>_</b>jac<b>_</b>sparsity&#160;<a href="cpp_jac_sparsity.htm#Purpose.for_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.for_jac_sparsity</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Purpose.for_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.for_jac_sparsity</a><br>
+forward&#160;<a href="cpp_sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_forward_xam.cpp.htm" target="_top">C++:&nbsp;Forward&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_forward.htm" target="_top">Forward&nbsp;Mode&nbsp;AD</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_forward_xam.py.htm" target="_top">Python:&nbsp;Forward&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_forward.htm" target="_top">Forward&nbsp;Mode&nbsp;AD</a><br>
 fun&#160;<a href="a_double_unary_fun.htm#fun" target="_top">Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result:&#160;fun</a><br>
@@ -531,17 +553,20 @@ h&#160;<a href="cpp_a_fun_hessian.htm#H" target="_top">Hessian&nbsp;of&nbsp;an&n
 handling&#160;<a href="error_message.htm" target="_top">Exception&nbsp;Handling</a><br>
 handling<b>:</b>&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="error_message_xam.cpp.htm" target="_top">C++:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-hessian&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+hessian&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_hessian_xam.cpp.htm" target="_top">C++:&nbsp;Dense&nbsp;Hessian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_hessian.htm" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_hessian_xam.py.htm" target="_top">Python:&nbsp;Dense&nbsp;Hessian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_hessian.htm" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function</a><br>
-hessians&#160;<a href="sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+hessians&#160;<a href="cpp_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
 
 <b><big><a name="I">I</a></big></b>
 <br>
@@ -575,22 +600,27 @@ is&#160;<a href="swig_xam.hpp.htm" target="_top">Example&nbsp;C++&nbsp;Library&n
 <br>
 j&#160;<a href="cpp_a_fun_jacobian.htm#J" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;J</a><br>
 &#160;&#160;<a href="py_a_fun_jacobian.htm#J" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;J</a><br>
-jacobian&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
+jacobian&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_jacobian_xam.cpp.htm" target="_top">C++:&nbsp;Dense&nbsp;Jacobian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_jacobian.htm" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_jacobian_xam.py.htm" target="_top">Python:&nbsp;Dense&nbsp;Jacobian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_jacobian.htm" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function</a><br>
-jacobians&#160;<a href="sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
-jacobians<b>:</b>&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+jacobians&#160;<a href="cpp_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+jacobians<b>:</b>&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 
 <b><big><a name="K">K</a></big></b>
 <br>
-k&#160;<a href="sparse_rcv.htm#put.k" target="_top">Sparse&nbsp;Matrices:&#160;put.k</a><br>
-&#160;&#160;<a href="sparse_rc.htm#put.k" target="_top">Sparsity&nbsp;Patterns:&#160;put.k</a><br>
+k&#160;<a href="cpp_sparse_rcv.htm#put.k" target="_top">Sparse&nbsp;Matrices:&#160;put.k</a><br>
+&#160;&#160;<a href="cpp_sparse_rc.htm#put.k" target="_top">Sparsity&nbsp;Patterns:&#160;put.k</a><br>
+&#160;&#160;<a href="py_sparse_rcv.htm#put.k" target="_top">Sparse&nbsp;Matrices:&#160;put.k</a><br>
+&#160;&#160;<a href="py_sparse_rc.htm#put.k" target="_top">Sparsity&nbsp;Patterns:&#160;put.k</a><br>
 
 <b><big><a name="L">L</a></big></b>
 <br>
@@ -608,8 +638,10 @@ load&#160;<a href="check_swig_xam.pl.htm#Load the Module" target="_top">Swig&nbs
 <b><big><a name="M">M</a></big></b>
 <br>
 m<b>_</b>swig<b>_</b>xam&#160;<a href="swig_xam.i.htm#m_swig_xam" target="_top">Example&nbsp;Using&nbsp;Swig&nbsp;with&nbsp;C++:&#160;m_swig_xam</a><br>
-matrices&#160;<a href="sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
-matrix&#160;<a href="sparse_rcv.htm#matrix" target="_top">Sparse&nbsp;Matrices:&#160;matrix</a><br>
+matrices&#160;<a href="cpp_sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
+matrix&#160;<a href="cpp_sparse_rcv.htm#matrix" target="_top">Sparse&nbsp;Matrices:&#160;matrix</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#matrix" target="_top">Sparse&nbsp;Matrices:&#160;matrix</a><br>
 max<b>_</b>array<b>_</b>by<b>_</b>ptr&#160;<a href="swig_xam_function.htm#max_array_by_ptr" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications:&#160;max_array_by_ptr</a><br>
 max<b>_</b>std<b>_</b>vector<b>_</b>double&#160;<a href="swig_xam_function.htm#max_std_vector_double" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications:&#160;max_std_vector_double</a><br>
 message<b>_</b>of<b>_</b>void&#160;<a href="check_swig_xam.pl.htm#message_of_void" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script:&#160;message_of_void</a><br>
@@ -635,15 +667,21 @@ module&#160;<a href="check_swig_xam.pl.htm#Load the Module" target="_top">Swig&n
 
 <b><big><a name="N">N</a></big></b>
 <br>
-n<b>_</b>sweep&#160;<a href="sparse_hes.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;n_sweep</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;n_sweep</a><br>
+n<b>_</b>sweep&#160;<a href="cpp_sparse_hes.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;n_sweep</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;n_sweep</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;n_sweep</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#n_sweep" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;n_sweep</a><br>
 name&#160;<a href="numpy2vec.htm#name" target="_top">Convert&nbsp;a&nbsp;Numpy&nbsp;Array&nbsp;to&nbsp;a&nbsp;cppad_py&nbsp;Vector:&#160;name</a><br>
-nc&#160;<a href="sparse_rcv.htm#nc" target="_top">Sparse&nbsp;Matrices:&#160;nc</a><br>
-&#160;&#160;&#160;<a href="sparse_rc.htm#nc" target="_top">Sparsity&nbsp;Patterns:&#160;nc</a><br>
+nc&#160;<a href="cpp_sparse_rcv.htm#nc" target="_top">Sparse&nbsp;Matrices:&#160;nc</a><br>
+&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#nc" target="_top">Sparsity&nbsp;Patterns:&#160;nc</a><br>
 &#160;&#160;&#160;<a href="vec2numpy.htm#nc" target="_top">Convert&nbsp;a&nbsp;cppad_py&nbsp;Vector&nbsp;to&nbsp;a&nbsp;Numpy&nbsp;Array:&#160;nc</a><br>
+&#160;&#160;&#160;<a href="py_sparse_rcv.htm#nc" target="_top">Sparse&nbsp;Matrices:&#160;nc</a><br>
+&#160;&#160;&#160;<a href="py_sparse_rc.htm#nc" target="_top">Sparsity&nbsp;Patterns:&#160;nc</a><br>
 near<b>_</b>equal&#160;<a href="a_double_property.htm#near_equal" target="_top">Properties&nbsp;of&nbsp;an&nbsp;a_double&nbsp;Object:&#160;near_equal</a><br>
-nnz&#160;<a href="sparse_rcv.htm#nnz" target="_top">Sparse&nbsp;Matrices:&#160;nnz</a><br>
-&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#nnz" target="_top">Sparsity&nbsp;Patterns:&#160;nnz</a><br>
+nnz&#160;<a href="cpp_sparse_rcv.htm#nnz" target="_top">Sparse&nbsp;Matrices:&#160;nnz</a><br>
+&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#nnz" target="_top">Sparsity&nbsp;Patterns:&#160;nnz</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#nnz" target="_top">Sparse&nbsp;Matrices:&#160;nnz</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#nnz" target="_top">Sparsity&nbsp;Patterns:&#160;nnz</a><br>
 normal<b>_</b>class&#160;<a href="check_swig_xam.pl.htm#normal_class" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script:&#160;normal_class</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.m.htm#normal_class" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Octave&nbsp;Script:&#160;normal_class</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm#normal_class" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script:&#160;normal_class</a><br>
@@ -652,9 +690,11 @@ normal<b>_</b>class<b>(</b>value<b>)</b>&#160;<a href="swig_xam_normal_class.htm
 not&#160;<a href="error_message.htm#Not Thread Safe" target="_top">Exception&nbsp;Handling:&#160;Not&nbsp;Thread&nbsp;Safe</a><br>
 notation&#160;<a href="cpp_a_fun_reverse.htm#Notation" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;Notation</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_reverse.htm#Notation" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;Notation</a><br>
-nr&#160;<a href="sparse_rcv.htm#nr" target="_top">Sparse&nbsp;Matrices:&#160;nr</a><br>
-&#160;&#160;&#160;<a href="sparse_rc.htm#nr" target="_top">Sparsity&nbsp;Patterns:&#160;nr</a><br>
+nr&#160;<a href="cpp_sparse_rcv.htm#nr" target="_top">Sparse&nbsp;Matrices:&#160;nr</a><br>
+&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#nr" target="_top">Sparsity&nbsp;Patterns:&#160;nr</a><br>
 &#160;&#160;&#160;<a href="vec2numpy.htm#nr" target="_top">Convert&nbsp;a&nbsp;cppad_py&nbsp;Vector&nbsp;to&nbsp;a&nbsp;Numpy&nbsp;Array:&#160;nr</a><br>
+&#160;&#160;&#160;<a href="py_sparse_rcv.htm#nr" target="_top">Sparse&nbsp;Matrices:&#160;nr</a><br>
+&#160;&#160;&#160;<a href="py_sparse_rc.htm#nr" target="_top">Sparsity&nbsp;Patterns:&#160;nr</a><br>
 numpy&#160;<a href="vec2numpy.htm" target="_top">Convert&nbsp;a&nbsp;cppad_py&nbsp;Vector&nbsp;to&nbsp;a&nbsp;Numpy&nbsp;Array</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="numpy2vec.htm" target="_top">Convert&nbsp;a&nbsp;Numpy&nbsp;Array&nbsp;to&nbsp;a&nbsp;cppad_py&nbsp;Vector</a><br>
 
@@ -690,26 +730,36 @@ p&#160;<a href="cpp_a_fun_forward.htm#p" target="_top">Forward&nbsp;Mode&nbsp;AD
 packages&#160;<a href="cppad_py.htm#Supporting Packages" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Supporting&nbsp;Packages</a><br>
 parameter&#160;<a href="a_double_property.htm#parameter" target="_top">Properties&nbsp;of&nbsp;an&nbsp;a_double&nbsp;Object:&#160;parameter</a><br>
 path&#160;<a href="check_swig_xam.pl.htm#Add Current Directory To Search Path" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script:&#160;Add&nbsp;Current&nbsp;Directory&nbsp;To&nbsp;Search&nbsp;Path</a><br>
-pattern&#160;<a href="sparse_hes.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;pattern</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;pattern</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv.htm#pattern" target="_top">Sparse&nbsp;Matrices:&#160;pattern</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#pattern" target="_top">Sparsity&nbsp;Patterns:&#160;pattern</a><br>
-pattern<b>_</b>in&#160;<a href="jac_sparsity.htm#pattern_in" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_in</a><br>
-pattern<b>_</b>out&#160;<a href="hes_sparsity.htm#pattern_out" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#pattern_out" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
-patterns&#160;<a href="hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
-patterns<b>:</b>&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+pattern&#160;<a href="cpp_sparse_hes.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rcv.htm#pattern" target="_top">Sparse&nbsp;Matrices:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#pattern" target="_top">Sparsity&nbsp;Patterns:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#pattern" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#pattern" target="_top">Sparse&nbsp;Matrices:&#160;pattern</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#pattern" target="_top">Sparsity&nbsp;Patterns:&#160;pattern</a><br>
+pattern<b>_</b>in&#160;<a href="cpp_jac_sparsity.htm#pattern_in" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_in</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#pattern_in" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_in</a><br>
+pattern<b>_</b>out&#160;<a href="cpp_sparsity.htm#pattern_out" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#pattern_out" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#pattern_out" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#pattern_out" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;pattern_out</a><br>
+patterns&#160;<a href="cpp_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
+patterns<b>:</b>&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 perl&#160;<a href="check_swig_xam.pl.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script</a><br>
 pl<b>_</b>swig<b>_</b>xam&#160;<a href="swig_xam.i.htm#pl_swig_xam" target="_top">Example&nbsp;Using&nbsp;Swig&nbsp;with&nbsp;C++:&#160;pl_swig_xam</a><br>
 plus&#160;<a href="a_double_unary_op_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -725,22 +775,28 @@ properties<b>:</b>&#160;<a href="a_fun_property_xam.cpp.htm" target="_top">C++:&
 prototypes&#160;<a href="swig_xam_template_class.htm#Prototypes" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class:&#160;Prototypes</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_normal_class.htm#Prototypes" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Class:&#160;Prototypes</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_function.htm#Prototypes" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications:&#160;Prototypes</a><br>
-purpose&#160;<a href="sparse_hes.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Purpose</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Purpose</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm#Purpose" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#Purpose" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
+purpose&#160;<a href="cpp_sparse_hes.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm#Purpose" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#Purpose" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_optimize.htm#Purpose" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_abort_recording.htm#Purpose" target="_top">Abort&nbsp;Recording:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_independent.htm#Purpose" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="vector_ctor.htm#Purpose" target="_top">Cppad&nbsp;Py&nbsp;Vector&nbsp;Constructors:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_cond_assign.htm#Purpose" target="_top">AD&nbsp;Conditional&nbsp;Assignment:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ctor.htm#Purpose" target="_top">The&nbsp;a_double&nbsp;Constructor:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#Purpose" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Purpose" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Purpose" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_optimize.htm#Purpose" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_abort_recording.htm#Purpose" target="_top">Abort&nbsp;Recording:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_independent.htm#Purpose" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording:&#160;Purpose</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cppad_py.htm#Purpose" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Purpose</a><br>
-put&#160;<a href="sparse_rcv.htm#put" target="_top">Sparse&nbsp;Matrices:&#160;put</a><br>
-&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#put" target="_top">Sparsity&nbsp;Patterns:&#160;put</a><br>
+put&#160;<a href="cpp_sparse_rcv.htm#put" target="_top">Sparse&nbsp;Matrices:&#160;put</a><br>
+&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#put" target="_top">Sparsity&nbsp;Patterns:&#160;put</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#put" target="_top">Sparse&nbsp;Matrices:&#160;put</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#put" target="_top">Sparsity&nbsp;Patterns:&#160;put</a><br>
 py&#160;<a href="whats_new_2018.htm" target="_top">Cppad&nbsp;Py&nbsp;Changes&nbsp;During&nbsp;2018</a><br>
 &#160;&#160;&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;<a href="error_message_xam.cpp.htm" target="_top">C++:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -755,16 +811,11 @@ py&#160;<a href="whats_new_2018.htm" target="_top">Cppad&nbsp;Py&nbsp;Changes&nb
 &#160;&#160;&#160;<a href="testing.htm" target="_top">Running&nbsp;the&nbsp;Cppad&nbsp;Py&nbsp;Tests</a><br>
 py<b>_</b>swig<b>_</b>xam&#160;<a href="swig_xam.i.htm#py_swig_xam" target="_top">Example&nbsp;Using&nbsp;Swig&nbsp;with&nbsp;C++:&#160;py_swig_xam</a><br>
 python&#160;<a href="py_utility.htm" target="_top">Python&nbsp;Utilities</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse.htm" target="_top">Python&nbsp;Sparsity&nbsp;Routines</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_lib.htm" target="_top">The&nbsp;Python&nbsp;Library</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm" target="_top">Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module</a><br>
 python<b>:</b>&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="vector_set_get_xam.py.htm" target="_top">Python:&nbsp;Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="vector_size_xam.py.htm" target="_top">Python:&nbsp;Size&nbsp;of&nbsp;Vectors:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_cond_assign_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Conditional&nbsp;Assignment:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -774,6 +825,12 @@ python<b>:</b>&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbs
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Binary&nbsp;Operators&nbsp;With&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_property_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Properties:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_op_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_optimize_xam.py.htm" target="_top">Python:&nbsp;Optimize&nbsp;an&nbsp;a_fun:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.py.htm" target="_top">Python:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_forward_xam.py.htm" target="_top">Python:&nbsp;Forward&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -803,23 +860,30 @@ recording&#160;<a href="a_fun_abort_xam.cpp.htm" target="_top">C++:&nbsp;Abort&n
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_independent.htm" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording</a><br>
 required&#160;<a href="cppad_py.htm#Supporting Packages.Required" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Supporting&nbsp;Packages.Required</a><br>
 requirements&#160;<a href="setup.py.htm#Requirements" target="_top">Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module:&#160;Requirements</a><br>
-resize&#160;<a href="sparse_rc.htm#resize" target="_top">Sparsity&nbsp;Patterns:&#160;resize</a><br>
+resize&#160;<a href="cpp_sparse_rc.htm#resize" target="_top">Sparsity&nbsp;Patterns:&#160;resize</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#resize" target="_top">Sparsity&nbsp;Patterns:&#160;resize</a><br>
 result&#160;<a href="a_double_unary_fun.htm" target="_top">Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary.htm" target="_top">ad_double&nbsp;Binary&nbsp;Operators&nbsp;with&nbsp;an&nbsp;AD&nbsp;Result</a><br>
 result<b>:</b>&#160;<a href="a_double_unary_fun_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_fun_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Binary&nbsp;Operators&nbsp;With&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Binary&nbsp;Operators&nbsp;With&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-rev<b>_</b>jac<b>_</b>sparsity&#160;<a href="jac_sparsity.htm#Purpose.rev_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.rev_jac_sparsity</a><br>
+rev<b>_</b>jac<b>_</b>sparsity&#160;<a href="cpp_jac_sparsity.htm#Purpose.rev_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.rev_jac_sparsity</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Purpose.rev_jac_sparsity" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Purpose.rev_jac_sparsity</a><br>
 reverse&#160;<a href="a_fun_reverse_xam.cpp.htm" target="_top">C++:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_reverse.htm" target="_top">Reverse&nbsp;Mode&nbsp;AD</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.py.htm" target="_top">Python:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_reverse.htm" target="_top">Reverse&nbsp;Mode&nbsp;AD</a><br>
 right&#160;<a href="a_double_cond_assign.htm#right" target="_top">AD&nbsp;Conditional&nbsp;Assignment:&#160;right</a><br>
-row&#160;<a href="sparse_rcv.htm#row" target="_top">Sparse&nbsp;Matrices:&#160;row</a><br>
-&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#row" target="_top">Sparsity&nbsp;Patterns:&#160;row</a><br>
-row<b>_</b>major&#160;<a href="sparse_rcv.htm#row_major" target="_top">Sparse&nbsp;Matrices:&#160;row_major</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#row_major" target="_top">Sparsity&nbsp;Patterns:&#160;row_major</a><br>
+routines&#160;<a href="py_sparse.htm" target="_top">Python&nbsp;Sparsity&nbsp;Routines</a><br>
+row&#160;<a href="cpp_sparse_rcv.htm#row" target="_top">Sparse&nbsp;Matrices:&#160;row</a><br>
+&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#row" target="_top">Sparsity&nbsp;Patterns:&#160;row</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#row" target="_top">Sparse&nbsp;Matrices:&#160;row</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#row" target="_top">Sparsity&nbsp;Patterns:&#160;row</a><br>
+row<b>_</b>major&#160;<a href="cpp_sparse_rcv.htm#row_major" target="_top">Sparse&nbsp;Matrices:&#160;row_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#row_major" target="_top">Sparsity&nbsp;Patterns:&#160;row_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#row_major" target="_top">Sparse&nbsp;Matrices:&#160;row_major</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#row_major" target="_top">Sparsity&nbsp;Patterns:&#160;row_major</a><br>
 running&#160;<a href="testing.htm" target="_top">Running&nbsp;the&nbsp;Cppad&nbsp;Py&nbsp;Tests</a><br>
 
 <b><big><a name="S">S</a></big></b>
@@ -830,8 +894,10 @@ script&#160;<a href="check_swig_xam.pl.htm" target="_top">Swig&nbsp;Example&nbsp
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.m.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Octave&nbsp;Script</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script</a><br>
 search&#160;<a href="check_swig_xam.pl.htm#Add Current Directory To Search Path" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script:&#160;Add&nbsp;Current&nbsp;Directory&nbsp;To&nbsp;Search&nbsp;Path</a><br>
-select<b>_</b>domain&#160;<a href="hes_sparsity.htm#select_domain" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_domain</a><br>
-select<b>_</b>range&#160;<a href="hes_sparsity.htm#select_range" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_range</a><br>
+select<b>_</b>domain&#160;<a href="cpp_sparsity.htm#select_domain" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_domain</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#select_domain" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_domain</a><br>
+select<b>_</b>range&#160;<a href="cpp_sparsity.htm#select_range" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_range</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#select_range" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;select_range</a><br>
 set&#160;<a href="check_swig_xam.pl.htm#Set Exit Code" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script:&#160;Set&nbsp;Exit&nbsp;Code</a><br>
 &#160;&#160;&#160;&#160;<a href="check_swig_xam.m.htm#Set Exit Code" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Octave&nbsp;Script:&#160;Set&nbsp;Exit&nbsp;Code</a><br>
 &#160;&#160;&#160;&#160;<a href="check_swig_xam.py.htm#Set Exit Code" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Python&nbsp;Script:&#160;Set&nbsp;Exit&nbsp;Code</a><br>
@@ -858,29 +924,40 @@ size<b>_</b>var&#160;<a href="cpp_a_fun_property.htm#size_var" target="_top">Pro
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_property.htm#size_var" target="_top">Properties&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;size_var</a><br>
 source&#160;<a href="get_cppad.sh.htm#Top Source Directory" target="_top">Get&nbsp;Cppad:&#160;Top&nbsp;Source&nbsp;Directory</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cppad_py.htm#Top Source Directory" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Top&nbsp;Source&nbsp;Directory</a><br>
-sparse&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
+sparse&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse.htm" target="_top">Cppad&nbsp;Py&nbsp;Sparse&nbsp;Calculation</a><br>
-sparse<b>_</b>jac<b>_</b>for&#160;<a href="sparse_jac.htm#sparse_jac_for" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_for</a><br>
-sparse<b>_</b>jac<b>_</b>rev&#160;<a href="sparse_jac.htm#sparse_jac_rev" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_rev</a><br>
-sparsity&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm" target="_top">Computing&nbsp;Sparse&nbsp;Hessians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm" target="_top">Sparse&nbsp;Matrices</a><br>
+sparse<b>_</b>jac<b>_</b>for&#160;<a href="cpp_sparse_jac.htm#sparse_jac_for" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_for</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#sparse_jac_for" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_for</a><br>
+sparse<b>_</b>jac<b>_</b>rev&#160;<a href="cpp_sparse_jac.htm#sparse_jac_rev" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_rev</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#sparse_jac_rev" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;sparse_jac_rev</a><br>
+sparsity&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Sparsity for Entire Jacobian" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Entire&nbsp;Jacobian</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm" target="_top">Sparsity&nbsp;Patterns</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse.htm" target="_top">Python&nbsp;Sparsity&nbsp;Routines</a><br>
 specifications&#160;<a href="swig_xam_function.htm" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Function&nbsp;Specifications</a><br>
 speed&#160;<a href="cppad_py.htm#C++ Function Speed" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;C++&nbsp;Function&nbsp;Speed</a><br>
 start&#160;<a href="cpp_independent.htm" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording</a><br>
@@ -890,8 +967,10 @@ stop&#160;<a href="cpp_a_fun_ctor.htm" target="_top">Stop&nbsp;Current&nbsp;Reco
 &#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_ctor.htm" target="_top">Stop&nbsp;Current&nbsp;Recording&nbsp;and&nbsp;Store&nbsp;in&nbsp;an&nbsp;a_fun&nbsp;Object</a><br>
 store&#160;<a href="cpp_a_fun_ctor.htm" target="_top">Stop&nbsp;Current&nbsp;Recording&nbsp;and&nbsp;Store&nbsp;in&nbsp;an&nbsp;a_fun&nbsp;Object</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_ctor.htm" target="_top">Stop&nbsp;Current&nbsp;Recording&nbsp;and&nbsp;Store&nbsp;in&nbsp;an&nbsp;a_fun&nbsp;Object</a><br>
-subset&#160;<a href="sparse_hes.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;subset</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;subset</a><br>
+subset&#160;<a href="cpp_sparse_hes.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;subset</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;subset</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;subset</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#subset" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;subset</a><br>
 supporting&#160;<a href="cppad_py.htm#Supporting Packages" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Supporting&nbsp;Packages</a><br>
 swig&#160;<a href="check_swig_xam.pl.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Perl&nbsp;Script</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="check_swig_xam.m.htm" target="_top">Swig&nbsp;Example&nbsp;/&nbsp;Test:&nbsp;Octave&nbsp;Script</a><br>
@@ -908,12 +987,12 @@ swig&#160;<a href="check_swig_xam.pl.htm" target="_top">Swig&nbsp;Example&nbsp;/
 swig<b>_</b>cxx<b>_</b>flags&#160;<a href="setup.py.htm#Configure.swig_cxx_flags" target="_top">Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module:&#160;Configure.swig_cxx_flags</a><br>
 swig<b>_</b>xam<b>.</b>hpp&#160;<a href="swig_xam.i.htm#swig_xam.hpp" target="_top">Example&nbsp;Using&nbsp;Swig&nbsp;with&nbsp;C++:&#160;swig_xam.hpp</a><br>
 syntax&#160;<a href="error_message.htm#Syntax" target="_top">Exception&nbsp;Handling:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="hes_sparsity.htm#Syntax" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="jac_sparsity.htm#Syntax" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv.htm#Syntax" target="_top">Sparse&nbsp;Matrices:&#160;Syntax</a><br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc.htm#Syntax" target="_top">Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_hes.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparsity.htm#Syntax" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_jac_sparsity.htm#Syntax" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rcv.htm#Syntax" target="_top">Sparse&nbsp;Matrices:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_rc.htm#Syntax" target="_top">Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_optimize.htm#Syntax" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_reverse.htm#Syntax" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="cpp_a_fun_forward.htm#Syntax" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;Syntax</a><br>
@@ -937,6 +1016,12 @@ syntax&#160;<a href="error_message.htm#Syntax" target="_top">Exception&nbsp;Hand
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="vec2numpy.htm#Syntax" target="_top">Convert&nbsp;a&nbsp;cppad_py&nbsp;Vector&nbsp;to&nbsp;a&nbsp;Numpy&nbsp;Array:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="numpy2vec.htm#syntax" target="_top">Convert&nbsp;a&nbsp;Numpy&nbsp;Array&nbsp;to&nbsp;a&nbsp;cppad_py&nbsp;Vector:&#160;syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="numpy2vec.htm#Syntax" target="_top">Convert&nbsp;a&nbsp;Numpy&nbsp;Array&nbsp;to&nbsp;a&nbsp;cppad_py&nbsp;Vector:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#Syntax" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Syntax" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_jac_sparsity.htm#Syntax" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#Syntax" target="_top">Sparse&nbsp;Matrices:&#160;Syntax</a><br>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_rc.htm#Syntax" target="_top">Sparsity&nbsp;Patterns:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_optimize.htm#Syntax" target="_top">Optimize&nbsp;an&nbsp;AD&nbsp;Function:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_reverse.htm#Syntax" target="_top">Reverse&nbsp;Mode&nbsp;AD:&#160;Syntax</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="py_a_fun_forward.htm#Syntax" target="_top">Forward&nbsp;Mode&nbsp;AD:&#160;Syntax</a><br>
@@ -959,17 +1044,11 @@ template&#160;<a href="swig_xam_template_class.hpp.htm" target="_top">Swig&nbsp;
 template<b>_</b>class<b>(</b>value<b>)</b>&#160;<a href="swig_xam_template_class.htm#template_class(value)" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class:&#160;template_class(value)</a><br>
 test&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="error_message_xam.cpp.htm" target="_top">C++:&nbsp;Cppad&nbsp;Py&nbsp;Exception&nbsp;Handling:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.cpp.htm" target="_top">C++:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.cpp.htm" target="_top">C++:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.cpp.htm" target="_top">C++:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_fun_optimize_xam.cpp.htm" target="_top">C++:&nbsp;Optimize&nbsp;an&nbsp;a_fun:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.cpp.htm" target="_top">C++:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -996,6 +1075,12 @@ test&#160;<a href="error_message_xam.py.htm" target="_top">Python:&nbsp;Cppad&nb
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_property_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Properties:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_op_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_op_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_xam.py.htm" target="_top">Python:&nbsp;Computing&nbsp;Sparse&nbsp;Jacobians:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_hes_pattern_xam.py.htm" target="_top">Python:&nbsp;Hessian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac_pattern_xam.py.htm" target="_top">Python:&nbsp;Jacobian&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_rcv_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="sparse_rc_xam.py.htm" target="_top">Python:&nbsp;Sparsity&nbsp;Patterns:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_fun_optimize_xam.py.htm" target="_top">Python:&nbsp;Optimize&nbsp;an&nbsp;a_fun:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_fun_reverse_xam.py.htm" target="_top">Python:&nbsp;Reverse&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_fun_forward_xam.py.htm" target="_top">Python:&nbsp;Forward&nbsp;Mode&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -1034,8 +1119,10 @@ unary&#160;<a href="a_double_unary_fun_xam.py.htm" target="_top">Python:&nbsp;a_
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_fun.htm" target="_top">Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_op.htm" target="_top">a_double&nbsp;Unary&nbsp;Plus&nbsp;and&nbsp;Minus</a><br>
 under&#160;<a href="cppad_py.htm#Under Construction" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface:&#160;Under&nbsp;Construction</a><br>
-uses&#160;<a href="sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
+uses&#160;<a href="cpp_sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;Uses&nbsp;Forward</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#Uses Forward" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;Uses&nbsp;Forward</a><br>
 using&#160;<a href="a_fun_hessian_xam.cpp.htm" target="_top">C++:&nbsp;Dense&nbsp;Hessian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_jacobian_xam.cpp.htm" target="_top">C++:&nbsp;Dense&nbsp;Jacobian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;<a href="a_fun_hessian_xam.py.htm" target="_top">Python:&nbsp;Dense&nbsp;Hessian&nbsp;Using&nbsp;AD:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -1045,10 +1132,12 @@ utilities&#160;<a href="py_utility.htm" target="_top">Python&nbsp;Utilities</a><
 
 <b><big><a name="V">V</a></big></b>
 <br>
-v&#160;<a href="sparse_rcv.htm#put.v" target="_top">Sparse&nbsp;Matrices:&#160;put.v</a><br>
+v&#160;<a href="cpp_sparse_rcv.htm#put.v" target="_top">Sparse&nbsp;Matrices:&#160;put.v</a><br>
 &#160;&#160;<a href="vector_set_get.htm#v" target="_top">Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements:&#160;v</a><br>
 &#160;&#160;<a href="vector_size.htm#v" target="_top">Size&nbsp;of&nbsp;a&nbsp;Vector:&#160;v</a><br>
-val&#160;<a href="sparse_rcv.htm#val" target="_top">Sparse&nbsp;Matrices:&#160;val</a><br>
+&#160;&#160;<a href="py_sparse_rcv.htm#put.v" target="_top">Sparse&nbsp;Matrices:&#160;put.v</a><br>
+val&#160;<a href="cpp_sparse_rcv.htm#val" target="_top">Sparse&nbsp;Matrices:&#160;val</a><br>
+&#160;&#160;&#160;&#160;<a href="py_sparse_rcv.htm#val" target="_top">Sparse&nbsp;Matrices:&#160;val</a><br>
 value&#160;<a href="a_double_property.htm#value" target="_top">Properties&nbsp;of&nbsp;an&nbsp;a_double&nbsp;Object:&#160;value</a><br>
 value<b>()</b>&#160;<a href="swig_xam_template_class.htm#value()" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Template&nbsp;Class:&#160;value()</a><br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a href="swig_xam_normal_class.htm#value()" target="_top">Swig&nbsp;Example:&nbsp;C++&nbsp;Class:&#160;value()</a><br>
@@ -1081,7 +1170,8 @@ verbose<b>_</b>makefile&#160;<a href="setup.py.htm#Configure.verbose_makefile" t
 <br>
 w&#160;<a href="cpp_a_fun_hessian.htm#w" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;w</a><br>
 &#160;&#160;<a href="py_a_fun_hessian.htm#w" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;w</a><br>
-wise&#160;<a href="hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+wise&#160;<a href="cpp_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="py_hes_sparsity.htm#Sparsity for Component Wise Hessian" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;Sparsity&nbsp;for&nbsp;Component&nbsp;Wise&nbsp;Hessian</a><br>
 with&#160;<a href="a_double_unary_fun_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_unary_fun_xam.cpp.htm" target="_top">C++:&nbsp;a_double&nbsp;Unary&nbsp;Functions&nbsp;with&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary_xam.py.htm" target="_top">Python:&nbsp;a_double&nbsp;Binary&nbsp;Operators&nbsp;With&nbsp;AD&nbsp;Result:&nbsp;Example&nbsp;and&nbsp;Test</a><br>
@@ -1090,19 +1180,25 @@ with&#160;<a href="a_double_unary_fun_xam.py.htm" target="_top">Python:&nbsp;a_d
 &#160;&#160;&#160;&#160;&#160;<a href="a_double_ad_binary.htm" target="_top">ad_double&nbsp;Binary&nbsp;Operators&nbsp;with&nbsp;an&nbsp;AD&nbsp;Result</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="swig_xam.i.htm" target="_top">Example&nbsp;Using&nbsp;Swig&nbsp;with&nbsp;C++</a><br>
 &#160;&#160;&#160;&#160;&#160;<a href="cppad_py.htm" target="_top">cppad_py-20180715:&nbsp;A&nbsp;C++&nbsp;AD&nbsp;Library&nbsp;with&nbsp;a&nbsp;Swig&nbsp;Interface</a><br>
-work&#160;<a href="sparse_hes.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;work</a><br>
-&#160;&#160;&#160;&#160;&#160;<a href="sparse_jac.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;work</a><br>
+work&#160;<a href="cpp_sparse_hes.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;work</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="cpp_sparse_jac.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;work</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_hes.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;work</a><br>
+&#160;&#160;&#160;&#160;&#160;<a href="py_sparse_jac.htm#work" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;work</a><br>
 
 <b><big><a name="X">X</a></big></b>
 <br>
-x&#160;<a href="sparse_hes.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;x</a><br>
-&#160;&#160;<a href="sparse_jac.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;x</a><br>
-&#160;&#160;<a href="hes_sparsity.htm#x" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
-&#160;&#160;<a href="jac_sparsity.htm#x" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
+x&#160;<a href="cpp_sparse_hes.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;x</a><br>
+&#160;&#160;<a href="cpp_sparse_jac.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;x</a><br>
+&#160;&#160;<a href="cpp_sparsity.htm#x" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
+&#160;&#160;<a href="cpp_jac_sparsity.htm#x" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
 &#160;&#160;<a href="cpp_a_fun_hessian.htm#x" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;x</a><br>
 &#160;&#160;<a href="cpp_a_fun_jacobian.htm#x" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;x</a><br>
 &#160;&#160;<a href="cpp_independent.htm#x" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording:&#160;x</a><br>
 &#160;&#160;<a href="vector_set_get.htm#x" target="_top">Setting&nbsp;and&nbsp;Getting&nbsp;Vector&nbsp;Elements:&#160;x</a><br>
+&#160;&#160;<a href="py_sparse_hes.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Hessians:&#160;x</a><br>
+&#160;&#160;<a href="py_sparse_jac.htm#x" target="_top">Computing&nbsp;Sparse&nbsp;Jacobians:&#160;x</a><br>
+&#160;&#160;<a href="py_hes_sparsity.htm#x" target="_top">Hessian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
+&#160;&#160;<a href="py_jac_sparsity.htm#x" target="_top">Jacobian&nbsp;Sparsity&nbsp;Patterns:&#160;x</a><br>
 &#160;&#160;<a href="py_a_fun_hessian.htm#x" target="_top">Hessian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;x</a><br>
 &#160;&#160;<a href="py_a_fun_jacobian.htm#x" target="_top">Jacobian&nbsp;of&nbsp;an&nbsp;AD&nbsp;Function:&#160;x</a><br>
 &#160;&#160;<a href="py_independent.htm#x" target="_top">Declare&nbsp;Independent&nbsp;Variables&nbsp;and&nbsp;Start&nbsp;Recording:&#160;x</a><br>

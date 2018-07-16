@@ -8,9 +8,9 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'sparse.htm',
-'hes_sparsity.htm'
+'py_lib.htm',
+'py_sparse.htm',
+'py_sparse_hes.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -23,34 +23,33 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'py_a_fun.htm',
+'py_sparse.htm',
+'py_utility.htm'
 ];
 var list_down1 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'py_sparse_rc.htm',
+'py_sparse_rcv.htm',
+'py_jac_sparsity.htm',
+'py_hes_sparsity.htm',
+'py_sparse_jac.htm',
+'py_sparse_hes.htm'
 ];
 var list_down0 = [
-'sparse_hes_pattern_xam.cpp.htm',
-'sparse_hes_pattern_xam.py.htm'
+'sparse_hes_xam.py.htm'
 ];
 var list_current0 = [
-'hes_sparsity.htm#Syntax',
-'hes_sparsity.htm#Purpose',
-'hes_sparsity.htm#x',
-'hes_sparsity.htm#af',
-'hes_sparsity.htm#select_domain',
-'hes_sparsity.htm#select_range',
-'hes_sparsity.htm#pattern_out',
-'hes_sparsity.htm#Sparsity for Component Wise Hessian',
-'hes_sparsity.htm#Example'
+'py_sparse_hes.htm#Syntax',
+'py_sparse_hes.htm#Purpose',
+'py_sparse_hes.htm#af',
+'py_sparse_hes.htm#subset',
+'py_sparse_hes.htm#x',
+'py_sparse_hes.htm#r',
+'py_sparse_hes.htm#pattern',
+'py_sparse_hes.htm#work',
+'py_sparse_hes.htm#n_sweep',
+'py_sparse_hes.htm#Uses Forward',
+'py_sparse_hes.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

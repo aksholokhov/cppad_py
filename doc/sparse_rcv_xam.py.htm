@@ -31,8 +31,8 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="sparse_rcv_xam.cpp.htm" target="_top">Prev</a>
-</td><td><a href="jac_sparsity.htm" target="_top">Next</a>
+<td><a href="py_sparse_rcv.htm" target="_top">Prev</a>
+</td><td><a href="py_jac_sparsity.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -48,9 +48,9 @@ A:active { color : purple }
 <option>Up-&gt;</option>
 <option>cppad_py</option>
 <option>library</option>
-<option>cpp_lib</option>
-<option>sparse</option>
-<option>sparse_rcv</option>
+<option>py_lib</option>
+<option>py_sparse</option>
+<option>py_sparse_rcv</option>
 <option>sparse_rcv_xam.py</option>
 </select>
 </td>
@@ -63,29 +63,26 @@ A:active { color : purple }
 </td>
 <td>
 <select onchange='choose_down3(this)'>
-<option>cpp_lib-&gt;</option>
-<option>a_double</option>
-<option>vector</option>
-<option>a_fun</option>
-<option>sparse</option>
-<option>error</option>
+<option>py_lib-&gt;</option>
+<option>py_a_fun</option>
+<option>py_sparse</option>
+<option>py_utility</option>
 </select>
 </td>
 <td>
 <select onchange='choose_down2(this)'>
-<option>sparse-&gt;</option>
-<option>sparse_rc</option>
-<option>sparse_rcv</option>
-<option>jac_sparsity</option>
-<option>hes_sparsity</option>
-<option>sparse_jac</option>
-<option>sparse_hes</option>
+<option>py_sparse-&gt;</option>
+<option>py_sparse_rc</option>
+<option>py_sparse_rcv</option>
+<option>py_jac_sparsity</option>
+<option>py_hes_sparsity</option>
+<option>py_sparse_jac</option>
+<option>py_sparse_hes</option>
 </select>
 </td>
 <td>
 <select onchange='choose_down1(this)'>
-<option>sparse_rcv-&gt;</option>
-<option>sparse_rcv_xam.cpp</option>
+<option>py_sparse_rcv-&gt;</option>
 <option>sparse_rcv_xam.py</option>
 </select>
 </td>
@@ -93,10 +90,12 @@ A:active { color : purple }
 <td>Headings</td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
-\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Python: Sparsity Patterns: Example and Test</big></big></b></center>
+\newcommand{\R}[1]{ {\rm #1} }@)@ 
+
+<center><b><big><big>Python: Sparsity Patterns: Example and Test</big></big></b></center>
 <pre><tt><b><font color="#0000FF">def</font></b> <b><font color="#000000">sparse_rcv_xam</font></b><font color="#990000">()</font> <font color="#990000">:</font>
      <i><font color="#9A1900">#</font></i>
-     <i><font color="#9A1900"># load the Cppad Py library</font></i>
+     <b><font color="#000080">import</font></b> numpy
      <b><font color="#000080">import</font></b> cppad_py
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># initialize return variable</font></i>
@@ -112,6 +111,7 @@ A:active { color : purple }
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># create n by n sparse representation of identity matrix</font></i>
+     <i><font color="#9A1900"># (temporarly use pattern.rc untile sparse_rcv wrapper is built)</font></i>
      matrix <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">sparse_rcv</font></b><font color="#990000">(</font>pattern<font color="#990000">)</font>
      <b><font color="#0000FF">for</font></b> k <b><font color="#0000FF">in</font></b> <b><font color="#000000">range</font></b><font color="#990000">(</font> n <font color="#990000">)</font> <font color="#990000">:</font>
           matrix<font color="#990000">.</font><b><font color="#000000">put</font></b><font color="#990000">(</font>k<font color="#990000">,</font> <font color="#993399">1.0</font><font color="#990000">)</font>

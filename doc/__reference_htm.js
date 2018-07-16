@@ -20,8 +20,6 @@ var list_current0 = [
 '_reference.htm#C',
 '_reference.htm#E',
 '_reference.htm#G',
-'_reference.htm#H',
-'_reference.htm#J',
 '_reference.htm#L',
 '_reference.htm#N',
 '_reference.htm#P',

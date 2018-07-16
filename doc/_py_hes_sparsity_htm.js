@@ -8,9 +8,9 @@ var list_across0 = [
 var list_up0 = [
 'cppad_py.htm',
 'library.htm',
-'cpp_lib.htm',
-'sparse.htm',
-'jac_sparsity.htm'
+'py_lib.htm',
+'py_sparse.htm',
+'py_hes_sparsity.htm'
 ];
 var list_down4 = [
 'testing.htm',
@@ -23,35 +23,31 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'a_fun.htm',
-'sparse.htm',
-'error.htm'
+'py_a_fun.htm',
+'py_sparse.htm',
+'py_utility.htm'
 ];
 var list_down1 = [
-'sparse_rc.htm',
-'sparse_rcv.htm',
-'jac_sparsity.htm',
-'hes_sparsity.htm',
-'sparse_jac.htm',
-'sparse_hes.htm'
+'py_sparse_rc.htm',
+'py_sparse_rcv.htm',
+'py_jac_sparsity.htm',
+'py_hes_sparsity.htm',
+'py_sparse_jac.htm',
+'py_sparse_hes.htm'
 ];
 var list_down0 = [
-'sparse_jac_pattern_xam.cpp.htm',
-'sparse_jac_pattern_xam.py.htm'
+'sparse_hes_pattern_xam.py.htm'
 ];
 var list_current0 = [
-'jac_sparsity.htm#Syntax',
-'jac_sparsity.htm#Purpose',
-'jac_sparsity.htm#Purpose.for_jac_sparsity',
-'jac_sparsity.htm#Purpose.rev_jac_sparsity',
-'jac_sparsity.htm#x',
-'jac_sparsity.htm#af',
-'jac_sparsity.htm#pattern_in',
-'jac_sparsity.htm#pattern_out',
-'jac_sparsity.htm#Sparsity for Entire Jacobian',
-'jac_sparsity.htm#Example'
+'py_hes_sparsity.htm#Syntax',
+'py_hes_sparsity.htm#Purpose',
+'py_hes_sparsity.htm#x',
+'py_hes_sparsity.htm#af',
+'py_hes_sparsity.htm#select_domain',
+'py_hes_sparsity.htm#select_range',
+'py_hes_sparsity.htm#pattern_out',
+'py_hes_sparsity.htm#Sparsity for Component Wise Hessian',
+'py_hes_sparsity.htm#Example'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

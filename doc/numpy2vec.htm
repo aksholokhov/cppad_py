@@ -73,6 +73,7 @@ A:active { color : purple }
 <select onchange='choose_down2(this)'>
 <option>py_lib-&gt;</option>
 <option>py_a_fun</option>
+<option>py_sparse</option>
 <option>py_utility</option>
 </select>
 </td>
@@ -123,13 +124,21 @@ an exception is raised with an appropriate error message.
 <b><big><a name="dtype" id="dtype">dtype</a></big></b>
 <br>
 This is the expected data type for the elements of the array.
-It must be either <code><font color="blue">float</font></code> or <code><font color="blue">cppad_py.a_double</font></code>.
+It must be one of the following:
+<code><font color="blue">bool</font></code>, <code><font color="blue">int</font></code>, <code><font color="blue">float</font></code> or <code><font color="blue">cppad_py.a_double</font></code>.
 
 <br>
 <br>
 <b><big><a name="shape" id="shape">shape</a></big></b>
 <br>
 This either a <code><font color="blue">int</font></code> or a tuple of <code><font color="blue">int</font></code> with length one or two.
+If it is an <code><font color="blue">int</font></code>, 
+<code><i><font color="black"><span style='white-space: nowrap'>array</span></font></i></code>
+ is expected to be a vector.
+If it is a tuple with length one, 
+<code><i><font color="black"><span style='white-space: nowrap'>array</span></font></i></code>
+ is expected to be a vector.
+Otherwise a matrix is expected.
 
 <br>
 <br>
