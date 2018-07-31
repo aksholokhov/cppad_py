@@ -11,7 +11,6 @@ var list_up0 = [
 ];
 var list_down1 = [
 'testing.htm',
-'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
@@ -24,8 +23,8 @@ var list_current0 = [
 'testing.htm#get_cppad.sh',
 'testing.htm#setup.py',
 'testing.htm#check',
-'testing.htm#check_swig_xam',
-'testing.htm#check_lib'
+'testing.htm#check.python',
+'testing.htm#c++'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;

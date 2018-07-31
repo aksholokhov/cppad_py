@@ -11,7 +11,6 @@ var list_up0 = [
 ];
 var list_down1 = [
 'testing.htm',
-'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];

@@ -55,7 +55,6 @@ A:active { color : purple }
 <select onchange='choose_down2(this)'>
 <option>cppad_py-&gt;</option>
 <option>testing</option>
-<option>swig_xam.i</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
@@ -84,10 +83,7 @@ A:active { color : purple }
 </td>
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
-\newcommand{\R}[1]{ {\rm #1} }@)@ 
-
-
-<center><b><big><big>Configure and Build the cppad_py Python Module</big></big></b></center>
+\newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Configure and Build the cppad_py Python Module</big></big></b></center>
 <br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
 
@@ -121,13 +117,9 @@ near the top of <code><font color="blue">setup.py</font></code>:
 <pre><tt>verbose_makefile <font color="#990000">=</font> <font color="#FF0000">"false"</font>
 build_type       <font color="#990000">=</font> <font color="#FF0000">"debug"</font>
 cppad_prefix     <font color="#990000">=</font> <font color="#FF0000">"build/prefix"</font>
-test_cppad       <font color="#990000">=</font> <font color="#FF0000">"false"</font>
-<i><font color="#9A1900">#</font></i>
-swig_cxx_flags <font color="#990000">=</font> <font color="#990000">\</font>
-<i><font color="#9A1900">"-Wno-sign-compare -Wno-catch-value -Wno-class-memaccess -std=c++11"</font></i>
-<i><font color="#9A1900">#</font></i>
-cppad_cxx_flags <font color="#990000">=</font> <font color="#990000">\</font>
-<i><font color="#9A1900">"-Wall -pedantic-errors -Wno-unused-result -std=c++11"</font></i></tt></pre>
+test_cppad       <font color="#990000">=</font> <font color="#FF0000">"fasle"</font>
+swig_cxx_flags <font color="#990000">=</font> <font color="#FF0000">"-Wno-sign-compare -Wno-catch-value -Wno-class-memaccess -std=c++11"</font>
+cppad_cxx_flags <font color="#990000">=</font> <font color="#FF0000">"-Wall -pedantic-errors -Wno-unused-result -std=c++11"</font></tt></pre>
 Each of these settings is described below:
 
 <br>

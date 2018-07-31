@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Running the Cppad Py Tests</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Running the Cppad Py Tests">
-<meta name="keywords" id="keywords" content=" running the cppad py tests configuration get_cppad.sh setup.py check check_swig_xam check_lib ">
+<meta name="keywords" id="keywords" content=" running the cppad py tests configuration get_cppad.sh setup.py check python c++ ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -54,7 +54,6 @@ A:active { color : purple }
 <select onchange='choose_down1(this)'>
 <option>cppad_py-&gt;</option>
 <option>testing</option>
-<option>swig_xam.i</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
@@ -73,8 +72,8 @@ A:active { color : purple }
 <option>get_cppad.sh</option>
 <option>setup.py</option>
 <option>check</option>
-<option>check_swig_xam</option>
-<option>check_lib</option>
+<option>---..python</option>
+<option>c++</option>
 </select>
 </td>
 </tr></table><br>
@@ -114,39 +113,31 @@ using with Cppad Py.
 <br>
 <br>
 <b><big><a name="check" id="check">check</a></big></b>
+
+
 <br>
-The next step is to check cppad_py on your system using
+<br>
+<big><a name="check.python" id="check.python">python</a></big>
+<br>
+The next step is to check the cppad_py python interface
+<a href="py_lib.htm" target="_top"><span style='white-space: nowrap'>py_lib</span></a>
+ on your system using
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;lib/example/python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;check_all.py<br>
+</span></font></code>
+<br>
+<b><big><a name="c++" id="c++">c++</a></big></b>
+<br>
+You can check the cppad_py c++ interface
+<a href="cpp_lib.htm" target="_top"><span style='white-space: nowrap'>cpp_lib</span></a>
+ on your system using
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;build<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_cplusplus<br>
 </span></font></code>
-<br>
-<b><big><a name="check_swig_xam" id="check_swig_xam">check_swig_xam</a></big></b>
-<br>
-For 
-<code><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i></code>
- equal
-<code><font color="blue">cplusplus</font></code>, <code><font color="blue">octave</font></code>, <code><font color="blue">perl</font></code>, <code><font color="blue">python</font></code>,
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_swig_xam_</span></font><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-only runs a simple test of Swig, for the particular language, on your system.
-
-<br>
-<br>
-<b><big><a name="check_lib" id="check_lib">check_lib</a></big></b>
-<br>
-For 
-<code><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i></code>
- equal <code><font color="blue">cplusplus</font></code> and <code><font color="blue">python</font></code>,
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_</span></font><i><font color="black"><span style='white-space: nowrap'>lang</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-only runs a the tests for the C++ or Python on your system.
-
 
 <hr>Input File: testing.omh
 

@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Cppad Py Changes During 2018</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Cppad Py Changes During 2018">
-<meta name="keywords" id="keywords" content=" cppad py changes during 2018 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
+<meta name="keywords" id="keywords" content=" cppad py changes during 2018 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -54,7 +54,6 @@ A:active { color : purple }
 <select onchange='choose_down1(this)'>
 <option>cppad_py-&gt;</option>
 <option>testing</option>
-<option>swig_xam.i</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
@@ -63,6 +62,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
+<option>07-31</option>
 <option>07-26</option>
 <option>07-19</option>
 <option>07-15</option>
@@ -78,6 +78,27 @@ A:active { color : purple }
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Cppad Py Changes During 2018</big></big></b></center>
+<br>
+<b><big><a name="07-31" id="07-31">07-31</a></big></b>
+
+<ol type="1"><li>
+The general purpose Swig example <code><font color="blue">swig_xam</font></code>,
+which was not specific to cppad_py,
+has been removed.
+</li><li>
+
+A change to <code><font color="blue">setup.py</font></code> was making the
+<a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+ script fail.
+This has been fixed.
+</li><li>
+
+The python tests are no run in <code><font color="blue">lib/example/python</font></code>
+(not copied to the build directory).
+</li></ol>
+
+
+<br>
 <br>
 <b><big><a name="07-26" id="07-26">07-26</a></big></b>
 <br>

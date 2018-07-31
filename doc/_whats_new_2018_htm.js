@@ -11,11 +11,11 @@ var list_up0 = [
 ];
 var list_down1 = [
 'testing.htm',
-'swig_xam.i.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
 var list_current0 = [
+'whats_new_2018.htm#07-31',
 'whats_new_2018.htm#07-26',
 'whats_new_2018.htm#07-19',
 'whats_new_2018.htm#07-15',
