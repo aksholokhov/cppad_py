@@ -24,7 +24,7 @@ var list_current0 = [
 'testing.htm#setup.py',
 'testing.htm#check',
 'testing.htm#check.python',
-'testing.htm#c++'
+'testing.htm#check.c++'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
