@@ -12,3 +12,7 @@ new
 # extensions to ignore
 *.log
 *.swp
+# automatically generated files in lib/example/python
+/lib/example/python/__pycache__
+/lib/example/python/*.pyc
+/lib/example/python/check_all.py
