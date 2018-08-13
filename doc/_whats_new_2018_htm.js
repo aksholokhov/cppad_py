@@ -10,11 +10,12 @@ var list_up0 = [
 'whats_new_2018.htm'
 ];
 var list_down1 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
 var list_current0 = [
+'whats_new_2018.htm#08-13',
 'whats_new_2018.htm#07-31',
 'whats_new_2018.htm#07-26',
 'whats_new_2018.htm#07-19',

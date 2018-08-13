@@ -12,7 +12,7 @@ var list_up0 = [
 'a_fun.htm'
 ];
 var list_down3 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];

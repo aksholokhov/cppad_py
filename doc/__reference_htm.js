@@ -10,7 +10,7 @@ var list_up0 = [
 '_reference.htm'
 ];
 var list_down1 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
@@ -23,7 +23,6 @@ var list_current0 = [
 '_reference.htm#N',
 '_reference.htm#P',
 '_reference.htm#S',
-'_reference.htm#T',
 '_reference.htm#V',
 '_reference.htm#W'
 ];

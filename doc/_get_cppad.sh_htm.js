@@ -7,16 +7,15 @@ var list_across0 = [
 ];
 var list_up0 = [
 'cppad_py.htm',
-'testing.htm',
+'setup.py.htm',
 'get_cppad.sh.htm'
 ];
 var list_down2 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
 var list_down1 = [
-'setup.py.htm',
 'get_cppad.sh.htm'
 ];
 var list_current0 = [

@@ -11,7 +11,7 @@ var list_up0 = [
 'py_lib.htm'
 ];
 var list_down2 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];

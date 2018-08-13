@@ -13,7 +13,7 @@ var list_up0 = [
 'cpp_sparse_jac.htm'
 ];
 var list_down4 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];

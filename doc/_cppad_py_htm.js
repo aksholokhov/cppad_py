@@ -9,7 +9,7 @@ var list_up0 = [
 'cppad_py.htm'
 ];
 var list_down0 = [
-'testing.htm',
+'setup.py.htm',
 'library.htm',
 'whats_new_2018.htm'
 ];
@@ -18,10 +18,6 @@ var list_current0 = [
 'cppad_py.htm#Under Construction',
 'cppad_py.htm#Getting Started',
 'cppad_py.htm#C++ Function Speed',
-'cppad_py.htm#Supporting Packages',
-'cppad_py.htm#Supporting Packages.Required',
-'cppad_py.htm#Supporting Packages.Swig',
-'cppad_py.htm#Top Source Directory',
 'cppad_py.htm#License',
 'cppad_py.htm#Contents'
 ];

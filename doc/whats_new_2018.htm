@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Cppad Py Changes During 2018</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Cppad Py Changes During 2018">
-<meta name="keywords" id="keywords" content=" cppad py changes during 2018 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
+<meta name="keywords" id="keywords" content=" cppad py changes during 2018 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -53,7 +53,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down1(this)'>
 <option>cppad_py-&gt;</option>
-<option>testing</option>
+<option>setup.py</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
@@ -62,6 +62,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
+<option>08-13</option>
 <option>07-31</option>
 <option>07-26</option>
 <option>07-19</option>
@@ -78,6 +79,24 @@ A:active { color : purple }
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Cppad Py Changes During 2018</big></big></b></center>
+<br>
+<b><big><a name="08-13" id="08-13">08-13</a></big></b>
+
+<ol type="1"><li>
+Change <code><font color="blue">cppad_cxx_flags</font></code> to
+<a href="setup.py.htm#Configure.extra_cxx_flags" target="_top"><span style='white-space: nowrap'>extra_cxx_flags</span></a>
+ in the user
+configuration settings.
+Also remove <code><font color="blue">swig_cxx_flags</font></code> from these user settings
+(set automatically).
+</li><li>
+
+Improve the install instructions; see <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+.
+</li></ol>
+
+
+<br>
 <br>
 <b><big><a name="07-31" id="07-31">07-31</a></big></b>
 
@@ -237,9 +256,8 @@ This has been fixed.
 <br>
 <b><big><a name="07-07" id="07-07">07-07</a></big></b>
 <br>
-Change build of Python module to use Python 3,
-<a href="testing.htm#setup.py" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
-,
+Change build of Python module to use Python 3
+(now it can use either 2 or 3).
 
 <br>
 <br>

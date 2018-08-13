@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Configure and Build the cppad_py Python Module</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Configure and Build the cppad_py Python Module">
-<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ">
+<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get cppad testing c++ import installing path ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -31,7 +31,7 @@ A:active { color : purple }
 <td>
 <a href="https://github.com/bradbell/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
-<td><a href="testing.htm" target="_top">Prev</a>
+<td><a href="_contents.htm" target="_top">Prev</a>
 </td><td><a href="get_cppad.sh.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
@@ -47,38 +47,44 @@ A:active { color : purple }
 <select onchange='choose_up0(this)'>
 <option>Up-&gt;</option>
 <option>cppad_py</option>
-<option>testing</option>
 <option>setup.py</option>
 </select>
 </td>
 <td>
-<select onchange='choose_down2(this)'>
+<select onchange='choose_down1(this)'>
 <option>cppad_py-&gt;</option>
-<option>testing</option>
+<option>setup.py</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
 </td>
 <td>
-<select onchange='choose_down1(this)'>
-<option>testing-&gt;</option>
-<option>setup.py</option>
+<select onchange='choose_down0(this)'>
+<option>setup.py-&gt;</option>
 <option>get_cppad.sh</option>
 </select>
 </td>
-<td>setup.py</td>
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
 <option>Syntax</option>
-<option>Requirements</option>
+<option>External Requirements</option>
+<option>Download</option>
+<option>---..Top Source Directory</option>
 <option>Configure</option>
 <option>---..verbose_makefile</option>
 <option>---..build_type</option>
-<option>---..swig_cxx_flags</option>
-<option>---..cppad_cxx_flags</option>
+<option>---..extra_cxx_flags</option>
 <option>---..cppad_prefix</option>
 <option>---..test_cppad</option>
+<option>Get cppad</option>
+<option>Build cppad_py</option>
+<option>Testing</option>
+<option>---..python</option>
+<option>---..c++</option>
+<option>---..import</option>
+<option>Installing</option>
+<option>Python Path</option>
 </select>
 </td>
 </tr></table><br>
@@ -89,37 +95,79 @@ A:active { color : purple }
 
 <br>
 
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace&nbsp;[--quiet]&nbsp;[--debug]&nbsp;[--undef&nbsp;NDEBUG]<br>
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace&nbsp;[--debug]&nbsp;[--undef&nbsp;NDEBUG]<br>
 </span></font></code>
 where 
 <code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
  is the Python executable you will be using with
-Cppad Py.
+cppad_py.
 
 <br>
 <br>
-<b><big><a name="Requirements" id="Requirements">Requirements</a></big></b>
-<br>
-This program must be run from the
-<a href="cppad_py.htm#Top Source Directory" target="_top"><span style='white-space: nowrap'>top&nbsp;source&nbsp;directory</span></a>
+<b><big><a name="External Requirements" id="External Requirements">External Requirements</a></big></b>
 
-and you must first run <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+<ol type="1"><li>
+<a href="https://en.wikipedia.org/wiki/C++" target="_top"><span style='white-space: nowrap'>c++</span></a>
 .
+</li><li>
+
+<a href="https://cmake.org" target="_top"><span style='white-space: nowrap'>cmake</span></a>
+.
+</li><li>
+
+<a href="https://git-scm.com/" target="_top"><span style='white-space: nowrap'>git</span></a>
+.
+</li><li>
+
+<a href="http://www.swig.org/" target="_top"><span style='white-space: nowrap'>swig</span></a>
+:
+There seems to be a problem with swig-3.0.8; see
+<a href="https://github.com/bradbell/cppad_py/issues/3" target="_top"><span style='white-space: nowrap'>issue&nbsp;3</span></a>
+.
+</li><li>
+
+<a href="https://www.python.org/" target="_top"><span style='white-space: nowrap'>python</span></a>
+: version 2 or 3.
+</li><li>
+
+<a href="http://www.numpy.org/" target="_top"><span style='white-space: nowrap'>numpy</span></a>
+.
+</li></ol>
+
+
+<br>
+<br>
+<b><big><a name="Download" id="Download">Download</a></big></b>
+<br>
+Use the following command to download the current version of cppad_py:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git&nbsp;clone&nbsp;https://github.com/bradbell/cppad_py.git&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+</span></font></code>
+<br>
+<big><a name="Download.Top Source Directory" id="Download.Top Source Directory">Top Source Directory</a></big>
+<br>
+The directory you choose for 
+<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
+ is
+referred to as your top source directory.
+
 
 <br>
 <br>
 <b><big><a name="Configure" id="Configure">Configure</a></big></b>
 <br>
-Before running,
-the user should check and possibly change the following settings
-near the top of <code><font color="blue">setup.py</font></code>:
+Before running <code><font color="blue">setup.py</font></code> or <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+,
+you should check and possibly change the following settings
+(which are near the top of 
+<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i><font color="blue"><span style='white-space: nowrap'>/setup.py</span></font></code>
+):
 <pre><tt>verbose_makefile <font color="#990000">=</font> <font color="#FF0000">"false"</font>
 build_type       <font color="#990000">=</font> <font color="#FF0000">"debug"</font>
 cppad_prefix     <font color="#990000">=</font> <font color="#FF0000">"build/prefix"</font>
 test_cppad       <font color="#990000">=</font> <font color="#FF0000">"fasle"</font>
-swig_cxx_flags <font color="#990000">=</font> <font color="#FF0000">"-Wno-sign-compare -Wno-catch-value -Wno-class-memaccess -std=c++11"</font>
-cppad_cxx_flags <font color="#990000">=</font> <font color="#FF0000">"-Wall -pedantic-errors -Wno-unused-result -std=c++11"</font></tt></pre>
+extra_cxx_flags  <font color="#990000">=</font> <font color="#FF0000">"-Wall -pedantic-errors -Wno-unused-result -std=c++11"</font></tt></pre>
 Each of these settings is described below:
 
 <br>
@@ -140,17 +188,9 @@ This is either <code><font color="blue">&quot;debug&quot;</font></code>, <code><
 
 <br>
 <br>
-<big><a name="Configure.swig_cxx_flags" id="Configure.swig_cxx_flags">swig_cxx_flags</a></big>
+<big><a name="Configure.extra_cxx_flags" id="Configure.extra_cxx_flags">extra_cxx_flags</a></big>
 <br>
-Extra C++ compiler flags used when compiling code that is created
-by Swig.
-
-<br>
-<br>
-<big><a name="Configure.cppad_cxx_flags" id="Configure.cppad_cxx_flags">cppad_cxx_flags</a></big>
-<br>
-Extra C++ compiler flags used when compiling code that includes Cppad
-header files.
+Extra compiler flags used when compiling C++ code.
 
 <br>
 <br>
@@ -170,6 +210,129 @@ If it is <code><font color="blue">&quot;true&quot;</font></code>, <a href="get_c
 a separate check of Cppad for this system.
 This takes a significant amount of time, but may be useful
 if you have any problems.
+
+<br>
+<br>
+<b><big><a name="Get cppad" id="Get cppad">Get cppad</a></big></b>
+<br>
+The next step is to get a copy of cppad using <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
+.
+
+<br>
+<br>
+<b><big><a name="Build cppad_py" id="Build cppad_py">Build cppad_py</a></big></b>
+<br>
+The next step is the build the Python cppad_py module using
+the command:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace&nbsp;--debug&nbsp;--undef&nbsp;NDEBUG<br>
+</span></font></code>
+where 
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
+ is the Python executable you will be
+using with cppad_py.
+If you want a faster version, with less error reporting, use
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace<br>
+</span></font></code>
+<br>
+<b><big><a name="Testing" id="Testing">Testing</a></big></b>
+
+
+<br>
+<br>
+<big><a name="Testing.python" id="Testing.python">python</a></big>
+<br>
+The next step is to test the cppad_py on your system by executing
+the following commands starting in 
+<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
+:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;lib/example/python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;check_all.py<br>
+</span></font></code>
+where 
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
+ is the same version of python as above.
+
+<br>
+<br>
+<big><a name="Testing.c++" id="Testing.c++">c++</a></big>
+<br>
+You can also test the cppad_py c++ interface
+<a href="cpp_lib.htm" target="_top"><span style='white-space: nowrap'>cpp_lib</span></a>
+ on your system by executing the following commands
+starting in 
+<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
+:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;build<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_cplusplus<br>
+</span></font></code>
+<br>
+<big><a name="Testing.import" id="Testing.import">import</a></big>
+<br>
+If you are in 
+<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
+ you should be able to execute the
+following commands:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;cppad_py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quit()<br>
+</span></font></code>
+We need to install cppad_py so you can import it from any directory.
+
+
+<br>
+<br>
+<b><big><a name="Installing" id="Installing">Installing</a></big></b>
+<br>
+Use the following command to install the debug version of cppad_py:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--debug&nbsp;--undef&nbsp;NDEBUG&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+</span></font></code>
+or the following to install the release version:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+</span></font></code>
+This will install <code><font color="blue">cppad_py</font></code> in the directory
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/python</span></font><i><font color="black"><span style='white-space: nowrap'>major</span></font></i><font color="blue"><span style='white-space: nowrap'>.</span></font><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i><font color="blue"><span style='white-space: nowrap'>/site_packages/cppad_py<br>
+</span></font></code>
+where 
+<code><i><font color="black"><span style='white-space: nowrap'>major</span></font></i></code>
+ and 
+<code><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i></code>
+ are the major and minor
+versions for 
+<code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
+.
+
+<br>
+<br>
+<b><big><a name="Python Path" id="Python Path">Python Path</a></big></b>
+<br>
+You can check the current setting of your python path using the commands:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;sys<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(sys.path)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quit()<br>
+</span></font></code>
+The directory 
+<code><i><font color="black"></font></i><font color="blue"><span style='white-space: nowrap'>prefix</span></font><i><font color="black"><span style='white-space: nowrap'>/lib/python</span></font></i><font color="blue"><span style='white-space: nowrap'>major</span></font><i><font color="black"><span style='white-space: nowrap'>.</span></font></i><font color="blue"><span style='white-space: nowrap'>minor</span></font><i><font color="black"><span style='white-space: nowrap'>/site_packages</span></font></i></code>
+
+must be in your python path.
 
 
 <hr>Input File: setup.py

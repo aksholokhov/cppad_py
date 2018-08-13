@@ -12,10 +12,10 @@ MathJax.Hub.Config({
 >
 </script>
 <head>
-<title>cppad_py-20180731: A C++ Object Library and Python Interface to Cppad</title>
+<title>cppad_py-20180813: A C++ Object Library and Python Interface to Cppad</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
-<meta name="description" id="description" content="cppad_py-20180731: A C++ Object Library and Python Interface to Cppad">
-<meta name="keywords" id="keywords" content=" cppad_py-20180731: c++ object library python interface to cppad purpose under construction getting started function speed supporting packages required swig top source directory license contents ">
+<meta name="description" id="description" content="cppad_py-20180813: A C++ Object Library and Python Interface to Cppad">
+<meta name="keywords" id="keywords" content=" cppad_py-20180813: c++ object library python interface to cppad purpose under construction getting started function speed license ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -51,7 +51,7 @@ A:active { color : purple }
 <td>
 <select onchange='choose_down0(this)'>
 <option>cppad_py-&gt;</option>
-<option>testing</option>
+<option>setup.py</option>
 <option>library</option>
 <option>whats_new_2018</option>
 </select>
@@ -63,10 +63,6 @@ A:active { color : purple }
 <option>Under Construction</option>
 <option>Getting Started</option>
 <option>C++ Function Speed</option>
-<option>Supporting Packages</option>
-<option>---..Required</option>
-<option>---..Swig</option>
-<option>Top Source Directory</option>
 <option>License</option>
 <option>Contents</option>
 </select>
@@ -75,7 +71,7 @@ A:active { color : purple }
 <small>@(@
 \newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }
-@)@</small><center><b><big><big>cppad_py-20180731: A C++ Object Library and Python Interface to Cppad</big></big></b></center>
+@)@</small><center><b><big><big>cppad_py-20180813: A C++ Object Library and Python Interface to Cppad</big></big></b></center>
 <br>
 <b><big><a name="Purpose" id="Purpose">Purpose</a></big></b>
 
@@ -108,10 +104,7 @@ See <a href="whats_new_2018.htm" target="_top"><span style='white-space: nowrap'
 <br>
 <b><big><a name="Getting Started" id="Getting Started">Getting Started</a></big></b>
 <br>
-The following is a good place to see what the interface is for
-the currently supported languages:
-<a href="a_fun_jacobian_xam.cpp.htm" target="_top"><span style='white-space: nowrap'>C++</span></a>
-,
+The following is a good place to see what the interface is like:
 <a href="a_fun_jacobian_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
 .
 
@@ -130,56 +123,6 @@ effectively evaluate the function in C++ instead of Python.
 
 <br>
 <br>
-<b><big><a name="Supporting Packages" id="Supporting Packages">Supporting Packages</a></big></b>
-<br>
-The
-<a href="https://www.coin-or.org/CppAD/" target="_top"><span style='white-space: nowrap'>Cppad</span></a>
- package is automatically
-installed by <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
-.
-The following packages are not automatically installed:
-
-<br>
-<br>
-<big><a name="Supporting Packages.Required" id="Supporting Packages.Required">Required</a></big>
-
-<br>
-<a href="https://en.wikipedia.org/wiki/C++" target="_top"><span style='white-space: nowrap'>C++</span></a>
-,
-<a href="https://cmake.org" target="_top"><span style='white-space: nowrap'>Cmake</span></a>
-,
-<a href="https://git-scm.com" target="_top"><span style='white-space: nowrap'>Git</span></a>
-,
-<a href="http://www.swig.org" target="_top"><span style='white-space: nowrap'>Swig</span></a>
-,
-<a href="https://www.python.org/" target="_top"><span style='white-space: nowrap'>Python</span></a>
-.
-
-<br>
-<br>
-<big><a name="Supporting Packages.Swig" id="Supporting Packages.Swig">Swig</a></big>
-<br>
-There is a known problem using <code><font color="blue">swig-3.0.8</font></code>; see
-<a href="https://github.com/bradbell/cppad_py/issues/3" target="_top"><span style='white-space: nowrap'>issue&nbsp;3</span></a>
-.
-
-<br>
-<br>
-<b><big><a name="Top Source Directory" id="Top Source Directory">Top Source Directory</a></big></b>
-<br>
-Currently, one gets the source code from Github at
-<a href="https://github.com/bradbell/cppad_py" target="_top"><span style='white-space: nowrap'>cppad_py</span></a>
-.
-The corresponding directory is referred to as the top source directory.
-For example, if one uses the command
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git&nbsp;clone&nbsp;https://github.com/bradbell/cppad_py&nbsp;cppad_py.git<br>
-</span></font></code>
-the top source directory is <code><font color="blue">cppad_py.git</font></code>.
-
-<br>
-<br>
 <b><big><a name="License" id="License">License</a></big></b>
 <br>
 This program is distributed under the terms of the
@@ -187,28 +130,12 @@ This program is distributed under the terms of the
 <a href="http://www.gnu.org/licenses/gpl-3.0.txt" target="_top"><span style='white-space: nowrap'>gpl-3.0.txt</span></a>
 .
 
-
 <br>
 <br>
 <b><big><a name="Contents" id="Contents">Contents</a></big></b>
-
-<table><tr><td align='left'  valign='top'>
-
-<a href="testing.htm" target="_top">testing</a></td><td>
-Running the Cppad Py Tests</td></tr>
-<tr><td>
-
-<a href="library.htm" target="_top">library</a></td><td>
-The Cppad Py Libraries</td></tr>
-<tr><td>
-
-<a href="whats_new_2018.htm" target="_top">whats_new_2018</a></td><td>
-Cppad Py Changes During 2018</td></tr>
-<tr><td>
-
-</td></tr>
-</table>
-
+<br>
+<table>
+<tr><td><a href="_contents.htm" target="_top">_contents</a></td><td>Table&nbsp;of&nbsp;Contents</td></tr><tr><td><a href="setup.py.htm" target="_top">setup.py</a></td><td>Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module</td></tr><tr><td><a href="library.htm" target="_top">library</a></td><td>The&nbsp;Cppad&nbsp;Py&nbsp;Libraries</td></tr><tr><td><a href="whats_new_2018.htm" target="_top">whats_new_2018</a></td><td>Cppad&nbsp;Py&nbsp;Changes&nbsp;During&nbsp;2018</td></tr><tr><td><a href="_reference.htm" target="_top">_reference</a></td><td>Alphabetic&nbsp;Listing&nbsp;of&nbsp;Cross&nbsp;Reference&nbsp;Tags</td></tr><tr><td><a href="_index.htm" target="_top">_index</a></td><td>Keyword&nbsp;Index</td></tr><tr><td><a href="_search.htm" target="_top">_search</a></td><td>Search&nbsp;This&nbsp;Web&nbsp;Site</td></tr><tr><td><a href="_external.htm" target="_top">_external</a></td><td>External&nbsp;Internet&nbsp;References</td></tr></table>
 <hr>Input File: doc.omh
 
 </body>

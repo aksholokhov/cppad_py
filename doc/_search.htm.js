@@ -3,9 +3,8 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20180731: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed supporting packages required swig top source directory license contents ',
-'testing  Running the Cppad Py Tests  ',' configuration get_cppad.sh setup.py check python c++ ',
-'setup.py  Configure and Build the cppad_py Python Module  ',' syntax requirements verbose_makefile build_type swig_cxx_flags cppad_cxx_flags cppad_prefix test_cppad ',
+'cppad_py  cppad_py-20180813: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed license ',
+'setup.py  Configure and Build the cppad_py Python Module  ',' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get testing c++ import installing path ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
 'library  The Cppad Py Libraries  ',' ',
 'py_lib  The Python Library  ',' ',
@@ -108,7 +107,7 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
+'whats_new_2018  Cppad Py Changes During 2018  ',' 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;
