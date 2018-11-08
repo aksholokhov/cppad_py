@@ -22,7 +22,7 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'py_a_fun.htm',
+'py_fun.htm',
 'py_sparse.htm',
 'py_utility.htm'
 ];
@@ -43,7 +43,7 @@ var list_current0 = [
 'py_jac_sparsity.htm#Purpose.for_jac_sparsity',
 'py_jac_sparsity.htm#Purpose.rev_jac_sparsity',
 'py_jac_sparsity.htm#x',
-'py_jac_sparsity.htm#af',
+'py_jac_sparsity.htm#f',
 'py_jac_sparsity.htm#pattern_in',
 'py_jac_sparsity.htm#pattern_out',
 'py_jac_sparsity.htm#Sparsity for Entire Jacobian',

@@ -22,7 +22,7 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'py_a_fun.htm',
+'py_fun.htm',
 'py_sparse.htm',
 'py_utility.htm'
 ];
@@ -42,7 +42,7 @@ var list_current0 = [
 'py_sparse_jac.htm#Purpose',
 'py_sparse_jac.htm#sparse_jac_for',
 'py_sparse_jac.htm#sparse_jac_rev',
-'py_sparse_jac.htm#af',
+'py_sparse_jac.htm#f',
 'py_sparse_jac.htm#subset',
 'py_sparse_jac.htm#x',
 'py_sparse_jac.htm#pattern',

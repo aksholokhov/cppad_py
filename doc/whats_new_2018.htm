@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Cppad Py Changes During 2018</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Cppad Py Changes During 2018">
-<meta name="keywords" id="keywords" content=" cppad py changes during 2018 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
+<meta name="keywords" id="keywords" content=" cppad py changes during 2018 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -62,6 +62,8 @@ A:active { color : purple }
 <td>
 <select onchange='choose_current0(this)'>
 <option>Headings-&gt;</option>
+<option>11-07</option>
+<option>11-05</option>
 <option>08-13</option>
 <option>07-31</option>
 <option>07-26</option>
@@ -79,6 +81,44 @@ A:active { color : purple }
 </tr></table><br>
 @(@\newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }@)@<center><b><big><big>Cppad Py Changes During 2018</big></big></b></center>
+<br>
+<b><big><a name="11-07" id="11-07">11-07</a></big></b>
+
+<ol type="1"><li>
+Advance to cppad-20181106 (must re-run <code><font color="blue">bin/get_cppad.sh</font></code>).
+</li><li>
+
+The <a href="py_fun_ctor.htm#Syntax.a_fun" target="_top"><span style='white-space: nowrap'>a_fun</span></a>
+ objects were added.
+This support all the operations that
+<a href="py_fun_ctor.htm#Syntax.d_fun" target="_top"><span style='white-space: nowrap'>d_fun</span></a>
+ support all the
+<a href="py_fun.htm" target="_top"><span style='white-space: nowrap'>py_fun</span></a>
+ operations with the exception of
+<a href="py_fun_optimize.htm" target="_top"><span style='white-space: nowrap'>optimize</span></a>
+.
+The <a href="py_sparse.htm" target="_top"><span style='white-space: nowrap'>py_sparse</span></a>
+ operations are not yet supported.
+</li></ol>
+
+
+<br>
+<br>
+<b><big><a name="11-05" id="11-05">11-05</a></big></b>
+
+<ol type="1"><li>
+<b>API Change</b>:
+change <code><font color="blue">cppad_py.a_fun</font></code> to <code><font color="blue">cppad_py.d_fun</font></code>
+because it is a function that evaluates in <code><font color="blue">double</font></code>
+and plan to use <code><font color="blue">cppad_py.a_fun</font></code> for a function that
+evaluates in <code><font color="blue">a_double</font></code>.
+</li><li>
+
+Advance to cppad-20181105 (must re-run <code><font color="blue">bin/get_cppad.sh</font></code>).
+</li></ol>
+
+
+<br>
 <br>
 <b><big><a name="08-13" id="08-13">08-13</a></big></b>
 
@@ -162,12 +202,12 @@ Note the <a href="py_utility.htm" target="_top"><span style='white-space: nowrap
 
 <ol type="1"><li>
 Continue conversion of python library to using <code><font color="blue">numpy.array</font></code>; see
-<a href="py_a_fun_forward.htm" target="_top"><span style='white-space: nowrap'>py_a_fun_forward</span></a>
-, <a href="py_a_fun_reverse.htm" target="_top"><span style='white-space: nowrap'>py_a_fun_reverse</span></a>
+<a href="py_fun_forward.htm" target="_top"><span style='white-space: nowrap'>py_fun_forward</span></a>
+, <a href="py_fun_reverse.htm" target="_top"><span style='white-space: nowrap'>py_fun_reverse</span></a>
 .
 </li><li>
 
-Add the <a href="py_a_fun_property.htm#size_order" target="_top"><span style='white-space: nowrap'>af.size_order()</span></a>
+Add the <a href="py_fun_property.htm#size_order" target="_top"><span style='white-space: nowrap'>f.size_order()</span></a>
  function.
 </li></ol>
 
@@ -177,8 +217,8 @@ Add the <a href="py_a_fun_property.htm#size_order" target="_top"><span style='wh
 <b><big><a name="07-13" id="07-13">07-13</a></big></b>
 <br>
 Continue conversion of python library to using <code><font color="blue">numpy.array</font></code>; see
-<a href="py_a_fun_jacobian.htm" target="_top"><span style='white-space: nowrap'>py_a_fun_jacobian</span></a>
-, <a href="py_a_fun_hessian.htm" target="_top"><span style='white-space: nowrap'>py_a_fun_hessian</span></a>
+<a href="py_fun_jacobian.htm" target="_top"><span style='white-space: nowrap'>py_fun_jacobian</span></a>
+, <a href="py_fun_hessian.htm" target="_top"><span style='white-space: nowrap'>py_fun_hessian</span></a>
 .
 
 <br>
@@ -188,7 +228,7 @@ Continue conversion of python library to using <code><font color="blue">numpy.ar
 <ol type="1"><li>
 Continue conversion of python library to using <code><font color="blue">numpy.array</font></code>; see
 <a href="py_independent.htm" target="_top"><span style='white-space: nowrap'>py_independent</span></a>
-, <a href="py_a_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>py_a_fun_ctor</span></a>
+, <a href="py_fun_ctor.htm" target="_top"><span style='white-space: nowrap'>py_fun_ctor</span></a>
 .
 </li><li>
 
@@ -208,9 +248,9 @@ one installed in <code><font color="blue">build/prefix</font></code> by <a href=
 This has been fixed.
 </li><li>
 
-Change <code><font color="blue">size_ind</font></code> to <a href="py_a_fun_property.htm#size_domain" target="_top"><span style='white-space: nowrap'>size_domain</span></a>
+Change <code><font color="blue">size_ind</font></code> to <a href="py_fun_property.htm#size_domain" target="_top"><span style='white-space: nowrap'>size_domain</span></a>
 
-and <code><font color="blue">size_dep</font></code> to <a href="py_a_fun_property.htm#size_range" target="_top"><span style='white-space: nowrap'>size_range</span></a>
+and <code><font color="blue">size_dep</font></code> to <a href="py_fun_property.htm#size_range" target="_top"><span style='white-space: nowrap'>size_range</span></a>
 .
 </li></ol>
 

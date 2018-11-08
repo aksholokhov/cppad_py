@@ -21,7 +21,7 @@ var list_down2 = [
 'cpp_lib.htm'
 ];
 var list_down1 = [
-'py_a_fun.htm',
+'py_fun.htm',
 'py_sparse.htm',
 'py_utility.htm'
 ];

@@ -22,7 +22,7 @@ var list_down3 = [
 'cpp_lib.htm'
 ];
 var list_down2 = [
-'py_a_fun.htm',
+'py_fun.htm',
 'py_sparse.htm',
 'py_utility.htm'
 ];
@@ -40,7 +40,7 @@ var list_down0 = [
 var list_current0 = [
 'py_sparse_hes.htm#Syntax',
 'py_sparse_hes.htm#Purpose',
-'py_sparse_hes.htm#af',
+'py_sparse_hes.htm#f',
 'py_sparse_hes.htm#subset',
 'py_sparse_hes.htm#x',
 'py_sparse_hes.htm#r',
