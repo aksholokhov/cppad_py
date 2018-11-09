@@ -47,6 +47,7 @@ var list_current0 = [
 'a_double_binary.htm#op',
 'a_double_binary.htm#ax',
 'a_double_binary.htm#ay',
+'a_double_binary.htm#y',
 'a_double_binary.htm#az',
 'a_double_binary.htm#Example'
 ];

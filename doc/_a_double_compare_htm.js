@@ -47,6 +47,7 @@ var list_current0 = [
 'a_double_compare.htm#op',
 'a_double_compare.htm#ax',
 'a_double_compare.htm#ay',
+'a_double_compare.htm#y',
 'a_double_compare.htm#b',
 'a_double_compare.htm#Example'
 ];

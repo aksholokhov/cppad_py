@@ -47,6 +47,7 @@ var list_current0 = [
 'a_double_assign.htm#op',
 'a_double_assign.htm#ax',
 'a_double_assign.htm#ay',
+'a_double_assign.htm#y',
 'a_double_assign.htm#Example'
 ];
 function choose_across0(item)
