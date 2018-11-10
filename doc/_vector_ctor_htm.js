@@ -26,7 +26,8 @@ var list_down2 = [
 'vector.htm',
 'cpp_fun.htm',
 'sparse.htm',
-'cpp_utility.htm'
+'cpp_utility.htm',
+'more_cpp.htm'
 ];
 var list_down1 = [
 'vector_ctor.htm',

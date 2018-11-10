@@ -26,24 +26,31 @@ var list_down2 = [
 'vector.htm',
 'cpp_fun.htm',
 'sparse.htm',
-'cpp_utility.htm'
+'cpp_utility.htm',
+'more_cpp.htm'
 ];
 var list_down1 = [
 'cpp_independent.htm',
 'cpp_abort_recording.htm',
 'cpp_fun_ctor.htm',
 'cpp_fun_property.htm',
+'cpp_fun_new_dynamic.htm',
 'cpp_fun_jacobian.htm',
 'cpp_fun_hessian.htm',
 'cpp_fun_forward.htm',
 'cpp_fun_reverse.htm',
 'cpp_fun_optimize.htm'
 ];
+var list_down0 = [
+'fun_dynamic_xam.cpp.htm'
+];
 var list_current0 = [
 'cpp_independent.htm#Syntax',
-'cpp_independent.htm#x',
-'cpp_independent.htm#ax',
 'cpp_independent.htm#Purpose',
+'cpp_independent.htm#x',
+'cpp_independent.htm#dynamic',
+'cpp_independent.htm#ax',
+'cpp_independent.htm#a_both',
 'cpp_independent.htm#Example'
 ];
 function choose_across0(item)

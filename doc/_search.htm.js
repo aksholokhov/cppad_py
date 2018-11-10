@@ -3,19 +3,21 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20181109: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed license ',
+'cppad_py  cppad_py-20181110: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed license ',
 'setup.py  Configure and Build the cppad_py Python Module  ',' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get testing c++ import installing path ',
 'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
 'library  The Cppad Py Libraries  ',' ',
 'py_lib  The Python Library  ',' ',
 'py_fun  Cppad Py AD Functions  ',' ',
-'py_independent  Declare Independent Variables and Start Recording  ',' syntax purpose example ',
+'py_independent  Declare Independent Variables and Start Recording  ',' syntax dynamic adynamic purpose example ',
+'fun_dynamic_xam.py  Python: Using Dynamic Parameters: Example and Test  ',' ',
 'py_abort_recording  Abort Recording  ',' syntax purpose example ',
 'fun_abort_xam.py  Python: Abort Recording a_double Operations: Example and Test  ',' ',
 'py_fun_ctor  Stop Current Recording and Store Function Object  ',' syntax d_fun a_fun ay af example ',
 'a_fun_xam.py  Python: Purpose of a_fun Objects: Example and Test  ',' ',
 'py_fun_property  Properties of a Function Object  ',' syntax size_domain size_range size_var size_op size_order example ',
 'fun_property_xam.py  Python: d_fun Properties: Example and Test  ',' ',
+'py_fun_new_dynamic  Forward Mode AD  ',' syntax size_order example ',
 'py_fun_jacobian  Jacobian of an AD Function  ',' syntax f(x) example ',
 'fun_jacobian_xam.py  Python: Dense Jacobian Using AD: Example and Test  ',' ',
 'py_fun_hessian  Hessian of an AD Function  ',' syntax f(x) g(x) w example ',
@@ -42,6 +44,7 @@ Keyword =
 'py_utility  Python Utilities  ',' ',
 'numpy2vec  Convert a Numpy Array to a cppad_py Vector  ',' syntax dtype shape name ',
 'vec2numpy  Convert a cppad_py Vector to a Numpy Array  ',' syntax nr nc ',
+'more_py  Steps To Add More Python Functions  ',' purpose documentation independent new_dynamic example implementation fun_new_dynamic.py __init__.py testing ',
 'cpp_lib  The C++ Library  ',' ',
 'a_double  Cppad Py AD Scalars  ',' ',
 'vector  Cppad Py Vectors  ',' ',
@@ -77,15 +80,17 @@ Keyword =
 'vector_size_xam.py  Python: Size of Vectors: Example and Test  ',' ',
 'vector_set_get_xam.cpp  C++: Setting and Getting Vector Elements: Example and Test  ',' ',
 'vector_set_get_xam.py  Python: Setting and Getting Vector Elements: Example and Test  ',' ',
-'cpp_independent  Declare Independent Variables and Start Recording  ',' syntax purpose example ',
+'cpp_independent  Declare Independent Variables and Start Recording  ',' syntax purpose dynamic a_both example ',
 'cpp_abort_recording  Abort Recording  ',' syntax purpose example ',
 'cpp_fun_ctor  Stop Current Recording and Store Function Object  ',' syntax d_fun a_fun ay af example ',
 'cpp_fun_property  Properties of a Function Object  ',' syntax size_domain size_range size_var size_op size_order example ',
+'cpp_fun_new_dynamic  Change The Dynamic Parameters  ',' syntax size_order example ',
 'cpp_fun_jacobian  Jacobian of an AD Function  ',' syntax f(x) example ',
 'cpp_fun_hessian  Hessian of an AD Function  ',' syntax f(x) g(x) w example ',
 'cpp_fun_forward  Forward Mode AD  ',' syntax taylor coefficient f(x) x(t) y(t) size_order xp yp example ',
 'cpp_fun_reverse  Reverse Mode AD  ',' syntax notation f(x) x(t) y(t) g(t) q yq xq example ',
 'cpp_fun_optimize  Optimize an AD Function  ',' syntax purpose example ',
+'fun_dynamic_xam.cpp  C++: Using Dynamic Parameters: Example and Test  ',' ',
 'fun_abort_xam.cpp  C++: Abort Recording a_double Operations: Example and Test  ',' ',
 'fun_property_xam.cpp  C++: d_fun Properties: Example and Test  ',' ',
 'fun_jacobian_xam.cpp  C++: Dense Jacobian Using AD: Example and Test  ',' ',
@@ -110,7 +115,8 @@ Keyword =
 'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
 'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
 'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
+'more_cpp  Steps To Add More C++ Functions  ',' purpose include file independent new_dynamic documentation example implementation testing ',
+'whats_new_2018  Cppad Py Changes During 2018  ',' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
 ]
 
 var MaxList = 100;

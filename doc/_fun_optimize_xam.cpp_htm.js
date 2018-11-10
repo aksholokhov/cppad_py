@@ -22,13 +22,15 @@ var list_down3 = [
 'vector.htm',
 'cpp_fun.htm',
 'sparse.htm',
-'cpp_utility.htm'
+'cpp_utility.htm',
+'more_cpp.htm'
 ];
 var list_down2 = [
 'cpp_independent.htm',
 'cpp_abort_recording.htm',
 'cpp_fun_ctor.htm',
 'cpp_fun_property.htm',
+'cpp_fun_new_dynamic.htm',
 'cpp_fun_jacobian.htm',
 'cpp_fun_hessian.htm',
 'cpp_fun_forward.htm',

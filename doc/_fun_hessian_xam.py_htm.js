@@ -20,13 +20,15 @@ var list_down4 = [
 var list_down3 = [
 'py_fun.htm',
 'py_sparse.htm',
-'py_utility.htm'
+'py_utility.htm',
+'more_py.htm'
 ];
 var list_down2 = [
 'py_independent.htm',
 'py_abort_recording.htm',
 'py_fun_ctor.htm',
 'py_fun_property.htm',
+'py_fun_new_dynamic.htm',
 'py_fun_jacobian.htm',
 'py_fun_hessian.htm',
 'py_fun_forward.htm',

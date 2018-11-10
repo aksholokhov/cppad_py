@@ -15,6 +15,7 @@ var list_down1 = [
 'whats_new_2018.htm'
 ];
 var list_current0 = [
+'whats_new_2018.htm#11-10',
 'whats_new_2018.htm#11-09',
 'whats_new_2018.htm#11-07',
 'whats_new_2018.htm#11-05',
