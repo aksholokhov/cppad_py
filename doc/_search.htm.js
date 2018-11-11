@@ -17,7 +17,7 @@ Keyword =
 'a_fun_xam.py  Python: Purpose of a_fun Objects: Example and Test  ',' ',
 'py_fun_property  Properties of a Function Object  ',' syntax size_domain size_range size_var size_op size_order example ',
 'fun_property_xam.py  Python: d_fun Properties: Example and Test  ',' ',
-'py_fun_new_dynamic  Forward Mode AD  ',' syntax size_order example ',
+'py_fun_new_dynamic  New Dynamic Parameters  ',' syntax size_order example ',
 'py_fun_jacobian  Jacobian of an AD Function  ',' syntax f(x) example ',
 'fun_jacobian_xam.py  Python: Dense Jacobian Using AD: Example and Test  ',' ',
 'py_fun_hessian  Hessian of an AD Function  ',' syntax f(x) g(x) w example ',
