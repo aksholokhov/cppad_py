@@ -12,46 +12,6 @@ var list_up0 = [
 'a_double.htm',
 'a_double_property.htm'
 ];
-var list_down4 = [
-'setup.py.htm',
-'library.htm',
-'whats_new_2018.htm'
-];
-var list_down3 = [
-'py_lib.htm',
-'cpp_lib.htm'
-];
-var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'cpp_fun.htm',
-'sparse.htm',
-'cpp_utility.htm',
-'more_cpp.htm'
-];
-var list_down1 = [
-'a_double_ctor.htm',
-'a_double_unary_op.htm',
-'a_double_property.htm',
-'a_double_binary.htm',
-'a_double_compare.htm',
-'a_double_assign.htm',
-'a_double_unary_fun.htm',
-'a_double_cond_assign.htm'
-];
-var list_down0 = [
-'a_double_property_xam.cpp.htm',
-'a_double_property_xam.py.htm'
-];
-var list_current0 = [
-'a_double_property.htm#Syntax',
-'a_double_property.htm#ad',
-'a_double_property.htm#value',
-'a_double_property.htm#parameter',
-'a_double_property.htm#variable',
-'a_double_property.htm#near_equal',
-'a_double_property.htm#Example'
-];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
 	item.selectedIndex = 0;
@@ -93,10 +53,4 @@ function choose_down0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_down0[index-1];
-}
-function choose_current0(item)
-{	var index          = item.selectedIndex;
-	item.selectedIndex = 0;
-	if(index > 0)
-		document.location = list_current0[index-1];
 }

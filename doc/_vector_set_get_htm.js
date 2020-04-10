@@ -12,42 +12,6 @@ var list_up0 = [
 'vector.htm',
 'vector_set_get.htm'
 ];
-var list_down4 = [
-'setup.py.htm',
-'library.htm',
-'whats_new_2018.htm'
-];
-var list_down3 = [
-'py_lib.htm',
-'cpp_lib.htm'
-];
-var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'cpp_fun.htm',
-'sparse.htm',
-'cpp_utility.htm',
-'more_cpp.htm'
-];
-var list_down1 = [
-'vector_ctor.htm',
-'vector_size.htm',
-'vector_set_get.htm'
-];
-var list_down0 = [
-'vector_set_get_xam.cpp.htm',
-'vector_set_get_xam.py.htm'
-];
-var list_current0 = [
-'vector_set_get.htm#Syntax',
-'vector_set_get.htm#element_type',
-'vector_set_get.htm#i',
-'vector_set_get.htm#u',
-'vector_set_get.htm#x',
-'vector_set_get.htm#v',
-'vector_set_get.htm#y',
-'vector_set_get.htm#Example'
-];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
 	item.selectedIndex = 0;
@@ -89,10 +53,4 @@ function choose_down0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_down0[index-1];
-}
-function choose_current0(item)
-{	var index          = item.selectedIndex;
-	item.selectedIndex = 0;
-	if(index > 0)
-		document.location = list_current0[index-1];
 }

@@ -12,32 +12,6 @@ var list_up0 = [
 'py_utility.htm',
 'vec2numpy.htm'
 ];
-var list_down4 = [
-'setup.py.htm',
-'library.htm',
-'whats_new_2018.htm'
-];
-var list_down3 = [
-'py_lib.htm',
-'cpp_lib.htm'
-];
-var list_down2 = [
-'py_fun.htm',
-'py_sparse.htm',
-'py_utility.htm',
-'more_py.htm'
-];
-var list_down1 = [
-'numpy2vec.htm',
-'vec2numpy.htm'
-];
-var list_current0 = [
-'vec2numpy.htm#Syntax',
-'vec2numpy.htm#vec',
-'vec2numpy.htm#nr',
-'vec2numpy.htm#nc',
-'vec2numpy.htm#array'
-];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
 	item.selectedIndex = 0;
@@ -79,10 +53,4 @@ function choose_down0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_down0[index-1];
-}
-function choose_current0(item)
-{	var index          = item.selectedIndex;
-	item.selectedIndex = 0;
-	if(index > 0)
-		document.location = list_current0[index-1];
 }

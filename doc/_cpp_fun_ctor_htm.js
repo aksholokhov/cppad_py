@@ -12,45 +12,6 @@ var list_up0 = [
 'cpp_fun.htm',
 'cpp_fun_ctor.htm'
 ];
-var list_down4 = [
-'setup.py.htm',
-'library.htm',
-'whats_new_2018.htm'
-];
-var list_down3 = [
-'py_lib.htm',
-'cpp_lib.htm'
-];
-var list_down2 = [
-'a_double.htm',
-'vector.htm',
-'cpp_fun.htm',
-'sparse.htm',
-'cpp_utility.htm',
-'more_cpp.htm'
-];
-var list_down1 = [
-'cpp_independent.htm',
-'cpp_abort_recording.htm',
-'cpp_fun_ctor.htm',
-'cpp_fun_property.htm',
-'cpp_fun_new_dynamic.htm',
-'cpp_fun_jacobian.htm',
-'cpp_fun_hessian.htm',
-'cpp_fun_forward.htm',
-'cpp_fun_reverse.htm',
-'cpp_fun_optimize.htm'
-];
-var list_current0 = [
-'cpp_fun_ctor.htm#Syntax',
-'cpp_fun_ctor.htm#Syntax.d_fun',
-'cpp_fun_ctor.htm#Syntax.a_fun',
-'cpp_fun_ctor.htm#ax',
-'cpp_fun_ctor.htm#ay',
-'cpp_fun_ctor.htm#f',
-'cpp_fun_ctor.htm#af',
-'cpp_fun_ctor.htm#Example'
-];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
 	item.selectedIndex = 0;
@@ -92,10 +53,4 @@ function choose_down0(item)
 	item.selectedIndex = 0;
 	if(index > 0)
 		document.location = list_down0[index-1];
-}
-function choose_current0(item)
-{	var index          = item.selectedIndex;
-	item.selectedIndex = 0;
-	if(index > 0)
-		document.location = list_current0[index-1];
 }

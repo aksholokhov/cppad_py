@@ -3,125 +3,127 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-'cppad_py  cppad_py-20181110: A C++ Object Library and Python Interface to Cppad  ',' purpose under construction getting started function speed license ',
-'setup.py  Configure and Build the cppad_py Python Module  ',' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get testing c++ import installing path ',
-'get_cppad.sh  Get Cppad  ',' syntax top source directory setup.py ',
-'library  The Cppad Py Libraries  ',' ',
-'py_lib  The Python Library  ',' ',
-'py_fun  Cppad Py AD Functions  ',' ',
-'py_independent  Declare Independent Variables and Start Recording  ',' syntax dynamic adynamic purpose example ',
-'fun_dynamic_xam.py  Python: Using Dynamic Parameters: Example and Test  ',' ',
-'py_abort_recording  Abort Recording  ',' syntax purpose example ',
-'fun_abort_xam.py  Python: Abort Recording a_double Operations: Example and Test  ',' ',
-'py_fun_ctor  Stop Current Recording and Store Function Object  ',' syntax d_fun a_fun ay af example ',
-'a_fun_xam.py  Python: Purpose of a_fun Objects: Example and Test  ',' ',
-'py_fun_property  Properties of a Function Object  ',' syntax size_domain size_range size_var size_op size_order example ',
-'fun_property_xam.py  Python: d_fun Properties: Example and Test  ',' ',
-'py_fun_new_dynamic  New Dynamic Parameters  ',' syntax size_order example ',
-'py_fun_jacobian  Jacobian of an AD Function  ',' syntax f(x) example ',
-'fun_jacobian_xam.py  Python: Dense Jacobian Using AD: Example and Test  ',' ',
-'py_fun_hessian  Hessian of an AD Function  ',' syntax f(x) g(x) w example ',
-'fun_hessian_xam.py  Python: Dense Hessian Using AD: Example and Test  ',' ',
-'py_fun_forward  Forward Mode AD  ',' syntax taylor coefficient f(x) x(t) y(t) size_order xp yp example ',
-'fun_forward_xam.py  Python: Forward Mode AD: Example and Test  ',' ',
-'py_fun_reverse  Reverse Mode AD  ',' syntax notation f(x) x(t) y(t) g(t) q yq xq example ',
-'fun_reverse_xam.py  Python: Reverse Mode AD: Example and Test  ',' ',
-'py_fun_optimize  Optimize an AD Function  ',' syntax purpose example ',
-'fun_optimize_xam.py  Python: Optimize an d_fun: Example and Test  ',' ',
-'py_sparse  Python Sparsity Routines  ',' ',
-'py_sparse_rc  Sparsity Patterns  ',' syntax nr nc nnz resize put k row col row_major col_major example ',
-'sparse_rc_xam.py  Python: Sparsity Patterns: Example and Test  ',' ',
-'py_sparse_rcv  Sparse Matrices  ',' syntax pattern matrix nr nc nnz put k row col val row_major col_major example ',
-'sparse_rcv_xam.py  Python: Sparsity Patterns: Example and Test  ',' ',
-'py_jac_sparsity  Jacobian Sparsity Patterns  ',' syntax purpose for_jac_sparsity rev_jac_sparsity pattern_in pattern_out entire example ',
-'sparse_jac_pattern_xam.py  Python: Jacobian Sparsity Patterns: Example and Test  ',' ',
-'py_hes_sparsity  Hessian Sparsity Patterns  ',' syntax purpose f select_domain select_range pattern_out component wise example ',
-'sparse_hes_pattern_xam.py  Python: Hessian Sparsity Patterns: Example and Test  ',' ',
-'py_sparse_jac  Computing Sparse Jacobians  ',' syntax purpose sparse_jac_for sparse_jac_rev subset pattern work n_sweep uses forward example ',
-'sparse_jac_xam.py  Python: Computing Sparse Jacobians: Example and Test  ',' ',
-'py_sparse_hes  Computing Sparse Hessians  ',' syntax purpose f subset pattern work n_sweep uses forward example ',
-'sparse_hes_xam.py  Python: Hessian Sparsity Patterns: Example and Test  ',' ',
-'py_utility  Python Utilities  ',' ',
-'numpy2vec  Convert a Numpy Array to a cppad_py Vector  ',' syntax dtype shape name ',
-'vec2numpy  Convert a cppad_py Vector to a Numpy Array  ',' syntax nr nc ',
-'more_py  Steps To Add More Python Functions  ',' purpose documentation independent new_dynamic example implementation fun_new_dynamic.py __init__.py testing ',
-'cpp_lib  The C++ Library  ',' ',
-'a_double  Cppad Py AD Scalars  ',' ',
-'vector  Cppad Py Vectors  ',' ',
-'cpp_fun  Cppad Py AD Functions  ',' ',
-'sparse  Cppad Py Sparse Calculation  ',' ',
-'cpp_utility  C++ Utilities  ',' ',
-'a_double_ctor  The a_double Constructor  ',' syntax purpose a_other ad example ',
-'a_double_unary_op  a_double Unary Plus and Minus  ',' syntax ay example ',
-'a_double_property  Properties of an a_double Object  ',' syntax ad value parameter variable near_equal example ',
-'a_double_binary  a_double Binary Operators with an AD Result  ',' syntax ay az example ',
-'a_double_compare  a_double Comparison Operators  ',' syntax ay example ',
-'a_double_assign  a_double Assignment Operators  ',' syntax ay example ',
-'a_double_unary_fun  Unary Functions with AD Result  ',' syntax ay example ',
-'a_double_cond_assign  AD Conditional Assignment  ',' syntax purpose target cop left right if_true if_false example ',
-'a_double_unary_op_xam.cpp  C++: a_double Unary Plus and Minus: Example and Test  ',' ',
-'a_double_unary_op_xam.py  Python: a_double Unary Plus and Minus: Example and Test  ',' ',
-'a_double_property_xam.cpp  C++: a_double Properties: Example and Test  ',' ',
-'a_double_property_xam.py  Python: a_double Properties: Example and Test  ',' ',
-'a_double_binary_xam.cpp  C++: a_double Binary Operators With AD Result: Example and Test  ',' ',
-'a_double_binary_xam.py  Python: a_double Binary Operators With AD Result: Example and Test  ',' ',
-'a_double_compare_xam.cpp  C++: a_double Comparison Operators: Example and Test  ',' ',
-'a_double_compare_xam.py  Python: a_double Comparison Operators: Example and Test  ',' ',
-'a_double_assign_xam.cpp  C++: a_double Assignment Operators: Example and Test  ',' ',
-'a_double_assign_xam.py  Python: a_double Assignment Operators: Example and Test  ',' ',
-'a_double_unary_fun_xam.cpp  C++: a_double Unary Functions with AD Result: Example and Test  ',' ',
-'a_double_unary_fun_xam.py  Python: a_double Unary Functions with AD Result: Example and Test  ',' ',
-'a_double_cond_assign_xam.cpp  C++: a_double Conditional Assignment: Example and Test  ',' ',
-'a_double_cond_assign_xam.py  Python: a_double Conditional Assignment: Example and Test  ',' ',
-'vector_ctor  Cppad Py Vector Constructors  ',' syntax purpose vec_bool vec_int vec_double vec_a_double example ',
-'vector_size  Size of a Vector  ',' syntax example ',
-'vector_set_get  Setting and Getting Vector Elements  ',' syntax element_type u example ',
-'vector_size_xam.cpp  C++: Size of Vectors: Example and Test  ',' ',
-'vector_size_xam.py  Python: Size of Vectors: Example and Test  ',' ',
-'vector_set_get_xam.cpp  C++: Setting and Getting Vector Elements: Example and Test  ',' ',
-'vector_set_get_xam.py  Python: Setting and Getting Vector Elements: Example and Test  ',' ',
-'cpp_independent  Declare Independent Variables and Start Recording  ',' syntax purpose dynamic a_both example ',
-'cpp_abort_recording  Abort Recording  ',' syntax purpose example ',
-'cpp_fun_ctor  Stop Current Recording and Store Function Object  ',' syntax d_fun a_fun ay af example ',
-'cpp_fun_property  Properties of a Function Object  ',' syntax size_domain size_range size_var size_op size_order example ',
-'cpp_fun_new_dynamic  Change The Dynamic Parameters  ',' syntax size_order example ',
-'cpp_fun_jacobian  Jacobian of an AD Function  ',' syntax f(x) example ',
-'cpp_fun_hessian  Hessian of an AD Function  ',' syntax f(x) g(x) w example ',
-'cpp_fun_forward  Forward Mode AD  ',' syntax taylor coefficient f(x) x(t) y(t) size_order xp yp example ',
-'cpp_fun_reverse  Reverse Mode AD  ',' syntax notation f(x) x(t) y(t) g(t) q yq xq example ',
-'cpp_fun_optimize  Optimize an AD Function  ',' syntax purpose example ',
-'fun_dynamic_xam.cpp  C++: Using Dynamic Parameters: Example and Test  ',' ',
-'fun_abort_xam.cpp  C++: Abort Recording a_double Operations: Example and Test  ',' ',
-'fun_property_xam.cpp  C++: d_fun Properties: Example and Test  ',' ',
-'fun_jacobian_xam.cpp  C++: Dense Jacobian Using AD: Example and Test  ',' ',
-'fun_hessian_xam.cpp  C++: Dense Hessian Using AD: Example and Test  ',' ',
-'fun_forward_xam.cpp  C++: Forward Mode AD: Example and Test  ',' ',
-'fun_reverse_xam.cpp  C++: Reverse Mode AD: Example and Test  ',' ',
-'fun_optimize_xam.cpp  C++: Optimize an d_fun: Example and Test  ',' ',
-'cpp_sparse_rc  Sparsity Patterns  ',' syntax nr nc nnz resize put k row col row_major col_major example ',
-'cpp_sparse_rcv  Sparse Matrices  ',' syntax pattern matrix nr nc nnz put k row col val row_major col_major example ',
-'cpp_jac_sparsity  Jacobian Sparsity Patterns  ',' syntax purpose for_jac_sparsity rev_jac_sparsity pattern_in pattern_out entire example ',
-'cpp_sparsity  Hessian Sparsity Patterns  ',' syntax purpose f select_domain select_range pattern_out component wise example ',
-'cpp_sparse_jac  Computing Sparse Jacobians  ',' syntax purpose sparse_jac_for sparse_jac_rev subset pattern work n_sweep uses forward example ',
-'cpp_sparse_hes  Computing Sparse Hessians  ',' syntax purpose f subset pattern work n_sweep uses forward example ',
-'sparse_rc_xam.cpp  C++: Sparsity Patterns: Example and Test  ',' ',
-'sparse_rcv_xam.cpp  C++: Sparsity Patterns: Example and Test  ',' ',
-'sparse_jac_pattern_xam.cpp  C++: Jacobian Sparsity Patterns: Example and Test  ',' ',
-'sparse_hes_pattern_xam.cpp  C++: Hessian Sparsity Patterns: Example and Test  ',' ',
-'sparse_jac_xam.cpp  C++: Computing Sparse Jacobians: Example and Test  ',' ',
-'sparse_hes_xam.cpp  C++: Hessian Sparsity Patterns: Example and Test  ',' ',
-'vec2cppad_double  Convert an a_double Vector to a CppAD::AD<double> Vector  ',' syntax prototype ',
-'vec2a_double  Convert a CppAD::AD<double> Vector to an a_double Vector  ',' syntax prototype ',
-'error_message  Exception Handling  ',' syntax try block catch cppad errors not thread safe example ',
-'error_message_xam.cpp  C++: Cppad Py Exception Handling: Example and Test  ',' ',
-'error_message_xam.py  Python: Cppad Py Exception Handling: Example and Test  ',' ',
-'more_cpp  Steps To Add More C++ Functions  ',' purpose include file independent new_dynamic documentation example implementation testing ',
-'whats_new_2018  Cppad Py Changes During 2018  ',' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03 '
+{ tag: 'cppad_py', title:'cppad_py-20200410: A C++ Object Library and Python Interface to Cppad', other:' purpose under construction getting started function speed license' },
+{ tag: 'setup.py', title:'Configure and Build the cppad_py Python Module', other:' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get testing c++ import installing path' },
+{ tag: 'get_cppad.sh', title:'Get Cppad', other:' syntax top source directory setup.py' },
+{ tag: 'library', title:'The Cppad Py Libraries', other:'' },
+{ tag: 'py_lib', title:'The Python Library', other:'' },
+{ tag: 'py_fun', title:'Cppad Py AD Functions', other:'' },
+{ tag: 'py_independent', title:'Declare Independent Variables and Start Recording', other:' syntax dynamic adynamic purpose example' },
+{ tag: 'fun_dynamic_xam.py', title:'Python: Using Dynamic Parameters: Example and Test', other:'' },
+{ tag: 'py_abort_recording', title:'Abort Recording', other:' syntax purpose example' },
+{ tag: 'fun_abort_xam.py', title:'Python: Abort Recording a_double Operations: Example and Test', other:'' },
+{ tag: 'py_fun_ctor', title:'Stop Current Recording and Store Function Object', other:' syntax d_fun a_fun ay af example' },
+{ tag: 'a_fun_xam.py', title:'Python: Purpose of a_fun Objects: Example and Test', other:'' },
+{ tag: 'py_fun_property', title:'Properties of a Function Object', other:' syntax size_domain size_range size_var size_op size_order example' },
+{ tag: 'fun_property_xam.py', title:'Python: d_fun Properties: Example and Test', other:'' },
+{ tag: 'py_fun_new_dynamic', title:'New Dynamic Parameters', other:' syntax size_order example' },
+{ tag: 'py_fun_jacobian', title:'Jacobian of an AD Function', other:' syntax f(x) example' },
+{ tag: 'fun_jacobian_xam.py', title:'Python: Dense Jacobian Using AD: Example and Test', other:'' },
+{ tag: 'py_fun_hessian', title:'Hessian of an AD Function', other:' syntax f(x) g(x) w example' },
+{ tag: 'fun_hessian_xam.py', title:'Python: Dense Hessian Using AD: Example and Test', other:'' },
+{ tag: 'py_fun_forward', title:'Forward Mode AD', other:' syntax taylor coefficient f(x) x(t) y(t) size_order xp yp example' },
+{ tag: 'fun_forward_xam.py', title:'Python: Forward Mode AD: Example and Test', other:'' },
+{ tag: 'py_fun_reverse', title:'Reverse Mode AD', other:' syntax notation f(x) x(t) y(t) g(t) q yq xq example' },
+{ tag: 'fun_reverse_xam.py', title:'Python: Reverse Mode AD: Example and Test', other:'' },
+{ tag: 'py_fun_optimize', title:'Optimize an AD Function', other:' syntax purpose example' },
+{ tag: 'fun_optimize_xam.py', title:'Python: Optimize an d_fun: Example and Test', other:'' },
+{ tag: 'py_sparse', title:'Python Sparsity Routines', other:'' },
+{ tag: 'py_sparse_rc', title:'Sparsity Patterns', other:' syntax nr nc nnz resize put k row col row_major col_major example' },
+{ tag: 'sparse_rc_xam.py', title:'Python: Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'py_sparse_rcv', title:'Sparse Matrices', other:' syntax pattern matrix nr nc nnz put k row col val row_major col_major example' },
+{ tag: 'sparse_rcv_xam.py', title:'Python: Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'py_jac_sparsity', title:'Jacobian Sparsity Patterns', other:' syntax purpose for_jac_sparsity rev_jac_sparsity pattern_in pattern_out entire example' },
+{ tag: 'sparse_jac_pattern_xam.py', title:'Python: Jacobian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'py_hes_sparsity', title:'Hessian Sparsity Patterns', other:' syntax purpose f select_domain select_range pattern_out component wise example' },
+{ tag: 'sparse_hes_pattern_xam.py', title:'Python: Hessian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'py_sparse_jac', title:'Computing Sparse Jacobians', other:' syntax purpose sparse_jac_for sparse_jac_rev subset pattern work n_sweep uses forward example' },
+{ tag: 'sparse_jac_xam.py', title:'Python: Computing Sparse Jacobians: Example and Test', other:'' },
+{ tag: 'py_sparse_hes', title:'Computing Sparse Hessians', other:' syntax purpose f subset pattern work n_sweep uses forward example' },
+{ tag: 'sparse_hes_xam.py', title:'Python: Hessian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'py_utility', title:'Python Utilities', other:'' },
+{ tag: 'numpy2vec', title:'Convert a Numpy Array to a cppad_py Vector', other:' syntax dtype shape name' },
+{ tag: 'vec2numpy', title:'Convert a cppad_py Vector to a Numpy Array', other:' syntax nr nc' },
+{ tag: 'more_py', title:'Steps To Add More Python Functions', other:' purpose documentation independent new_dynamic example implementation fun_new_dynamic.py __init__.py testing' },
+{ tag: 'cpp_lib', title:'The C++ Library', other:'' },
+{ tag: 'a_double', title:'Cppad Py AD Scalars', other:'' },
+{ tag: 'vector', title:'Cppad Py Vectors', other:'' },
+{ tag: 'cpp_fun', title:'Cppad Py AD Functions', other:'' },
+{ tag: 'sparse', title:'Cppad Py Sparse Calculation', other:'' },
+{ tag: 'cpp_utility', title:'C++ Utilities', other:'' },
+{ tag: 'a_double_ctor', title:'The a_double Constructor', other:' syntax purpose a_other ad example' },
+{ tag: 'a_double_unary_op', title:'a_double Unary Plus and Minus', other:' syntax ay example' },
+{ tag: 'a_double_property', title:'Properties of an a_double Object', other:' syntax ad value parameter variable near_equal example' },
+{ tag: 'a_double_binary', title:'a_double Binary Operators with an AD Result', other:' syntax ay az example' },
+{ tag: 'a_double_compare', title:'a_double Comparison Operators', other:' syntax ay example' },
+{ tag: 'a_double_assign', title:'a_double Assignment Operators', other:' syntax ay example' },
+{ tag: 'a_double_unary_fun', title:'Unary Functions with AD Result', other:' syntax ay example' },
+{ tag: 'a_double_cond_assign', title:'AD Conditional Assignment', other:' syntax purpose target cop left right if_true if_false example' },
+{ tag: 'a_double_unary_op_xam.cpp', title:'C++: a_double Unary Plus and Minus: Example and Test', other:'' },
+{ tag: 'a_double_unary_op_xam.py', title:'Python: a_double Unary Plus and Minus: Example and Test', other:'' },
+{ tag: 'a_double_property_xam.cpp', title:'C++: a_double Properties: Example and Test', other:'' },
+{ tag: 'a_double_property_xam.py', title:'Python: a_double Properties: Example and Test', other:'' },
+{ tag: 'a_double_binary_xam.cpp', title:'C++: a_double Binary Operators With AD Result: Example and Test', other:'' },
+{ tag: 'a_double_binary_xam.py', title:'Python: a_double Binary Operators With AD Result: Example and Test', other:'' },
+{ tag: 'a_double_compare_xam.cpp', title:'C++: a_double Comparison Operators: Example and Test', other:'' },
+{ tag: 'a_double_compare_xam.py', title:'Python: a_double Comparison Operators: Example and Test', other:'' },
+{ tag: 'a_double_assign_xam.cpp', title:'C++: a_double Assignment Operators: Example and Test', other:'' },
+{ tag: 'a_double_assign_xam.py', title:'Python: a_double Assignment Operators: Example and Test', other:'' },
+{ tag: 'a_double_unary_fun_xam.cpp', title:'C++: a_double Unary Functions with AD Result: Example and Test', other:'' },
+{ tag: 'a_double_unary_fun_xam.py', title:'Python: a_double Unary Functions with AD Result: Example and Test', other:'' },
+{ tag: 'a_double_cond_assign_xam.cpp', title:'C++: a_double Conditional Assignment: Example and Test', other:'' },
+{ tag: 'a_double_cond_assign_xam.py', title:'Python: a_double Conditional Assignment: Example and Test', other:'' },
+{ tag: 'vector_ctor', title:'Cppad Py Vector Constructors', other:' syntax purpose vec_bool vec_int vec_double vec_a_double example' },
+{ tag: 'vector_size', title:'Size of a Vector', other:' syntax example' },
+{ tag: 'vector_set_get', title:'Setting and Getting Vector Elements', other:' syntax element_type u example' },
+{ tag: 'vector_size_xam.cpp', title:'C++: Size of Vectors: Example and Test', other:'' },
+{ tag: 'vector_size_xam.py', title:'Python: Size of Vectors: Example and Test', other:'' },
+{ tag: 'vector_set_get_xam.cpp', title:'C++: Setting and Getting Vector Elements: Example and Test', other:'' },
+{ tag: 'vector_set_get_xam.py', title:'Python: Setting and Getting Vector Elements: Example and Test', other:'' },
+{ tag: 'cpp_independent', title:'Declare Independent Variables and Start Recording', other:' syntax purpose dynamic a_both example' },
+{ tag: 'cpp_abort_recording', title:'Abort Recording', other:' syntax purpose example' },
+{ tag: 'cpp_fun_ctor', title:'Stop Current Recording and Store Function Object', other:' syntax d_fun a_fun ay af example' },
+{ tag: 'cpp_fun_property', title:'Properties of a Function Object', other:' syntax size_domain size_range size_var size_op size_order example' },
+{ tag: 'cpp_fun_new_dynamic', title:'Change The Dynamic Parameters', other:' syntax size_order example' },
+{ tag: 'cpp_fun_jacobian', title:'Jacobian of an AD Function', other:' syntax f(x) example' },
+{ tag: 'cpp_fun_hessian', title:'Hessian of an AD Function', other:' syntax f(x) g(x) w example' },
+{ tag: 'cpp_fun_forward', title:'Forward Mode AD', other:' syntax taylor coefficient f(x) x(t) y(t) size_order xp yp example' },
+{ tag: 'cpp_fun_reverse', title:'Reverse Mode AD', other:' syntax notation f(x) x(t) y(t) g(t) q yq xq example' },
+{ tag: 'cpp_fun_optimize', title:'Optimize an AD Function', other:' syntax purpose example' },
+{ tag: 'fun_dynamic_xam.cpp', title:'C++: Using Dynamic Parameters: Example and Test', other:'' },
+{ tag: 'fun_abort_xam.cpp', title:'C++: Abort Recording a_double Operations: Example and Test', other:'' },
+{ tag: 'fun_property_xam.cpp', title:'C++: d_fun Properties: Example and Test', other:'' },
+{ tag: 'fun_jacobian_xam.cpp', title:'C++: Dense Jacobian Using AD: Example and Test', other:'' },
+{ tag: 'fun_hessian_xam.cpp', title:'C++: Dense Hessian Using AD: Example and Test', other:'' },
+{ tag: 'fun_forward_xam.cpp', title:'C++: Forward Mode AD: Example and Test', other:'' },
+{ tag: 'fun_reverse_xam.cpp', title:'C++: Reverse Mode AD: Example and Test', other:'' },
+{ tag: 'fun_optimize_xam.cpp', title:'C++: Optimize an d_fun: Example and Test', other:'' },
+{ tag: 'cpp_sparse_rc', title:'Sparsity Patterns', other:' syntax nr nc nnz resize put k row col row_major col_major example' },
+{ tag: 'cpp_sparse_rcv', title:'Sparse Matrices', other:' syntax pattern matrix nr nc nnz put k row col val row_major col_major example' },
+{ tag: 'cpp_jac_sparsity', title:'Jacobian Sparsity Patterns', other:' syntax purpose for_jac_sparsity rev_jac_sparsity pattern_in pattern_out entire example' },
+{ tag: 'cpp_sparsity', title:'Hessian Sparsity Patterns', other:' syntax purpose f select_domain select_range pattern_out component wise example' },
+{ tag: 'cpp_sparse_jac', title:'Computing Sparse Jacobians', other:' syntax purpose sparse_jac_for sparse_jac_rev subset pattern work n_sweep uses forward example' },
+{ tag: 'cpp_sparse_hes', title:'Computing Sparse Hessians', other:' syntax purpose f subset pattern work n_sweep uses forward example' },
+{ tag: 'sparse_rc_xam.cpp', title:'C++: Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'sparse_rcv_xam.cpp', title:'C++: Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'sparse_jac_pattern_xam.cpp', title:'C++: Jacobian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'sparse_hes_pattern_xam.cpp', title:'C++: Hessian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'sparse_jac_xam.cpp', title:'C++: Computing Sparse Jacobians: Example and Test', other:'' },
+{ tag: 'sparse_hes_xam.cpp', title:'C++: Hessian Sparsity Patterns: Example and Test', other:'' },
+{ tag: 'vec2cppad_double', title:'Convert an a_double Vector to a CppAD::AD<double> Vector', other:' syntax prototype' },
+{ tag: 'vec2a_double', title:'Convert a CppAD::AD<double> Vector to an a_double Vector', other:' syntax prototype' },
+{ tag: 'error_message', title:'Exception Handling', other:' syntax try block catch cppad errors not thread safe example' },
+{ tag: 'error_message_xam.cpp', title:'C++: Cppad Py Exception Handling: Example and Test', other:'' },
+{ tag: 'error_message_xam.py', title:'Python: Cppad Py Exception Handling: Example and Test', other:'' },
+{ tag: 'more_cpp', title:'Steps To Add More C++ Functions', other:' purpose include file independent new_dynamic documentation example implementation testing' },
+{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-10' },
+{ tag: 'whats_new_2018', title:'Cppad Py Changes During 2018', other:' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03' }
 ]
 
 var MaxList = 100;
 var Nstring = -1;
-var Nkeyword = Keyword.length / 2;
+var Nkeyword = Keyword.length;
+var Row2Tag  = [];
 Initialize();
 
 function Initialize()
@@ -129,17 +131,8 @@ function Initialize()
 	UpdateList();
 	document.search.keywords.focus();
 }
-function UpdateList(event)
+function UpdateList()
 {
-	key = 0;
-	if( window.event )
-		key = window.event.keyCode;
-	else if( event )
-		key = event.which;
-	if( key == 13 )
-	{	Goto();
-		return;
-	}
 	var string  = document.search.keywords.value;
 	if( Nstring == string.length )
 		return;
@@ -154,53 +147,61 @@ function UpdateList(event)
 	for(var j = 0; j < nword; j++)
 		pattern[j] = new RegExp(word[j], 'i');
 
-	var nlist = 0;
-	var list  = '';
+	var nlist       = 0;
+	var title_list  = '';
+	var tag_list    = '';
 	for(i = 0; (i < Nkeyword) && (nlist < MaxList) ; i++)
 	{
 		var match = true;
 		for(j = 0; j < nword; j++)
-		{	var flag = pattern[j].test(Keyword[2*i]);
-			flag     = flag || pattern[j].test(Keyword[2*i+1]);
+		{	var flag = pattern[j].test(Keyword[i].tag);
+			flag     = flag || pattern[j].test(Keyword[i].title);
+			flag     = flag || pattern[j].test(Keyword[i].other);
 			match    = match && flag;
 		}
-
 		if( match )
 		{
-			line  = Keyword[2*i].split(/\s+/);
-			line  = line.join(' ');
-			list  = list + line + '\n';
+			var tag    = Keyword[i].tag;
+			var title  = Keyword[i].title
+			title      = title.split(/\s+/);
+			title      = title.join(' ');
+			title_list = title_list + title + '\n';
+			tag_list   = tag_list + tag + '\n'
+			Row2Tag[nlist] = tag;
 			nlist = nlist + 1;
 		}
 	}
-	document.search.list.value    = list;
+	document.search.title_list.value = title_list;
+	document.search.title_list.setAttribute('wrap', 'off');;
+	document.search.title_list.readOnly = true;
+	document.search.tag_list.value = tag_list;
+	document.search.tag_list.setAttribute('wrap', 'off');;
+	document.search.tag_list.readOnly = true;
 }
 function Choose(textarea)
 {	var start_select = textarea.value.substring(0, textarea.selectionStart);
-	var start_pos    = Math.max(0, start_select.lastIndexOf('\n') );
+	var start_pos    = Math.max(0, start_select.lastIndexOf('\n') + 1);
 	var length       = textarea.value.length;
 	var end_select   = 
 		textarea.value.substring(textarea.selectionEnd, length);
-	var end_pos      = end_select.indexOf('\n');
-	if( end_pos >= 0 ) 
-	{	end_pos = textarea.selectionEnd + end_pos;
-	} else 
-	{	end_pos = length;
-	}
-	// highlight the selected line
+	var end_pos  = end_select.indexOf('\n');
+	end_pos      = textarea.selectionEnd + end_pos;
 	textarea.selectionStart = start_pos;
 	textarea.selectionEnd   = end_pos;
-	// get the choice from the beginning of the line
-	var line = textarea.value.substring(start_pos, length);
-	var end_choice = line.indexOf(' ');
-	if( end_choice >= 0 )
-	{	var choice = line.substring(0, end_choice);
-		document.search.choice.value = choice.toLowerCase();
-	}
+	var row = start_select.split('\n').length - 1;
+	var tag = Row2Tag[row];
+	document.search.selection.value    = tag.toLowerCase();
+	document.search.selection.readOnly = true;
 	
 	return true;
 }
 function Goto()
+{  selection       = document.search.selection.value;
+   if( selection != '' )
+	    parent.location = selection + '.htm';
+}
+function CheckForReturn()
 {
-parent.location = document.search.choice.value + '.htm';
+	var key = event.which;
+	if( key == 13 ) Goto();
 }
