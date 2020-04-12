@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Get Cppad</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Get Cppad">
-<meta name="keywords" id="keywords" content=" get cppad syntax top source directory setup.py ">
+<meta name="keywords" id="keywords" content=" get cppad syntax top source directory setup.py caching ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -68,6 +68,7 @@ A:active { color : purple }
 <br><a href="get_cppad.sh.htm#Syntax" target="_top">Syntax</a>
 <br><a href="get_cppad.sh.htm#Top Source Directory" target="_top">Top&nbsp;Source&nbsp;Directory</a>
 <br><a href="get_cppad.sh.htm#setup.py" target="_top">setup.py</a>
+<br><a href="get_cppad.sh.htm#Caching" target="_top">Caching</a>
 <br><br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
 
@@ -90,6 +91,19 @@ This program must be run from the
 <br>
 This program uses some of the settings in <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
 .
+
+<br>
+<br>
+<b><big><a name="Caching" id="Caching">Caching</a></big></b>
+<br>
+This procedure cashes previous builds so that when you re-run
+this script it does not re-do all the work.
+If you have trouble, try deleting the directory
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;build/cppad-</span></font><i><font color="black"><span style='white-space: nowrap'>yyyymmdd</span></font></i><font color="blue"><span style='white-space: nowrap'>.git<br>
+</span></font></code>
+and re-running this script.
 
 
 <hr>Input File: bin/get_cppad.sh

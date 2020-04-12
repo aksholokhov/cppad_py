@@ -105,6 +105,12 @@ A:active { color : purple }
      atmp <font color="#990000">=</font> pi_4<font color="#990000">.</font><b><font color="#000000">tan</font></b><font color="#990000">()</font> <font color="#990000">;</font>
      ok <font color="#990000">=</font> ok <font color="#990000">&amp;&amp;</font> atmp<font color="#990000">.</font><b><font color="#000000">near_equal</font></b><font color="#990000">(</font>a1<font color="#990000">)</font> <font color="#990000">;</font>
      <i><font color="#9A1900">//</font></i>
+     <i><font color="#9A1900">// erf(0.5) = 0.5204998778130465</font></i>
+     <font color="#008080">a_double</font> <b><font color="#000000">acheck</font></b><font color="#990000">(</font><font color="#993399">0.5204998778130465</font><font color="#990000">);</font>
+     atmp <font color="#990000">=</font>  <b><font color="#000000">a_double</font></b><font color="#990000">(</font><font color="#993399">0.5</font><font color="#990000">);</font>
+     atmp <font color="#990000">=</font> atmp<font color="#990000">.</font><b><font color="#000000">erf</font></b><font color="#990000">();</font>
+     ok <font color="#990000">=</font> ok <font color="#990000">&amp;&amp;</font> atmp<font color="#990000">.</font><b><font color="#000000">near_equal</font></b><font color="#990000">(</font>acheck<font color="#990000">);</font>
+     <i><font color="#9A1900">//</font></i>
      <b><font color="#0000FF">return</font></b><font color="#990000">(</font> ok <font color="#990000">);</font>
 <font color="#FF0000">}</font></tt></pre>
 
