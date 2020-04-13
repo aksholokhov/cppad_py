@@ -3,8 +3,8 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-{ tag: 'cppad_py', title:'cppad_py-20200412: A C++ Object Library and Python Interface to Cppad', other:' purpose under construction getting started function speed license' },
-{ tag: 'setup.py', title:'Configure and Build the cppad_py Python Module', other:' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get testing c++ import installing path' },
+{ tag: 'cppad_py', title:'cppad_py-20200413: A C++ Object Library and Python Interface to Cppad', other:' purpose under construction getting started function speed license' },
+{ tag: 'setup.py', title:'Configure and Build the cppad_py Python Module', other:' syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get c++ import install path' },
 { tag: 'get_cppad.sh', title:'Get Cppad', other:' syntax top source directory setup.py caching' },
 { tag: 'library', title:'The Cppad Py Libraries', other:'' },
 { tag: 'py_lib', title:'The Python Library', other:'' },
@@ -116,7 +116,7 @@ Keyword =
 { tag: 'error_message_xam.cpp', title:'C++: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'error_message_xam.py', title:'Python: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'more_cpp', title:'Steps To Add More C++ Functions', other:' purpose include file independent new_dynamic documentation example implementation testing' },
-{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-12 04-10' },
+{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-13 04-12 04-10' },
 { tag: 'whats_new_2018', title:'Cppad Py Changes During 2018', other:' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03' }
 ]
 

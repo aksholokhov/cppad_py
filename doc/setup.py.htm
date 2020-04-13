@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Configure and Build the cppad_py Python Module</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Configure and Build the cppad_py Python Module">
-<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get cppad testing c++ import installing path ">
+<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax external requirements download top source directory verbose_makefile build_type extra_cxx_flags cppad_prefix test_cppad get cppad test c++ import install path ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -71,12 +71,12 @@ A:active { color : purple }
 <br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Configure.cppad_prefix" target="_top">cppad_prefix</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Configure.test_cppad" target="_top">test_cppad</a>
 <br><a href="setup.py.htm#Get cppad" target="_top">Get&nbsp;cppad</a>
-<br><a href="setup.py.htm#Build cppad_py" target="_top">Build&nbsp;cppad_py</a>
-<br><a href="setup.py.htm#Testing" target="_top">Testing</a>
-<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Testing.python" target="_top">python</a>
-<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Testing.c++" target="_top">c++</a>
-<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Testing.import" target="_top">import</a>
-<br><a href="setup.py.htm#Installing" target="_top">Installing</a>
+<br><a href="setup.py.htm#Test" target="_top">Test</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Test.Build cppad_py" target="_top">Build&nbsp;cppad_py</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Test.python" target="_top">python</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Test.c++" target="_top">c++</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Test.import" target="_top">import</a>
+<br><a href="setup.py.htm#Install" target="_top">Install</a>
 <br><a href="setup.py.htm#Python Path" target="_top">Python&nbsp;Path</a>
 <br><br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
@@ -206,12 +206,19 @@ if you have any problems.
 The next step is to get a copy of cppad using <a href="get_cppad.sh.htm" target="_top"><span style='white-space: nowrap'>get_cppad.sh</span></a>
 .
 
+
 <br>
 <br>
-<b><big><a name="Build cppad_py" id="Build cppad_py">Build cppad_py</a></big></b>
+<b><big><a name="Test" id="Test">Test</a></big></b>
 <br>
-The next step is the build the Python cppad_py module using
-the command:
+These steps are optional if you already know that cppad_py
+works on your system.
+
+<br>
+<br>
+<big><a name="Test.Build cppad_py" id="Test.Build cppad_py">Build cppad_py</a></big>
+<br>
+Build the Python cppad_py module using the command:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace&nbsp;--debug&nbsp;--undef&nbsp;NDEBUG<br>
@@ -220,18 +227,13 @@ where
 <code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
  is the Python executable you will be
 using with cppad_py.
-If you want a faster version, with less error reporting, use
+You want can test faster version (release version) using
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--inplace<br>
 </span></font></code>
 <br>
-<b><big><a name="Testing" id="Testing">Testing</a></big></b>
-
-
-<br>
-<br>
-<big><a name="Testing.python" id="Testing.python">python</a></big>
+<big><a name="Test.python" id="Test.python">python</a></big>
 <br>
 The next step is to test the cppad_py on your system by executing
 the following commands starting in 
@@ -248,7 +250,7 @@ where
 
 <br>
 <br>
-<big><a name="Testing.c++" id="Testing.c++">c++</a></big>
+<big><a name="Test.c++" id="Test.c++">c++</a></big>
 <br>
 You can also test the cppad_py c++ interface
 <a href="cpp_lib.htm" target="_top"><span style='white-space: nowrap'>cpp_lib</span></a>
@@ -262,7 +264,7 @@ starting in
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_cplusplus<br>
 </span></font></code>
 <br>
-<big><a name="Testing.import" id="Testing.import">import</a></big>
+<big><a name="Test.import" id="Test.import">import</a></big>
 <br>
 If you are in 
 <code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
@@ -279,14 +281,14 @@ We need to install cppad_py so you can import it from any directory.
 
 <br>
 <br>
-<b><big><a name="Installing" id="Installing">Installing</a></big></b>
+<b><big><a name="Install" id="Install">Install</a></big></b>
 <br>
-Use the following command to install the debug version of cppad_py:
+Use the following command to build and install the debug version of cppad_py:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;--debug&nbsp;--undef&nbsp;NDEBUG&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
 </span></font></code>
-or the following to install the release version:
+Use the following to build and install the release version:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;setup.py&nbsp;build_ext&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
@@ -294,14 +296,17 @@ or the following to install the release version:
 This will install <code><font color="blue">cppad_py</font></code> in the directory
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/python</span></font><i><font color="black"><span style='white-space: nowrap'>major</span></font></i><font color="blue"><span style='white-space: nowrap'>.</span></font><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i><font color="blue"><span style='white-space: nowrap'>/site_packages/cppad_py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>/</span></font><i><font color="black"><span style='white-space: nowrap'>lib</span></font></i><font color="blue"><span style='white-space: nowrap'>/python</span></font><i><font color="black"><span style='white-space: nowrap'>major</span></font></i><font color="blue"><span style='white-space: nowrap'>.</span></font><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i><font color="blue"><span style='white-space: nowrap'>/site_packages/cppad_py<br>
 </span></font></code>
 where 
+<code><i><font color="black"><span style='white-space: nowrap'>lib</span></font></i></code>
+ is <code><font color="blue">lib</font></code> or <code><font color="blue">lib64</font></code>,
+
 <code><i><font color="black"><span style='white-space: nowrap'>major</span></font></i></code>
- and 
+ (
 <code><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i></code>
- are the major and minor
-versions for 
+) is the major (minor)
+version of 
 <code><i><font color="black"><span style='white-space: nowrap'>python</span></font></i></code>
 .
 
@@ -309,7 +314,13 @@ versions for
 <br>
 <b><big><a name="Python Path" id="Python Path">Python Path</a></big></b>
 <br>
-You can check the current setting of your python path using the commands:
+Check that the directory
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>/</span></font><i><font color="black"><span style='white-space: nowrap'>lib</span></font></i><font color="blue"><span style='white-space: nowrap'>/python</span></font><i><font color="black"><span style='white-space: nowrap'>major</span></font></i><font color="blue"><span style='white-space: nowrap'>.</span></font><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i><font color="blue"><span style='white-space: nowrap'>/site_packages<br>
+</span></font></code>
+is in your python path.
+Once it is, you should be able to execute the following commands:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>python</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
@@ -317,11 +328,6 @@ You can check the current setting of your python path using the commands:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(sys.path)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quit()<br>
 </span></font></code>
-The directory 
-<code><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>/lib/python</span></font><i><font color="black"><span style='white-space: nowrap'>major</span></font></i><font color="blue"><span style='white-space: nowrap'>.</span></font><i><font color="black"><span style='white-space: nowrap'>minor</span></font></i><font color="blue"><span style='white-space: nowrap'>/site_packages</span></font></code>
-
-must be in your python path.
-
 
 <hr>Input File: setup.py
 
