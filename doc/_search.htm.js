@@ -53,7 +53,7 @@ Keyword =
 { tag: 'cpp_utility', title:'C++ Utilities', other:'' },
 { tag: 'a_double_ctor', title:'The a_double Constructor', other:' syntax purpose a_other ad example' },
 { tag: 'a_double_unary_op', title:'a_double Unary Plus and Minus', other:' syntax ay example' },
-{ tag: 'a_double_property', title:'Properties of an a_double Object', other:' syntax ad value parameter variable near_equal example' },
+{ tag: 'a_double_property', title:'Properties of an a_double Object', other:' syntax ad value restriction parameter variable near_equal var2par example' },
 { tag: 'a_double_binary', title:'a_double Binary Operators with an AD Result', other:' syntax ay az example' },
 { tag: 'a_double_compare', title:'a_double Comparison Operators', other:' syntax ay example' },
 { tag: 'a_double_assign', title:'a_double Assignment Operators', other:' syntax ay example' },
