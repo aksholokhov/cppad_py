@@ -104,7 +104,7 @@ and adding a new python function, <a href="py_fun_new_dynamic.htm" target="_top"
 <br>
 <big><a name="Documentation.independent" id="Documentation.independent">independent</a></big>
 <br>
-The python file <code><font color="blue">lib/python/independent.py</font></code>
+The python file <code><font color="blue">lib/python/cppad_py/independent.py</font></code>
 was edited to add the following syntax documentation:
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
@@ -120,12 +120,12 @@ and the extra return value was documented; see
 <br>
 The <a href="cpp_fun_new_dynamic.htm" target="_top"><span style='white-space: nowrap'>cpp_fun_new_dynamic</span></a>
  documentation was added
-in the file <code><font color="blue">lib/python/fun_new_dynamic.py</font></code>.
+in the file <code><font color="blue">lib/python/cppad_py/fun_new_dynamic.py</font></code>.
 In addition, the OMhelp command
 <code><font color='blue'><pre style='display:inline'> 
-     %lib/python/fun_new_dynamic.py
+     %lib/python/cppad_py/fun_new_dynamic.py
 </pre></font></code>
-was added to the file <code><font color="blue">lib/python/fun.py</font></code>.
+was added to the file <code><font color="blue">lib/python/cppad_py/fun.py</font></code>.
 
 <br>
 <br>
@@ -136,7 +136,7 @@ below the <a href="py_independent.htm" target="_top"><span style='white-space: n
  section, using the OMhelp commands:
 <code><font color='blue'><pre style='display:inline'> 
      $children%
-          lib/example/python/fun_dynamic_xam.py
+          example/python/fun_dynamic_xam.py
      %$$
 </pre></font></code>
 In addition, a reference to this example was added under the
@@ -153,7 +153,7 @@ documentation.
 <br>
 <big><a name="Implementation.independent" id="Implementation.independent">independent</a></big>
 <br>
-The <code><font color="blue">independent</font></code> function in <code><font color="blue">lib/python/independent.py</font></code>
+The <code><font color="blue">independent</font></code> function in <code><font color="blue">lib/python/cppad_py/independent.py</font></code>
 was changed to handle dynamic parameters as follows:
 <pre><tt><b><font color="#000080">import</font></b> cppad_py
 <b><font color="#000080">import</font></b> numpy
@@ -193,7 +193,7 @@ was changed to handle dynamic parameters as follows:
 <br>
 The following function declaration was added to the
 <code><font color="blue">d_fun</font></code> class
-in the <code><font color="blue">lib/python/fun.py</font></code> file:
+in the <code><font color="blue">lib/python/cppad_py/fun.py</font></code> file:
 <pre style='display:inline'><tt>
     <b><font color="#0000FF">def</font></b> <b><font color="#000000">new_dynamic</font></b><font color="#990000">(</font>self<font color="#990000">,</font> dynamic<font color="#990000">)</font> <font color="#990000">:</font>
         <b><font color="#0000FF">return</font></b> cppad_py<font color="#990000">.</font><b><font color="#000000">d_fun_new_dynamic</font></b><font color="#990000">(</font>self<font color="#990000">.</font>f<font color="#990000">,</font> dynamic<font color="#990000">)</font>
@@ -212,7 +212,7 @@ The implementation of <code><font color="blue">d_fun_new_dynamic</font></code> a
 <br>
 <big><a name="Implementation.__init__.py" id="Implementation.__init__.py">__init__.py</a></big>
 <br>
-The following code was added to the file <code><font color="blue">lib/python/__init__.py</font></code>:
+The following code was added to the file <code><font color="blue">lib/python/cppad_py/__init__.py</font></code>:
 <code><font color='blue'><pre style='display:inline'> 
 from cppad_py.fun_new_dynamic import a_fun_new_dynamic
 from cppad_py.fun_new_dynamic import d_fun_new_dynamic
@@ -220,13 +220,13 @@ from cppad_py.fun_new_dynamic import d_fun_new_dynamic
 <br>
 <b><big><a name="Example" id="Example">Example</a></big></b>
 <br>
-The file <code><font color="blue">lib/example/python/fun_dynamic_xam.py</font></code> was added
+The file <code><font color="blue">example/python/fun_dynamic_xam.py</font></code> was added
 with the following contents:
 <a href="fun_dynamic_xam.py.htm" target="_top"><span style='white-space: nowrap'>fun_dynamic_xam.py</span></a>
 .
 In addition, in the file
 <code><font color='blue'><pre style='display:inline'> 
-    lib/example/python/check_all.py.in
+    example/python/check_all.py.in
 </pre></font></code>
 the following text was added to the list of python example files.
 <code><font color='blue'><pre style='display:inline'> 
@@ -255,7 +255,7 @@ Once the tests were working, the changes where checked into using
 <code><font color="blue">git</font></code>.
 
 
-<hr>Input File: lib/python/more_py.omh
+<hr>Input File: lib/python/cppad_py/more_py.omh
 
 </body>
 </html>

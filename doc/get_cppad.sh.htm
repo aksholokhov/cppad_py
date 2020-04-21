@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Get Cppad</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Get Cppad">
-<meta name="keywords" id="keywords" content=" get cppad syntax top source directory setup.py caching ">
+<meta name="keywords" id="keywords" content=" get cppad syntax top source directory settings cppad_prefix extra_cxx_flags build_type test_cppad caching ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -64,7 +64,11 @@ A:active { color : purple }
 
 <br><a href="get_cppad.sh.htm#Syntax" target="_top">Syntax</a>
 <br><a href="get_cppad.sh.htm#Top Source Directory" target="_top">Top&nbsp;Source&nbsp;Directory</a>
-<br><a href="get_cppad.sh.htm#setup.py" target="_top">setup.py</a>
+<br><a href="get_cppad.sh.htm#Settings" target="_top">Settings</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="get_cppad.sh.htm#Settings.cppad_prefix" target="_top">cppad_prefix</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="get_cppad.sh.htm#Settings.extra_cxx_flags" target="_top">extra_cxx_flags</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="get_cppad.sh.htm#Settings.build_type" target="_top">build_type</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="get_cppad.sh.htm#Settings.test_cppad" target="_top">test_cppad</a>
 <br><a href="get_cppad.sh.htm#Caching" target="_top">Caching</a>
 <br><br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
@@ -84,12 +88,45 @@ This program must be run from the
 
 <br>
 <br>
-<b><big><a name="setup.py" id="setup.py">setup.py</a></big></b>
-<br>
-This program uses some of the settings in <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
-.
+<b><big><a name="Settings" id="Settings">Settings</a></big></b>
+
 
 <br>
+<br>
+<big><a name="Settings.cppad_prefix" id="Settings.cppad_prefix">cppad_prefix</a></big>
+<br>
+This prefix is used to install cppad locally relative to the
+top source director:
+<pre style='display:inline'><tt>
+<font color="#009900">cppad_prefix</font><font color="#990000">=</font><font color="#FF0000">'build/prefix'</font>
+</tt></pre>
+<br>
+<big><a name="Settings.extra_cxx_flags" id="Settings.extra_cxx_flags">extra_cxx_flags</a></big>
+<br>
+Extra compiler false used when compiling c++ code not including the
+debugging and optimization flags.
+The ones below are example flags are used by g++:
+<pre style='display:inline'><tt>
+<font color="#009900">extra_cxx_flags</font><font color="#990000">=</font><font color="#FF0000">'-Wall -pedantic-errors -Wno-unused-result -std=c++11'</font>
+</tt></pre>
+<br>
+<big><a name="Settings.build_type" id="Settings.build_type">build_type</a></big>
+<br>
+This must be must <code><font color="blue">debug</font></code> or <code><font color="blue">release</font></code>.
+The debug version has more error messaging while the release
+version runs faster.
+<pre style='display:inline'><tt>
+<font color="#009900">build_type</font><font color="#990000">=</font><font color="#FF0000">'release'</font>
+</tt></pre>
+<br>
+<big><a name="Settings.test_cppad" id="Settings.test_cppad">test_cppad</a></big>
+<br>
+This must be must <code><font color="blue">true</font></code> or <code><font color="blue">false</font></code>.
+Cppad has a huge test suite and this can take a significant amount of time,
+but it may be useful if you have problems.
+<pre style='display:inline'><tt>
+<font color="#009900">test_cppad</font><font color="#990000">=</font><font color="#FF0000">'false'</font>
+</tt></pre>
 <br>
 <b><big><a name="Caching" id="Caching">Caching</a></big></b>
 <br>
