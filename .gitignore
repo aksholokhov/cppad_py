@@ -3,16 +3,21 @@
 junk
 junk.*
 # directories to ignore
-/build/
-/cppad_py/
 # /doc/
-/new/
+/build/
+/dist/
+/cppad_py/
+/cppad_py.egg-info/
 /new.*/
-new
+/new/
 # extensions to ignore
 *.log
 *.swp
-# automatically generated files in lib/example/python
-/lib/example/python/__pycache__
-/lib/example/python/*.pyc
-/lib/example/python/check_all.py
+# files and directory created to run python examples
+/example/python/check_all.py
+/example/python/*.pyc
+/example/python/__pycache__
+#
+# files created by swig
+/lib/python/cppad_py/cppad_py_swig_wrap.cpp
+/lib/python/cppad_py/swig.py
