@@ -116,7 +116,7 @@ Keyword =
 { tag: 'error_message_xam.cpp', title:'C++: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'error_message_xam.py', title:'Python: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'more_cpp', title:'Steps To Add More C++ Functions', other:' purpose include file independent new_dynamic documentation example implementation testing' },
-{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-21 04-20 04-19 04-18 04-13 04-12 04-10' },
+{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-22 04-20 04-19 04-18 04-13 04-12 04-10' },
 { tag: 'whats_new_2018', title:'Cppad Py Changes During 2018', other:' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03' }
 ]
 
