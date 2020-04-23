@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Configure and Build the cppad_py Python Module</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Configure and Build the cppad_py Python Module">
-<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax external requirements install using pip download top source directory get cppad test c++ import path ">
+<meta name="keywords" id="keywords" content=" configure build the cppad_py python module syntax external requirements install using pip errors download top source directory get cppad test c++ import path ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -32,7 +32,7 @@ A:active { color : purple }
 <a href="https://bradbell.github.io/cppad_py" target="_top"><img border="0" src="_image.gif"></a>
 </td>
 <td><a href="_contents.htm" target="_top">Prev</a>
-</td><td><a href="get_cppad.sh.htm" target="_top">Next</a>
+</td><td><a href="install_error.htm" target="_top">Next</a>
 </td><td>
 <select onchange='choose_across0(this)'>
 <option>Index-&gt;</option>
@@ -63,6 +63,7 @@ A:active { color : purple }
 <br><a href="setup.py.htm#Syntax" target="_top">Syntax</a>
 <br><a href="setup.py.htm#External Requirements" target="_top">External&nbsp;Requirements</a>
 <br><a href="setup.py.htm#Install Using Pip" target="_top">Install&nbsp;Using&nbsp;Pip</a>
+<br><a href="setup.py.htm#Install Errors" target="_top">Install&nbsp;Errors</a>
 <br><a href="setup.py.htm#Download" target="_top">Download</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="setup.py.htm#Download.Top Source Directory" target="_top">Top&nbsp;Source&nbsp;Directory</a>
 <br><a href="setup.py.htm#Configure" target="_top">Configure</a>
@@ -125,13 +126,14 @@ To install for you entire system use:
 <code><font color='blue'><pre style='display:inline'> 
      pip install -i https://test.pypi.org/simple/ cppad_py
 </pre></font></code>
-If you do not have the necessary permissions,
-you can install in your local user space using:
-<code><font color='blue'><pre style='display:inline'> 
-     pip install -i https://test.pypi.org/simple/ cppad_py --user
-</pre></font></code>
+<br>
+<b><big><a name="Install Errors" id="Install Errors">Install Errors</a></big></b>
+<br>
+If you get an error message during the install procedure above,
+or the one below, see <a href="install_error.htm" target="_top"><span style='white-space: nowrap'>install_error</span></a>
+.
 This will only install the release version.
-The debug version is included below with the instructions
+Installing a debug version is discussed below in the instructions
 for downloading and building from the source code.
 
 <br>
@@ -150,7 +152,6 @@ The directory you choose for
 <code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
  is
 referred to as your top source directory.
-
 
 <br>
 <br>
