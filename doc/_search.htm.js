@@ -5,7 +5,7 @@ Keyword =
 [
 { tag: 'cppad_py', title:'cppad_py-2020.4.24: A C++ Object Library and Python Interface to CppAD', other:' git repository purpose under construction getting started function speed license' },
 { tag: 'setup.py', title:'Configure and Build the cppad_py Python Module', other:' syntax external requirements install using pip errors download top source directory get test c++ import path' },
-{ tag: 'install_error', title:'Error Messages During Installation', other:' solved swig permissions unsolved mac travis' },
+{ tag: 'install_error', title:'Error Messages During Installation', other:' solved swig permissions unsolved travis' },
 { tag: 'get_cppad.sh', title:'Get Cppad', other:' syntax top source directory settings cppad_prefix extra_cxx_flags build_type test_cppad caching' },
 { tag: 'library', title:'The Cppad Py Libraries', other:'' },
 { tag: 'py_lib', title:'The Python Library', other:'' },

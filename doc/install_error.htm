@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Error Messages During Installation</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Error Messages During Installation">
-<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions unsolved mac travis ">
+<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions unsolved travis ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -66,7 +66,6 @@ A:active { color : purple }
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Solved.swig" target="_top">swig</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Solved.Permissions" target="_top">Permissions</a>
 <br><a href="install_error.htm#Unsolved" target="_top">Unsolved</a>
-<br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Unsolved.Mac" target="_top">Mac</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Unsolved.Travis" target="_top">Travis</a>
 <br>.
 
@@ -118,19 +117,9 @@ and put your solution there.
 
 <br>
 <br>
-<big><a name="Unsolved.Mac" id="Unsolved.Mac">Mac</a></big>
-<br>
-The following error message has occurred on the Mac:
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;warning:&nbsp;include&nbsp;path&nbsp;for&nbsp;stdlibc++&nbsp;headers&nbsp;not&nbsp;found&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>...</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;cppad_py_swig_wrap.cpp:2723:10:&nbsp;fatal&nbsp;error:&nbsp;'stdexcept'&nbsp;file&nbsp;not&nbsp;found<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#include&nbsp;&lt;stdexcept&gt;<br>
-</span></font></code>
-<br>
 <big><a name="Unsolved.Travis" id="Unsolved.Travis">Travis</a></big>
 <br>
-The following message occurs on Travis system of unknown configuration;
+The following message occurs on a Travis system of unknown configuration;
 i.e., it has not been reproduced outside of Travis.
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
@@ -138,8 +127,19 @@ i.e., it has not been reproduced outside of Travis.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TypeError:&nbsp;unsupported&nbsp;operand&nbsp;type(s)&nbsp;for&nbsp;/:&nbsp;'a_double'&nbsp;and&nbsp;'float'<br>
 </span></font></code>
 Note the same code works on other systems.
-
-
+The <code><font color="blue">.travis.yml</font></code> file is included below:
+<code><font color='blue'><pre style='display:inline'> 
+    language: python
+    python:
+      - &quot;3.7&quot;
+    install:
+      - sudo apt-get install swig
+      - python setup.py install
+      - pip install -i https://test.pypi.org/simple/ cppad_py
+    script:
+      - pytest tests
+      - make examples
+</pre></font></code>
 
 <hr>Input File: install_error.omh
 
