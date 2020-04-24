@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Cppad Py Changes During 2020</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Cppad Py Changes During 2020">
-<meta name="keywords" id="keywords" content=" cppad py changes during 2020 previous years 04-23 04-22 04-20 04-19 04-18 04-13 04-12 04-10 ">
+<meta name="keywords" id="keywords" content=" cppad py changes during 2020 previous years 04-24 04-23 04-22 04-20 04-19 04-18 04-13 04-12 04-10 ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -64,6 +64,7 @@ A:active { color : purple }
 <center><b><big><big>Cppad Py Changes During 2020</big></big></b></center>
 
 <br><a href="whats_new_2020.htm#Previous Years" target="_top">Previous&nbsp;Years</a>
+<br><a href="whats_new_2020.htm#04-24" target="_top">04-24</a>
 <br><a href="whats_new_2020.htm#04-23" target="_top">04-23</a>
 <br><a href="whats_new_2020.htm#04-22" target="_top">04-22</a>
 <br><a href="whats_new_2020.htm#04-20" target="_top">04-20</a>
@@ -78,6 +79,19 @@ A:active { color : purple }
 <br>
 <a href="whats_new_2018.htm" target="_top"><span style='white-space: nowrap'>whats_new_2018</span></a>
 
+
+<br>
+<br>
+<b><big><a name="04-24" id="04-24">04-24</a></big></b>
+<br>
+The newer Mac systems seems to require that one use
+<code><font color="blue">-stdlib=libc++</font></code> compile and link flag.
+The install has been changed to check for and adapt to this condition.
+In addition, <a href="setup.py.htm" target="_top"><span style='white-space: nowrap'>setup.py</span></a>
+ now runs the <code><font color="blue">cmake</font></code> command; i.e.,
+the user no longer needs to run <code><font color="blue">cmake</font></code> to test the
+<a href="setup.py.htm#Test.c++" target="_top"><span style='white-space: nowrap'>c++</span></a>
+ library.
 
 <br>
 <br>

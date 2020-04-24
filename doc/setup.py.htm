@@ -80,7 +80,7 @@ A:active { color : purple }
 
 <br>
 
-<code><font color="blue"><span style='white-space: nowrap'>python&nbsp;setup.py&nbsp;build_ext&nbsp;[--debug]<br>
+<code><font color="blue"><span style='white-space: nowrap'>python&nbsp;setup.py&nbsp;build_ext<br>
 </span></font></code>
 <br>
 <b><big><a name="External Requirements" id="External Requirements">External Requirements</a></big></b>
@@ -181,13 +181,6 @@ works on your system.
 <big><a name="Test.Build cppad_py" id="Test.Build cppad_py">Build cppad_py</a></big>
 <br>
 Build the Python cppad_py module using the command:
-If <a href="get_cppad.sh.htm#Settings.build_type" target="_top"><span style='white-space: nowrap'>build_type</span></a>
- is <code><font color="blue">debug</font></code>
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;setup.py&nbsp;build_ext&nbsp;--debug<br>
-</span></font></code>
-otherwise use
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;setup.py&nbsp;build_ext<br>
@@ -207,7 +200,8 @@ the following commands starting in
 <br>
 <big><a name="Test.c++" id="Test.c++">c++</a></big>
 <br>
-You can also test the cppad_py c++ interface
+After <code><font color="blue">setup.py</font></code> has run,
+you can also test the cppad_py c++ interface
 <a href="cpp_lib.htm" target="_top"><span style='white-space: nowrap'>cpp_lib</span></a>
  on your system by executing the following commands
 starting in 
@@ -216,32 +210,8 @@ starting in
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd&nbsp;build<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cmake&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-D&nbsp;CMAKE_BUILD_TYPE=</span></font><i><font color="black"><span style='white-space: nowrap'>build_type</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-D&nbsp;cppad_prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>cppad_prefix</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-D&nbsp;extra_cxx_flags=</span></font><i><font color="black"><span style='white-space: nowrap'>extra_cxx_flags</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make&nbsp;check_lib_cplusplus<br>
 </span></font></code>
-where 
-<code><i><font color="black"><span style='white-space: nowrap'>build_type</span></font></i></code>
- is <code><font color="blue">debug</font></code> or <code><font color="blue">release</font></code>,
-
-<code><i><font color="black"><span style='white-space: nowrap'>cppad_prefix</span></font></i></code>
- is the prefix where 
-<code><i><font color="black"><span style='white-space: nowrap'>cppad</span></font></i></code>
- is installed,
-and 
-<code><i><font color="black"><span style='white-space: nowrap'>extra_cxx_flags</span></font></i></code>
- are extra flags to use when running the
-c++ compiler. Note that 
-<code><i><font color="black"><span style='white-space: nowrap'>cppad_prefix</span></font></i></code>
- is relative to the
-
-<code><i><font color="black"><span style='white-space: nowrap'>top_srcdir</span></font></i></code>
- directory not the build directory.
-
-<br>
 <br>
 <big><a name="Test.import" id="Test.import">import</a></big>
 <br>
@@ -263,13 +233,6 @@ We need to install cppad_py so you can import it from any directory.
 <b><big><a name="Install" id="Install">Install</a></big></b>
 <br>
 Use the following command to build and install the debug version of cppad_py:
-If <a href="get_cppad.sh.htm#Settings.build_type" target="_top"><span style='white-space: nowrap'>build_type</span></a>
- is <code><font color="blue">debug</font></code>
-
-<code><font color="blue"><span style='white-space: nowrap'><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;setup.py&nbsp;build_ext&nbsp;--debug&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
-</span></font></code>
-otherwise use
 
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;setup.py&nbsp;build_ext&nbsp;install&nbsp;--prefix=</span></font><i><font color="black"><span style='white-space: nowrap'>prefix</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
