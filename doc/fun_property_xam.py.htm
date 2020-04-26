@@ -77,6 +77,7 @@ A:active { color : purple }
      <i><font color="#9A1900">#</font></i>
      <b><font color="#000080">import</font></b> numpy
      <b><font color="#000080">import</font></b> cppad_py
+     <b><font color="#000080">import</font></b> re
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># initialize return variable</font></i>
      ok <font color="#990000">=</font> True
@@ -112,7 +113,7 @@ A:active { color : purple }
      f  <font color="#990000">=</font> cppad_py<font color="#990000">.</font><b><font color="#000000">d_fun</font></b><font color="#990000">(</font>ax<font color="#990000">,</font> ay<font color="#990000">)</font>
      n_op <font color="#990000">=</font> n_op <font color="#990000">+</font> <font color="#993399">1</font> <i><font color="#9A1900"># speical operator at end</font></i>
      <i><font color="#9A1900">#</font></i>
-     <i><font color="#9A1900"># check af properties</font></i>
+     <i><font color="#9A1900"># check af properties except f.to_json</font></i>
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> f<font color="#990000">.</font><b><font color="#000000">size_domain</font></b><font color="#990000">()</font> <font color="#990000">==</font> n_ind
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> f<font color="#990000">.</font><b><font color="#000000">size_range</font></b><font color="#990000">()</font>  <font color="#990000">==</font> n_dep
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> f<font color="#990000">.</font><b><font color="#000000">size_var</font></b><font color="#990000">()</font>    <font color="#990000">==</font> n_var
@@ -131,6 +132,17 @@ A:active { color : purple }
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_var</font></b><font color="#990000">()</font>    <font color="#990000">==</font> n_var
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_op</font></b><font color="#990000">()</font>     <font color="#990000">==</font> n_op
      ok <font color="#990000">=</font> ok <b><font color="#0000FF">and</font></b> af<font color="#990000">.</font><b><font color="#000000">size_order</font></b><font color="#990000">()</font>  <font color="#990000">==</font> <font color="#993399">0</font>
+     <i><font color="#9A1900"># ---------------------------------------------------------------------</font></i>
+     <i><font color="#9A1900"># check f.to_json</font></i>
+     json     <font color="#990000">=</font> f<font color="#990000">.</font><b><font color="#000000">to_json</font></b><font color="#990000">()</font>
+     pattern  <font color="#990000">=</font> r<font color="#FF0000">'"op_code" *: *([^,]*),'</font>
+     match    <font color="#990000">=</font> re<font color="#990000">.</font><b><font color="#000000">search</font></b><font color="#990000">(</font>pattern<font color="#990000">,</font> json<font color="#990000">)</font>
+     op_code  <font color="#990000">=</font> <b><font color="#000000">int</font></b><font color="#990000">(</font> match<font color="#990000">.</font><b><font color="#000000">group</font></b><font color="#990000">(</font><font color="#993399">1</font><font color="#990000">)</font> <font color="#990000">)</font>
+     ok      <font color="#990000">&amp;=</font> op_code <font color="#990000">==</font> <font color="#993399">1</font>
+     pattern  <font color="#990000">=</font> r<font color="#FF0000">'"name" *: *"([^"]*)" *,'</font>
+     match    <font color="#990000">=</font> re<font color="#990000">.</font><b><font color="#000000">search</font></b><font color="#990000">(</font>pattern<font color="#990000">,</font> json<font color="#990000">)</font>
+     name     <font color="#990000">=</font> match<font color="#990000">.</font><b><font color="#000000">group</font></b><font color="#990000">(</font><font color="#993399">1</font><font color="#990000">);</font>
+     ok      <font color="#990000">&amp;=</font> name <font color="#990000">==</font> <font color="#FF0000">'add'</font> <b><font color="#0000FF">or</font></b> name <font color="#990000">==</font> <font color="#FF0000">'sub'</font>
      <i><font color="#9A1900">#</font></i>
      <b><font color="#0000FF">return</font></b><font color="#990000">(</font> ok  <font color="#990000">)</font>
 <i><font color="#9A1900">#</font></i></tt></pre>

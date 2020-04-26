@@ -3,9 +3,9 @@
 // ------------------------------------------------------------ 
 Keyword = 
 [
-{ tag: 'cppad_py', title:'cppad_py-2020.4.24: A C++ Object Library and Python Interface to CppAD', other:' git repository purpose under construction getting started function speed license' },
+{ tag: 'cppad_py', title:'cppad_py-2020.4.25: A C++ Object Library and Python Interface to CppAD', other:' git repository purpose under construction getting started function speed license' },
 { tag: 'setup.py', title:'Configure and Build the cppad_py Python Module', other:' syntax external requirements install using pip errors download top source directory get test c++ import path' },
-{ tag: 'install_error', title:'Error Messages During Installation', other:' solved swig permissions unsolved travis' },
+{ tag: 'install_error', title:'Error Messages During Installation', other:' solved swig permissions fortify source unsolved travis' },
 { tag: 'get_cppad.sh', title:'Get Cppad', other:' syntax top source directory settings cppad_prefix extra_cxx_flags build_type test_cppad caching' },
 { tag: 'library', title:'The Cppad Py Libraries', other:'' },
 { tag: 'py_lib', title:'The Python Library', other:'' },
@@ -84,7 +84,7 @@ Keyword =
 { tag: 'cpp_independent', title:'Declare Independent Variables and Start Recording', other:' syntax purpose dynamic a_both example' },
 { tag: 'cpp_abort_recording', title:'Abort Recording', other:' syntax purpose example' },
 { tag: 'cpp_fun_ctor', title:'Stop Current Recording and Store Function Object', other:' syntax d_fun a_fun ay af example' },
-{ tag: 'cpp_fun_property', title:'Properties of a Function Object', other:' syntax size_domain size_range size_var size_op size_order example' },
+{ tag: 'cpp_fun_property', title:'Properties of a Function Object', other:' syntax size_domain size_range size_var size_op size_order to_json example' },
 { tag: 'cpp_fun_new_dynamic', title:'Change The Dynamic Parameters', other:' syntax size_order example' },
 { tag: 'cpp_fun_jacobian', title:'Jacobian of an AD Function', other:' syntax f(x) example' },
 { tag: 'cpp_fun_hessian', title:'Hessian of an AD Function', other:' syntax f(x) g(x) w example' },
@@ -117,7 +117,7 @@ Keyword =
 { tag: 'error_message_xam.cpp', title:'C++: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'error_message_xam.py', title:'Python: Cppad Py Exception Handling: Example and Test', other:'' },
 { tag: 'more_cpp', title:'Steps To Add More C++ Functions', other:' purpose include file independent new_dynamic documentation example implementation testing' },
-{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-24 04-23 04-22 04-20 04-19 04-18 04-13 04-12 04-10' },
+{ tag: 'whats_new_2020', title:'Cppad Py Changes During 2020', other:' previous years 04-25 04-24 04-23 04-22 04-20 04-19 04-18 04-13 04-12 04-10' },
 { tag: 'whats_new_2018', title:'Cppad Py Changes During 2018', other:' 11-10 11-09 11-07 11-05 08-13 07-31 07-26 07-19 07-15 07-14 07-13 07-12 07-10 07-08 07-07 07-03' }
 ]
 

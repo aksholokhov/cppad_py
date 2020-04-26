@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Properties of a Function Object</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Properties of a Function Object">
-<meta name="keywords" id="keywords" content=" properties function object syntax f size_domain size_range size_var size_op size_order example ">
+<meta name="keywords" id="keywords" content=" properties function object syntax f size_domain size_range size_var size_op size_order to_json example ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -82,6 +82,7 @@ A:active { color : purple }
 <br><a href="cpp_fun_property.htm#size_var" target="_top">size_var</a>
 <br><a href="cpp_fun_property.htm#size_op" target="_top">size_op</a>
 <br><a href="cpp_fun_property.htm#size_order" target="_top">size_order</a>
+<br><a href="cpp_fun_property.htm#to_json" target="_top">to_json</a>
 <br><a href="cpp_fun_property.htm#Example" target="_top">Example</a>
 <br><br>
 <b><big><a name="Syntax" id="Syntax">Syntax</a></big></b>
@@ -104,6 +105,9 @@ A:active { color : purple }
 </span></font></code>
 
 <code><i><font color="black"><span style='white-space: nowrap'>q</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>f</span></font></i><font color="blue"><span style='white-space: nowrap'>.size_order()<br>
+</span></font></code>
+
+<code><i><font color="black"><span style='white-space: nowrap'>s</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>f</span></font></i><font color="blue"><span style='white-space: nowrap'>.to_json()<br>
 </span></font></code>
 <br>
 <b><big><a name="f" id="f">f</a></big></b>
@@ -198,6 +202,22 @@ The initial value for this property, when the object
 or 
 <code><i><font color="black"><span style='white-space: nowrap'>af</span></font></i></code>
  is created, is zero.
+
+<br>
+<br>
+<b><big><a name="to_json" id="to_json">to_json</a></big></b>
+<br>
+The return value has prototype
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;std::string&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>s</span></font></i><font color="blue"><span style='white-space: nowrap'><br>
+</span></font></code>
+and is a Json representation of the computation graph corresponding to
+
+<code><i><font color="black"><span style='white-space: nowrap'>f</span></font></i></code>
+; see the CppAD documentation for
+<a href="https://coin-or.github.io/CppAD/doc/json_ad_graph.htm" target="_top"><span style='white-space: nowrap'>json_ad_graph</span></a>
+.
 
 
 <br>

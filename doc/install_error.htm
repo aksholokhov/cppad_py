@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Error Messages During Installation</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Error Messages During Installation">
-<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions unsolved travis ">
+<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions fortify source unsolved travis ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -65,6 +65,7 @@ A:active { color : purple }
 <br><a href="install_error.htm#Solved" target="_top">Solved</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Solved.swig" target="_top">swig</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Solved.Permissions" target="_top">Permissions</a>
+<br><a href="install_error.htm#Fortify Source" target="_top">Fortify&nbsp;Source</a>
 <br><a href="install_error.htm#Unsolved" target="_top">Unsolved</a>
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Unsolved.Travis" target="_top">Travis</a>
 <br>.
@@ -107,6 +108,20 @@ Try install in your local user space. For example, if you are using pip,
 <code><font color="blue"><span style='white-space: nowrap'><br>
 &nbsp;&nbsp;&nbsp;&nbsp;pip&nbsp;install&nbsp;-i&nbsp;https://test.pypi.org/simple/&nbsp;cppad_py&nbsp;--user<br>
 </span></font></code>
+<br>
+<b><big><a name="Fortify Source" id="Fortify Source">Fortify Source</a></big></b>
+<br>
+If you set <a href="get_cppad.sh.htm#Settings.build_type" target="_top"><span style='white-space: nowrap'>build_type</span></a>
+ to <code><font color="blue">debug</font></code>,
+you may get the following warning during the build:
+<code><font color='blue'><pre style='display:inline'> 
+     #warning _FORTIFY_SOURCE requires compiling with optimization
+</pre></font></code>
+This is a problem with the python setuptools,
+one can un-define a macro, but it does not remove a original definition.
+
+
+<br>
 <br>
 <b><big><a name="Unsolved" id="Unsolved">Unsolved</a></big></b>
 <br>
