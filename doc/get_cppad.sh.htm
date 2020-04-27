@@ -98,10 +98,11 @@ If you change any of these settings, you must re-run <code><font color="blue">ge
 <br>
 <big><a name="Settings.cppad_prefix" id="Settings.cppad_prefix">cppad_prefix</a></big>
 <br>
-This prefix is used to install cppad locally relative to the
-top source director:
+This prefix is used to install CppAD may be a local director; e.g.,
+<code><font color="blue">build/prefix</font></code> or an absolute path; e.g., <code><font color="blue">/usr/local</font></code>,
+it may include the shell variable <code><font color="blue">$HOME</font></code> but no variables:
 <pre style='display:inline'><tt>
-<font color="#009900">cppad_prefix</font><font color="#990000">=</font><font color="#FF0000">'build/prefix'</font>
+<font color="#009900">cppad_prefix</font><font color="#990000">=</font><font color="#FF0000">"$HOME/prefix/cppad"</font>
 </tt></pre>
 <br>
 <big><a name="Settings.extra_cxx_flags" id="Settings.extra_cxx_flags">extra_cxx_flags</a></big>
