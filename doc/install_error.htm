@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Error Messages During Installation</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Error Messages During Installation">
-<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions fortify source unsolved travis ">
+<meta name="keywords" id="keywords" content=" error messages during installation solved swig permissions fortify source unsolved cppad library missing travis ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -67,7 +67,8 @@ A:active { color : purple }
 <br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Solved.Permissions" target="_top">Permissions</a>
 <br><a href="install_error.htm#Fortify Source" target="_top">Fortify&nbsp;Source</a>
 <br><a href="install_error.htm#Unsolved" target="_top">Unsolved</a>
-<br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#Unsolved.Travis" target="_top">Travis</a>
+<br><a href="install_error.htm#CppAD Library Missing" target="_top">CppAD&nbsp;Library&nbsp;Missing</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="install_error.htm#CppAD Library Missing.Travis" target="_top">Travis</a>
 <br>.
 
 <br>
@@ -132,7 +133,27 @@ and put your solution there.
 
 <br>
 <br>
-<big><a name="Unsolved.Travis" id="Unsolved.Travis">Travis</a></big>
+<b><big><a name="CppAD Library Missing" id="CppAD Library Missing">CppAD Library Missing</a></big></b>
+<br>
+If the error message below occurs, it is because the CppAD library
+is not in your <code><font color="blue">LD_LIBRARY_PATH</font></code>:
+
+<code><font color="blue"><span style='white-space: nowrap'><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ImportError:&nbsp;libcppad_lib.so&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>...</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;cannot&nbsp;open&nbsp;shared&nbsp;object&nbsp;file<br>
+</span></font></code>
+There should be a copy of the library in the
+
+<code><font color="blue"><span style='white-space: nowrap'>build/prefix/</span></font><i><font color="black"><span style='white-space: nowrap'>lib</span></font></i></code>
+ subdirectory where 
+<code><i><font color="black"><span style='white-space: nowrap'>lib</span></font></i></code>
+ is
+<code><font color="blue">lib</font></code> or <code><font color="blue">lib64</font></code>.
+What really needs doing here is to make a separate install for CppAD.
+
+
+<br>
+<br>
+<big><a name="CppAD Library Missing.Travis" id="CppAD Library Missing.Travis">Travis</a></big>
 <br>
 The following message occurs on a Travis system of unknown configuration;
 i.e., it has not been reproduced outside of Travis.
