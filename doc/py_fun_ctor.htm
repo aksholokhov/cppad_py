@@ -15,7 +15,7 @@ MathJax.Hub.Config({
 <title>Stop Current Recording and Store Function Object</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
 <meta name="description" id="description" content="Stop Current Recording and Store Function Object">
-<meta name="keywords" id="keywords" content=" stop current recording store function object syntax d_fun a_fun ax ay f af example ">
+<meta name="keywords" id="keywords" content=" stop current recording store function object syntax d_fun a_fun ax ay f empty af example ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -78,6 +78,7 @@ A:active { color : purple }
 <br><a href="py_fun_ctor.htm#ax" target="_top">ax</a>
 <br><a href="py_fun_ctor.htm#ay" target="_top">ay</a>
 <br><a href="py_fun_ctor.htm#f" target="_top">f</a>
+<br>&#160;&#160;&#160;&#160;&#160;<a href="py_fun_ctor.htm#f.Empty Function" target="_top">Empty&nbsp;Function</a>
 <br><a href="py_fun_ctor.htm#af" target="_top">af</a>
 <br><a href="py_fun_ctor.htm#Example" target="_top">Example</a>
 <br><br>
@@ -91,6 +92,9 @@ A:active { color : purple }
 <br>
 
 <code><i><font color="black"><span style='white-space: nowrap'>f</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py.d_fun(</span></font><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i><font color="blue"><span style='white-space: nowrap'>,&nbsp;</span></font><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i><font color="blue"><span style='white-space: nowrap'>)<br>
+</span></font></code>
+
+<code><i><font color="black"><span style='white-space: nowrap'>f</span></font></i><font color="blue"><span style='white-space: nowrap'>&nbsp;=&nbsp;cppad_py.d_fun()<br>
 </span></font></code>
 <br>
 <big><a name="Syntax.a_fun" id="Syntax.a_fun">a_fun</a></big>
@@ -133,9 +137,27 @@ to denote the number of dependent variables (the size of
 <br>
 This result is a function object that
 has a representation for the floating point operations
-that mapped the independent variables to the dependent variables.
+that mapped the independent variables 
+<code><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i></code>
+
+to the dependent variables 
+<code><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i></code>
+.
 This object computes function and derivative values using
 <code><font color="blue">double</font></code>
+
+<br>
+<br>
+<big><a name="f.Empty Function" id="f.Empty Function">Empty Function</a></big>
+<br>
+In the case where 
+<code><i><font color="black"><span style='white-space: nowrap'>ax</span></font></i></code>
+ and 
+<code><i><font color="black"><span style='white-space: nowrap'>ay</span></font></i></code>
+ are not present
+the function is 'empty' and all its sizes are zero; see
+<a href="cpp_fun_property.htm" target="_top"><span style='white-space: nowrap'>cpp_fun_property</span></a>
+.
 
 <br>
 <br>

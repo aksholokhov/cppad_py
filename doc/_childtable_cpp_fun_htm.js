@@ -12,6 +12,7 @@ document.write('\
 <option>cpp_fun_forward</option>\
 <option>cpp_fun_reverse</option>\
 <option>cpp_fun_optimize</option>\
+<option>cpp_fun_json</option>\
 </select>\
 ');
 function cpp_fun_child(item)
@@ -25,7 +26,8 @@ function cpp_fun_child(item)
 		'cpp_fun_hessian.htm',
 		'cpp_fun_forward.htm',
 		'cpp_fun_reverse.htm',
-		'cpp_fun_optimize.htm'
+		'cpp_fun_optimize.htm',
+		'cpp_fun_json.htm'
 	];
 	var index = item.selectedIndex;
 	item.selectedIndex = 0;

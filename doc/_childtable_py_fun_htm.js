@@ -12,6 +12,7 @@ document.write('\
 <option>py_fun_forward</option>\
 <option>py_fun_reverse</option>\
 <option>py_fun_optimize</option>\
+<option>py_fun_json</option>\
 </select>\
 ');
 function py_fun_child(item)
@@ -25,7 +26,8 @@ function py_fun_child(item)
 		'py_fun_hessian.htm',
 		'py_fun_forward.htm',
 		'py_fun_reverse.htm',
-		'py_fun_optimize.htm'
+		'py_fun_optimize.htm',
+		'py_fun_json.htm'
 	];
 	var index = item.selectedIndex;
 	item.selectedIndex = 0;
