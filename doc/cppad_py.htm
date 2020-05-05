@@ -12,12 +12,12 @@ MathJax.Hub.Config({
 >
 </script>
 <head>
-<title>cppad_py-2020.4.28:
+<title>cppad_py-2020.5.4:
 	A C++ Object Library and Python Interface to CppAD</title>
 <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
-<meta name="description" id="description" content="cppad_py-2020.4.28:
+<meta name="description" id="description" content="cppad_py-2020.5.4:
 	A C++ Object Library and Python Interface to CppAD">
-<meta name="keywords" id="keywords" content=" cppad_py-2020.4.28: c++ object library python interface to cppad git repository purpose under construction getting started function speed license ">
+<meta name="keywords" id="keywords" content=" cppad_py-2020.5.4: c++ object library python interface to cppad git repository purpose getting started optimization function speed license ">
 <style type='text/css'>
 body { color : black }
 body { background-color : white }
@@ -57,13 +57,13 @@ A:active { color : purple }
 <small>@(@
 \newcommand{\B}[1]{ {\bf #1} }
 \newcommand{\R}[1]{ {\rm #1} }
-@)@</small><center><b><big><big>cppad_py-2020.4.28:
+@)@</small><center><b><big><big>cppad_py-2020.5.4:
 	A C++ Object Library and Python Interface to CppAD</big></big></b></center>
 
 <br><a href="cppad_py.htm#Git Repository" target="_top">Git&nbsp;Repository</a>
 <br><a href="cppad_py.htm#Purpose" target="_top">Purpose</a>
-<br><a href="cppad_py.htm#Under Construction" target="_top">Under&nbsp;Construction</a>
 <br><a href="cppad_py.htm#Getting Started" target="_top">Getting&nbsp;Started</a>
+<br><a href="cppad_py.htm#Optimization" target="_top">Optimization</a>
 <br><a href="cppad_py.htm#C++ Function Speed" target="_top">C++&nbsp;Function&nbsp;Speed</a>
 <br><a href="cppad_py.htm#License" target="_top">License</a>
 <br><a href="cppad_py.htm#Contents" target="_top">Contents</a>
@@ -91,24 +91,24 @@ Provide an AD object library; see <a href="cpp_lib.htm" target="_top"><span styl
 Provide a concrete example of how
 <a href="https://github.com/bradbell/cppad_swig" target="_top"><span style='white-space: nowrap'>cppad_swig</span></a>
 
-can be used to connect any scripting language to Cppad.
+can be used to connect any scripting language to CppAD.
 </li></ol>
 
 
 <br>
 <br>
-<b><big><a name="Under Construction" id="Under Construction">Under Construction</a></big></b>
+<b><big><a name="Getting Started" id="Getting Started">Getting Started</a></big></b>
 <br>
-This version is preliminary and the user API is subject to change.
-See <a href="whats_new_2020.htm" target="_top"><span style='white-space: nowrap'>whats_new_2020</span></a>
- for changes.
+The following is a good place to get started using cppad_py:
+<a href="fun_jacobian_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
+.
 
 <br>
 <br>
-<b><big><a name="Getting Started" id="Getting Started">Getting Started</a></big></b>
+<b><big><a name="Optimization" id="Optimization">Optimization</a></big></b>
 <br>
-The following is a good place to see what the interface is like:
-<a href="fun_jacobian_xam.py.htm" target="_top"><span style='white-space: nowrap'>Python</span></a>
+The following is an example using cppad_py with the scipy optimization
+routines: <a href="scipy_optimize_xam.py.htm" target="_top"><span style='white-space: nowrap'>scipy_optimize_xam.py</span></a>
 .
 
 <br>
@@ -138,7 +138,7 @@ This program is distributed under the terms of the
 <b><big><a name="Contents" id="Contents">Contents</a></big></b>
 <br>
 <table>
-<tr><td><a href="_contents.htm" target="_top">_contents</a></td><td>Table&nbsp;of&nbsp;Contents</td></tr><tr><td><a href="setup.py.htm" target="_top">setup.py</a></td><td>Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module</td></tr><tr><td><a href="library.htm" target="_top">library</a></td><td>The&nbsp;Cppad&nbsp;Py&nbsp;Libraries</td></tr><tr><td><a href="whats_new_2020.htm" target="_top">whats_new_2020</a></td><td>CppAD&nbsp;Py&nbsp;Changes&nbsp;During&nbsp;2020</td></tr><tr><td><a href="_reference.htm" target="_top">_reference</a></td><td>Alphabetic&nbsp;Listing&nbsp;of&nbsp;Cross&nbsp;Reference&nbsp;Tags</td></tr><tr><td><a href="_index.htm" target="_top">_index</a></td><td>Keyword&nbsp;Index</td></tr><tr><td><a href="_search.htm" target="_top">_search</a></td><td>Search&nbsp;This&nbsp;Web&nbsp;Site</td></tr><tr><td><a href="_external.htm" target="_top">_external</a></td><td>External&nbsp;Internet&nbsp;References</td></tr></table>
+<tr><td><a href="_contents.htm" target="_top">_contents</a></td><td>Table&nbsp;of&nbsp;Contents</td></tr><tr><td><a href="setup.py.htm" target="_top">setup.py</a></td><td>Configure&nbsp;and&nbsp;Build&nbsp;the&nbsp;cppad_py&nbsp;Python&nbsp;Module</td></tr><tr><td><a href="scipy_optimize_xam.py.htm" target="_top">scipy_optimize_xam.py</a></td><td>Example&nbsp;Using&nbsp;Scipy&nbsp;trust-constr&nbsp;Optimization&nbsp;Method</td></tr><tr><td><a href="library.htm" target="_top">library</a></td><td>The&nbsp;Cppad&nbsp;Py&nbsp;Libraries</td></tr><tr><td><a href="whats_new_2020.htm" target="_top">whats_new_2020</a></td><td>CppAD&nbsp;Py&nbsp;Changes&nbsp;During&nbsp;2020</td></tr><tr><td><a href="_reference.htm" target="_top">_reference</a></td><td>Alphabetic&nbsp;Listing&nbsp;of&nbsp;Cross&nbsp;Reference&nbsp;Tags</td></tr><tr><td><a href="_index.htm" target="_top">_index</a></td><td>Keyword&nbsp;Index</td></tr><tr><td><a href="_search.htm" target="_top">_search</a></td><td>Search&nbsp;This&nbsp;Web&nbsp;Site</td></tr><tr><td><a href="_external.htm" target="_top">_external</a></td><td>External&nbsp;Internet&nbsp;References</td></tr></table>
 <hr>Input File: doc.omh
 
 </body>

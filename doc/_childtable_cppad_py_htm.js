@@ -3,6 +3,7 @@ document.write('\
 <select onchange="cppad_py_child(this)">\
 <option>cppad_py-&gt;</option>\
 <option>setup.py</option>\
+<option>scipy_optimize_xam.py</option>\
 <option>library</option>\
 <option>whats_new_2020</option>\
 <option>_reference</option>\
@@ -14,6 +15,7 @@ document.write('\
 function cppad_py_child(item)
 {	var child_list = [
 		'setup.py.htm',
+		'scipy_optimize_xam.py.htm',
 		'library.htm',
 		'whats_new_2020.htm',
 		'_reference.htm',
