@@ -7,7 +7,7 @@ var list_across0 = [
 ];
 var list_up0 = [
 'cppad_py.htm',
-'scipy_optimize_xam.py.htm'
+'numeric_xam.htm'
 ];
 function choose_across0(item)
 {	var index          = item.selectedIndex;
