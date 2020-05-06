@@ -92,18 +92,18 @@ A:active { color : purple }
      ay_init  <font color="#990000">=</font> ax<font color="#990000">[</font><font color="#993399">4</font><font color="#990000">:</font><font color="#993399">8</font><font color="#990000">]</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># set up seirs model</font></i>
-     seirs_obj <font color="#990000">=</font> <b><font color="#000000">seirs_class</font></b><font color="#990000">()</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_t_all</font></b><font color="#990000">(</font>t_all<font color="#990000">)</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_ode_p</font></b><font color="#990000">(</font>aode_p<font color="#990000">)</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_initial</font></b><font color="#990000">(</font>ay_init<font color="#990000">)</font>
+     seirs <font color="#990000">=</font> <b><font color="#000000">seirs_class</font></b><font color="#990000">()</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_t_all</font></b><font color="#990000">(</font>t_all<font color="#990000">)</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_ode_p</font></b><font color="#990000">(</font>aode_p<font color="#990000">)</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_initial</font></b><font color="#990000">(</font>ay_init<font color="#990000">)</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># compute model for data</font></i>
-     ay_model <font color="#990000">=</font> seirs_obj<font color="#990000">.</font><b><font color="#000000">model</font></b><font color="#990000">()</font>
+     ay_model <font color="#990000">=</font> seirs<font color="#990000">.</font><b><font color="#000000">model</font></b><font color="#990000">()</font>
      <i><font color="#9A1900">#</font></i>
-     <i><font color="#9A1900"># model for the data</font></i>
+     <i><font color="#9A1900"># Only have I(t) data.</font></i>
      aI_model  <font color="#990000">=</font> ay_model<font color="#990000">[:,</font><font color="#993399">2</font><font color="#990000">]</font> <i><font color="#9A1900"># S=0, E=1, I=2, R=3</font></i>
      <i><font color="#9A1900">#</font></i>
-     <i><font color="#9A1900"># compute loss function</font></i>
+     <i><font color="#9A1900"># compute Gaussian loss function</font></i>
      aresidual <font color="#990000">=</font> I_data <font color="#990000">-</font> aI_model
      aloss     <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">sum</font></b><font color="#990000">(</font> aresidual <font color="#990000">*</font> aresidual<font color="#990000">)</font>
      aloss     <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">array</font></b><font color="#990000">(</font> <font color="#990000">[</font> aloss <font color="#990000">]</font> <font color="#990000">)</font>
@@ -115,28 +115,28 @@ A:active { color : purple }
      ok <font color="#990000">=</font> True
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># parameter values used to simulate data</font></i>
-     seirs_obj <font color="#990000">=</font> <b><font color="#000000">seirs_class</font></b><font color="#990000">()</font>
+     seirs <font color="#990000">=</font> <b><font color="#000000">seirs_class</font></b><font color="#990000">()</font>
      ode_p_true <font color="#990000">=</font> <font color="#990000">[</font>
           <font color="#993399">0.3</font><font color="#990000">,</font>          <i><font color="#9A1900"># beta:  exposure rate</font></i>
           <font color="#993399">1.0</font> <font color="#990000">/</font> <font color="#993399">5.0</font><font color="#990000">,</font>    <i><font color="#9A1900"># sigma: on average 5 days from exposure to infectious</font></i>
           <font color="#993399">1.0</font> <font color="#990000">/</font> <font color="#993399">20.0</font><font color="#990000">,</font>   <i><font color="#9A1900"># gamma: on average 20 days from infectors to recovered</font></i>
           <font color="#993399">0.0</font><font color="#990000">,</font>          <i><font color="#9A1900"># xi: immunity is permanent</font></i>
      <font color="#990000">]</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_ode_p</font></b><font color="#990000">(</font>ode_p_true<font color="#990000">)</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_ode_p</font></b><font color="#990000">(</font>ode_p_true<font color="#990000">)</font>
      t_init    <font color="#990000">=</font> <font color="#993399">0.0</font>
      t_final   <font color="#990000">=</font> <font color="#993399">50.0</font>
      n_step    <font color="#990000">=</font> <font color="#993399">40</font>
      t_all     <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">linspace</font></b><font color="#990000">(</font>t_init<font color="#990000">,</font> t_final<font color="#990000">,</font> n_step<font color="#990000">)</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_t_all</font></b><font color="#990000">(</font>t_all<font color="#990000">)</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_t_all</font></b><font color="#990000">(</font>t_all<font color="#990000">)</font>
      <i><font color="#9A1900">#</font></i>
      I_start      <font color="#990000">=</font> <font color="#993399">0.01</font>
      E_start      <font color="#990000">=</font> I_start <font color="#990000">*</font> ode_p_true<font color="#990000">[</font><font color="#993399">0</font><font color="#990000">]</font> <font color="#990000">/</font> ode_p_true<font color="#990000">[</font><font color="#993399">1</font><font color="#990000">]</font>
      S_start      <font color="#990000">=</font> <font color="#993399">1.0</font> <font color="#990000">-</font> E_start <font color="#990000">-</font> I_start
      y_init_true  <font color="#990000">=</font> numpy<font color="#990000">.</font><b><font color="#000000">array</font></b><font color="#990000">(</font> <font color="#990000">[</font> S_start<font color="#990000">,</font> E_start<font color="#990000">,</font> I_start<font color="#990000">,</font> <font color="#993399">0.0</font> <font color="#990000">]</font> <font color="#990000">)</font>
-     seirs_obj<font color="#990000">.</font><b><font color="#000000">set_initial</font></b><font color="#990000">(</font>y_init_true<font color="#990000">)</font>
+     seirs<font color="#990000">.</font><b><font color="#000000">set_initial</font></b><font color="#990000">(</font>y_init_true<font color="#990000">)</font>
      <i><font color="#9A1900">#</font></i>
      <i><font color="#9A1900"># noiseless simulated data</font></i>
-     y_model    <font color="#990000">=</font> seirs_obj<font color="#990000">.</font><b><font color="#000000">model</font></b><font color="#990000">()</font>
+     y_model    <font color="#990000">=</font> seirs<font color="#990000">.</font><b><font color="#000000">model</font></b><font color="#990000">()</font>
      <b><font color="#0000FF">if</font></b> False <font color="#990000">:</font>
           ax <font color="#990000">=</font> pyplot<font color="#990000">.</font><b><font color="#000000">subplot</font></b><font color="#990000">(</font><font color="#993399">111</font><font color="#990000">)</font>
           ax<font color="#990000">.</font><b><font color="#000000">plot</font></b><font color="#990000">(</font>t_all<font color="#990000">,</font> y_model<font color="#990000">[:,</font><font color="#993399">0</font><font color="#990000">],</font> <font color="#FF0000">'b-'</font><font color="#990000">,</font> label<font color="#990000">=</font><font color="#FF0000">'S'</font><font color="#990000">)</font>
