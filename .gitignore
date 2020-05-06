@@ -16,6 +16,7 @@ junk.*
 # files and directory created to run python examples
 /example/python/check_all.py
 /example/python/__pycache__/
+/example/python/core/__pycache__/
 /example/python/numeric/__pycache__/
 #
 # files created by swig
